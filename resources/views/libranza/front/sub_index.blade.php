@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+    @php
+    header('Strict-Transport-Security: max-age=0;');
+    @endphp
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+        <meta name="author" content="Oportunidadaes Libranza">
+        <title>Libranza Fácil - Oportunidades Libranza</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{asset('modules/libranza/public/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/main.min.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/slick.css"')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/whatsapp.min.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/slick-theme.css')}}" />
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c1313463c5.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png"
+            href="{{asset('modules/libranza/public/resources/assets/oportunidadesServicios.ico')}}" />
+        <meta name="description" content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados,
+    docentes y militares muy fácil, solicítalo Online." />
+        <meta property="og:type" content="Website" />
+        <meta property="og:title" content="Libranza Facil" />
+        <meta property="og:description" content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados,
+    docentes y militares muy fácil, solicítalo Online. Crédito por Libranza para pensionados, docentes y militares, hasta
+    con 120 meses de plazo, aprobamos hasta los 84 años y Somos especialistas en Fondos Privados, Si estas reportado, te
+    damos una segunda Oportunidad." />
+        <meta property="og:image"
+            content="https://libranzafacil.com/{{asset('modules/libranza/public/resources/assets/Portada_OGV.jpg')}}" />
+        <meta property="og:url" content="https://libranzafacil.com/" />
+        <meta property="og:site_name" content="LibranzaFacil.com" />
+        <!-- Global site tag (gtag.js) - Google Ads: 781153823 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-781153823"></script>
+        @yield('og')
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-781153823');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164894259-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164894259-1');
+        </script>
+        <script>
+            (function(h, e, a, t, m, p) {
+            m = e.createElement(a);
+            m.async = !0;
+            m.src = t;
+            p = e.getElementsByTagName(a)[0];
+            p.parentNode.insertBefore(m, p);
+        })(window, document, 'script', 'https://u.heatmap.it/log.js');
+        </script>
+        <style>
+            #emailAlert {
+                display: block;
+                padding: 0px 15px;
+                font-size: 11px;
+                font-weight: bold;
+                position: absolute;
+                display: none;
+            }
+
+            .imgFon {
+                position: initial !important;
+                margin: auto;
+            }
+
+            .content-textTitleNav {
+                border-right: initial;
+            }
+
+        </style>
+        @yield('styles')
+    </head>
+
+    <body>
+        <div id="contenedor_carga">
+            <div class="loader"></div>
+        </div>
+        <script>
+            window.onload = function() {
+        var contenedor = document.getElementById('contenedor_carga');
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+    }
+        </script>
+        <script>
+            function soloLetras(e) {
+        key = e.keyCode || e.which;
+        tecla = String.fromCharCode(key).toLowerCase();
+        letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+        especiales = [8, 37, 39, 46];
+
+        tecla_especial = false
+        for (var i in especiales) {
+            if (key == especiales[i]) {
+                tecla_especial = true;
+                break;
+            }
+        }
+
+        if (letras.indexOf(tecla) == -1 && !tecla_especial)
+            return false;
+    }
+
+    function limpia() {
+        var val = document.getElementById("miInput").value;
+        var tam = val.length;
+        for (i = 0; i < tam; i++) {
+            if (!isNaN(val[i]))
+                document.getElementById("miInput").value = '';
+        }
+    }
+        </script>
+        <script>
+            function validaNumericos(event) {
+        if (event.charCode >= 48 && event.charCode <= 57) {
+            return true;
+        }
+        return false;
+    }
+        </script>
+        <nav class="navbar navbar-expand navbar-light bg-white">
+            <div class="row w-100 d-flex align-items-center text-center row-reset">
+
+                <div style="margin-left: auto;margin-right: auto;"
+                    class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-reset">
+                    <a href="/" style=" margin-top: 5px;" class="nav-link centrado"> <img class="w-imgLog"
+                            src="{{asset('modules/libranza/public/resources/assets/LogoLibranza.png')}}" alt=""> </a>
+
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 col-reset content-textTitleNav">
+                    <p class="titleNav">
+                        <span class="title-form mt-1 text-center ">
+                            <strong>¿REPORTADO?</strong>
+                        </span>
+                        <br>
+                        <span class="title-form2 text-center" style="color:#1cbaf8">
+                            Te damos una segunda <br>
+                        </span>
+                        <span class="title-form2 text-left" style="color:#1cbaf8">
+                            <strong> oportunidad </strong>
+                        </span>
+                    </p>
+                </div>
+                <div style="margin-left: auto;margin-right: auto;"
+                    class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-reset ">
+                    <a href="https://www.oportunidades.com.co/" style=" margin-top: 5px;" class="nav-link centrado">
+                        <img class="w-imgLog"
+                            src="{{asset('modules/libranza/public/resources/assets/oportunidades.jpg')}}" alt=""> </a>
+
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class=" row-reset row contenedor my-4">
+                <div class="col-12">
+                    @include('libranza.front.layouts.form_customers')
+                </div>
+            </div>
+        </div>
+        @include('libranza.front.footer')
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{asset('modules/libranza/public/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('modules/libranza/public/js/slick.min.js')}}"></script>
+    <script src="{{asset('modules/libranza/public/js/jqueryMigrate.min.js')}}"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    {{-- <script src="{{asset('modules/libranza/public/js/ciudades.min.js')}}"></script> --}}
+    <script type="text/javascript" src="{{asset('modules/libranza/public/js/whatsapp.min.js')}}"> </script>
+    <script>
+
+    </script>
+    <script type="text/javascript">
+        // 1. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+    
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                playerVars: {
+                    loop: 1,
+                    controls: 1,
+                    showinfo: 1,
+                    autohide: 1,
+                    modestbranding: 1,
+                    autoplay: 0,
+                    vq: 'hd720'
+                },
+                videoId: 'QQdp5gF7LAw',
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+    
+        // 3. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    
+        var done = false;
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#WAButton').floatingWhatsApp({
+                phone: '573138701355', //WhatsApp Business phone number
+                headerTitle: 'Chatea con nosotros por WhatsApp !', //Popup Title
+                popupMessage: 'Hola, como podemos ayudarte?', //Popup Message
+                showPopup: true, //Enables popup display
+                buttonImage: '<img src="whatsapp.svg" />', //Button Image
+                // headerColor: 'crimson', //Custom header color
+                //backgroundColor: 'crimson', //Custom background button color
+                position: "right" //Position: left | right
+    
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var email = document.getElementById("email").value;
+        var emailConfirm = document.getElementById("emailConfirm").value;
+    
+        if (email != emailConfirm) {
+            document.getElementById("emailAlert").style.display = "block";
+            document.getElementById("email").value = "";
+        } else {
+            document.getElementById("emailAlert").style.display = "none";
+        }
+    </script>
+    <script type="text/javascript">
+        // 1. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+    
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Libranza Facil",
+            "url": "https://libranzafacil.com/",
+            "sameAs": [
+                "https://www.facebook.com/almacenes.oportunidades/",
+                "https://www.instagram.com/almacenes.oportunidades/"
+            ],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://libranzafacil.com/{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-164894259-1');
+    </script>
+
+</html>

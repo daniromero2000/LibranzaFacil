@@ -1,0 +1,16 @@
+{
+    "Generals": true,
+    "Companies": true,
+    "Customers": true,
+    "Ecommerce": false,
+    "Pqrs": true,
+    "CamStudio": false,
+    "Courses": true,
+    "CallCenter": false,
+    "Commercial": true,
+    "CreditFactory": false,
+    "Insurances": false,
+    "Warranty": false,
+    "Libranza": true,
+    "Leads": true
+}
