@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/app.min.css')}}" />
         <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
         @yield('styles')
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         @include('libranza.front.layouts.og_labels')
         @yield('og')
 

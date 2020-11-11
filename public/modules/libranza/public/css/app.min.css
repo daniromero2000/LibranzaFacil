@@ -1,10 +1,145 @@
-.container-header {
-    min-height: 160px;
+@font-face {
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight : bold;
+    font-style  : normal;
+    font-display: swap;
 }
 
-.logo-yellow-header {
-    -webkit-box-shadow: 0px 0px 4rem 0px rgba(255, 206, 0, 0.68);
-    -moz-box-shadow   : 0px 0px 4rem 0px rgba(255, 206, 0, 0.68);
-    box-shadow        : 0px 0px 4rem 0px rgba(255, 206, 0, 0.68);
-    border-radius     : 0px 0px 22px 22px;
+@font-face {
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight : 500;
+    font-style  : normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src        : url('../fonts/MontserratAlternates-SemiBold.woff2') format('woff2'),
+        url('../fonts/MontserratAlternates-SemiBold.woff') format('woff');
+    font-weight : 600;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight : 800;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+}
+
+/* .container-header {
+    min-height: 15vh;
+} */
+
+.logo-yellow-header {
+    -webkit-box-shadow: 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    -moz-box-shadow   : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    box-shadow        : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    border-radius     : 0px 0px 16% 16%;
+}
+
+.first-div-header {
+    width: 36%;
+}
+
+.first-div-header img {
+    width: 47%;
+}
+
+.last-div-header {
+    width  : 20%;
+    z-index: 9;
+}
+
+.last-div-header img {
+    width: 41%;
+}
+
+.second-logo {
+    width: 63%;
+}
+
+header {
+    padding-bottom: 1%;
+}
+
+header span,
+.navbar a {
+    font-size: 0.9rem;
+}
+
+header,
+.navbar a {
+    font-family: "Montserrat", -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
+    color: #164194 !important;
+}
+
+header .icons {
+    width: 10%;
+}
+
+header .container-icon-call {
+    width: 12%;
+}
+
+header .icon-call {
+    width : 80%;
+    margin: auto;
+}
+
+.navbar {
+    padding    : 1% 17%;
+    border-top : 1px solid #dee2e66b;
+    font-weight: 500;
+}
+
+.button-nav {
+    padding      : 0.8% 1.8%;
+    background   : #FFCE00;
+    border-radius: 48px;
+    font-size    : 1rem;
+    display      : flex;
+}
+
+.button-nav:hover {
+    text-decoration: none;
+}
+
+.button-nav img {
+    width       : 12%;
+    margin-right: 2.2%;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left : 0.7rem;
+}
+
+.navbar .nav-link:hover {
+    border       : #FFCE00 1.6px solid;
+    border-radius: 40px;
+}
+
+
+/* slider */
