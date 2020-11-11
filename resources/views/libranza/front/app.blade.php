@@ -14,22 +14,12 @@
         <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
         @yield('styles')
 
-        <meta name="description" content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados,
-    docentes y militares muy fácil, solicítalo Online." />
-        <meta property="og:type" content="Website" />
-        <meta property="og:title" content="Libranza Facil" />
-        <meta property="og:description" content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados,
-    docentes y militares muy fácil, solicítalo Online. Crédito por Libranza para pensionados, docentes y militares, hasta
-    con 120 meses de plazo, aprobamos hasta los 84 años y Somos especialistas en Fondos Privados, Si estas reportado, te
-    damos una segunda Oportunidad." />
-        <meta property="og:image" content="https://libranzafacil.com/resources/assets/Portada_OGV.jpg" />
-        <meta property="og:url" content="https://libranzafacil.com/" />
-        <meta property="og:site_name" content="LibranzaFacil.com" />
+        @include('libranza.front.layouts.og_labels')
         @yield('og')
 
         @include('libranza.front.layouts.tracking_labels')
         @yield('tracing')
-        <script>
+        {{-- <script>
             window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -55,7 +45,7 @@
             p = e.getElementsByTagName(a)[0];
             p.parentNode.insertBefore(m, p);
         })(window, document, 'script', 'https://u.heatmap.it/log.js');
-        </script>
+        </script> --}}
 
     </head>
 
@@ -68,20 +58,17 @@
 
     <script src="{{asset('js/bootstrap/jquery.slim.min.js')}}"></script>
     <script src="{{asset('js/bootstrap/bootstrap.bundle.min.js')}}"></script>
-    <script>
-
-    </script>
 
     <script type="text/javascript">
-        var email = document.getElementById("email").value;
-    var emailConfirm = document.getElementById("emailConfirm").value;
+        //     var email = document.getElementById("email").value;
+    // var emailConfirm = document.getElementById("emailConfirm").value;
 
-    if (email != emailConfirm) {
-        document.getElementById("emailAlert").style.display = "block";
-        document.getElementById("email").value = "";
-    } else {
-        document.getElementById("emailAlert").style.display = "none";
-    }
+    // if (email != emailConfirm) {
+    //     document.getElementById("emailAlert").style.display = "block";
+    //     document.getElementById("email").value = "";
+    // } else {
+    //     document.getElementById("emailAlert").style.display = "none";
+    // }
     </script>
     @yield('scripts')
 
