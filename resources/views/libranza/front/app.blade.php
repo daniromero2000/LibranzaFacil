@@ -10,7 +10,7 @@
         <title>Libranza Fácil - Oportunidades Libranza</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/main.min.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/app.min.css')}}" />
         <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
         @yield('styles')
 
@@ -50,7 +50,7 @@
     </head>
 
     <body>
-        @include('libranza.front.layouts.header')
+        @include('libranza.front.header')
         @yield('content')
         @include('libranza.front.footer')
 
