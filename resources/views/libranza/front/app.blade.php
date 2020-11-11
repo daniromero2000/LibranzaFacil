@@ -30,7 +30,11 @@
         <meta property="og:site_name" content="LibranzaFacil.com" />
         <!-- Global site tag (gtag.js) - Google Ads: 781153823 -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-781153823"></script>
+        @yield('css')
+
         @yield('og')
+
+        @yield('tracing')
         <script>
             window.dataLayer = window.dataLayer || [];
 
