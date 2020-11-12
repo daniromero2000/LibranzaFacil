@@ -218,6 +218,7 @@ article {
 .main-text-container h2 {
     font-size    : 2.1vw;
     margin-bottom: 1.7%;
+    font-weight  : normal;
 }
 
 .main-text-container p {
@@ -226,20 +227,45 @@ article {
     font-size: 1.1vw;
 }
 
+.main-text-container span {
+    color      : #c70f0f;
+    font-weight: 700;
+}
+
 .container-text-benefits h2 {
     font-size    : 2.1vw;
     margin-bottom: 2.3%;
+    font-weight  : normal;
 }
 
 .container-text-benefits .row {
-    width    : 64%;
+    width    : 70%;
     margin   : auto;
     font-size: 1.1vw;
+}
+
+.container-text-benefits .row .icon-card {
+    padding: 12%;
+}
+
+.container-text-benefits .row .container-icon-cards {
+    padding: 6%;
+}
+
+.container-text-benefits .row .container-icon-cards:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 0.5rem #00C3FF17;
+    -moz-box-shadow   : 0px 0px 3rem 0.5rem #00C3FF17;
+    box-shadow        : 0px 0px 3rem 0.5rem #00C3FF17;
 }
 
 .video-container .col-info-video {
     width   : 46%;
     position: relative;
+}
+
+.video-container .col-info-video img {
+    width: 100%;
 }
 
 .video-container .col-info-video .play {
@@ -265,12 +291,44 @@ article {
 .video-container .col-info section {
     width        : 72%;
     text-align   : center;
-    margin-top   : auto;
+    position     : relative;
+    margin-top   : 9%;
     margin-bottom: auto;
+    margin-left  : 7%;
+}
+
+.video-container .col-info p {
+    color: #5C5C5C;
+}
+
+.video-container .col-info section a {
+    margin-top        : 3%;
+    width             : 36%;
+    right             : 33%;
+    position          : absolute;
+    font-size         : 1vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 2.7%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.video-container .col-info section a:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
 }
 
 .video-container .col-info section h1 {
     font-size    : 2vw;
+    font-weight  : normal;
     margin-bottom: 5%;
 }
 
@@ -281,6 +339,10 @@ article {
 .banner-last {
     width   : 100%;
     position: relative;
+}
+
+.banner-last img {
+    width: 100%;
 }
 
 .banner-last a {
@@ -306,4 +368,30 @@ article {
     background-color  : #d04242;
     box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
     -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}
+
+
+.container-covenants .row {
+    padding  : 3% 5%;
+    width    : 74%;
+    margin   : auto;
+    font-size: 0.9vw;
+}
+
+.container-covenants .row div {
+    padding        : 3%;
+    border         : 1px solid #e9ecef5c;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 15%;
+    margin         : 0.7%;
+    font-weight    : 600;
+}
+
+.container-covenants .row div:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 0.2rem #00C3FF17;
+    -moz-box-shadow   : 0px 0px 3rem 0.2rem #00C3FF17;
+    box-shadow        : 0px 0px 3rem 0.2rem #00C3FF17;
 }
