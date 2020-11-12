@@ -43,10 +43,6 @@
     font-display: swap;
 }
 
-/* .container-header {
-    min-height: 15vh;
-} */
-
 .logo-yellow-header {
     -webkit-box-shadow: 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
     -moz-box-shadow   : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
@@ -75,23 +71,28 @@
     width: 63%;
 }
 
+body {
+    font-size: 1vw;
+    font-family: "Montserrat",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
+}
+
 header {
     padding-bottom: 1%;
 }
 
 header span,
 .navbar a {
-    font-size: 0.9rem;
+    font-size: 1vw;
 }
 
 header,
 .navbar a {
-    font-family: "Montserrat", -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        "Helvetica Neue",
-        Arial;
     color: #164194 !important;
 }
 
@@ -108,6 +109,10 @@ header .icon-call {
     margin: auto;
 }
 
+.ml-2-responsive {
+    margin-left: 1.4%;
+}
+
 .navbar {
     padding    : 1% 17%;
     border-top : 1px solid #dee2e66b;
@@ -120,6 +125,7 @@ header .icon-call {
     border-radius: 48px;
     font-size    : 1rem;
     display      : flex;
+    width        : 25%;
 }
 
 .button-nav:hover {
@@ -141,5 +147,163 @@ header .icon-call {
     border-radius: 40px;
 }
 
-
 /* slider */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width : 100%;
+    height: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width  : 9%;
+    opacity: 0.7;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='cyan' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='cyan' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.container-icons-carousel {
+    width           : 34.8%;
+    height          : 7.5%;
+    background-color: white;
+    border-radius   : 64%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.button-carousel {
+    position          : absolute;
+    bottom            : 18%;
+    left              : 19.8%;
+    width             : 15%;
+    font-size         : 1.2vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 0.8%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.button-carousel:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}
+
+article {
+    padding-top   : 3.5%;
+    padding-bottom: 3.5%;
+    text-align    : center;
+    color         : #164194;
+}
+
+.main-text-container {
+    background-color: #F7FAFF;
+}
+
+.main-text-container h2 {
+    font-size    : 2.1vw;
+    margin-bottom: 1.7%;
+}
+
+.main-text-container p {
+    width    : 64%;
+    margin   : auto;
+    font-size: 1.1vw;
+}
+
+.container-text-benefits h2 {
+    font-size    : 2.1vw;
+    margin-bottom: 2.3%;
+}
+
+.container-text-benefits .row {
+    width    : 64%;
+    margin   : auto;
+    font-size: 1.1vw;
+}
+
+.video-container .col-info-video {
+    width   : 46%;
+    position: relative;
+}
+
+.video-container .col-info-video .play {
+    position     : absolute;
+    top          : 38%;
+    left         : 47%;
+    width        : 9%;
+    border-radius: 65%;
+}
+
+.video-container .col-info-video .play:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    -moz-box-shadow   : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    box-shadow        : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+}
+
+.video-container .col-info {
+    display: flex;
+    width  : 50%;
+}
+
+.video-container .col-info section {
+    width        : 72%;
+    text-align   : center;
+    margin-top   : auto;
+    margin-bottom: auto;
+}
+
+.video-container .col-info section h1 {
+    font-size    : 2vw;
+    margin-bottom: 5%;
+}
+
+.video-container .col-info section p {
+    font-size: 1.1vw;
+}
+
+.banner-last {
+    width   : 100%;
+    position: relative;
+}
+
+.banner-last a {
+    position          : absolute;
+    bottom            : 12%;
+    right             : 17.6%;
+    width             : 15%;
+    font-size         : 1.2vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 0.8%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.banner-last a:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}

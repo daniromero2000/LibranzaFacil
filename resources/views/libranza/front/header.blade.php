@@ -5,9 +5,9 @@
         </div>
 
         <div class="col px-0 d-flex">
-            <div class="row">
+            <div class="row w-100 mx-0">
                 <div class="col-12 px-0 m-auto py-2">
-                    <div class="row mx-0">
+                    <div class="row w-100 mx-0">
                         <div class="container-icon-call d-flex">
                             <img src="{{asset('modules/libranza/public/img/icons/call-light.png')}}" class="icon-call"
                                 alt="">
@@ -22,9 +22,9 @@
                 </div>
                 <div class=" col pl-1">
                     <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" class="icons" alt="">
-                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}" class="icons ml-2"
-                        alt="">
-                    <span class="ml-2">
+                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}"
+                        class="icons ml-2-responsive" alt="">
+                    <span class="ml-2-responsive">
                         <b>Siguenos</b>
                     </span>
                 </div>
