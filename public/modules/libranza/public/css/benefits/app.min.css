@@ -12,8 +12,8 @@
     font-weight : normal;
     font-style  : normal;
     font-display: swap;
-    font-size: 18px;
-    text-justify: left;
+    font-size: 1.2vw;
+    text-justify: left; 
     }
 
 .card-title{
@@ -22,8 +22,7 @@
     url('../fonts/Montserrat-Bold.woff') format('woff');
     font-weight : normal;
     font-style  : normal;
-    font-display: swap;
-    font-size: 37.3px;
+    font-display: swap;    
     text-justify: left;
     }
 
@@ -33,6 +32,7 @@
     width: 490px;
     height: 45px;
     color: #164194;
+    font-size: 1.9vw;
     }
 
 .card-img{
@@ -48,5 +48,17 @@
     flex-basis: auto;
     min-height: 1px;
     padding: 1.25rem;
-    margin-top: 2.5cm;  
+    margin-top: 2.5cm;      
     }
+
+.img-left{
+    margin-left: 3cm;
+}
+
+.text-left{
+    margin-left: 4.5cm;
+}
+
+.mb-3 {
+    height: 350px;    
+}

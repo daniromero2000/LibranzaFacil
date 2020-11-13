@@ -1,0 +1,141 @@
+.imgBanner{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    }
+
+.vectorial-50{
+    width: 40%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: -0.5cm;
+    }
+
+.manito{
+    width: 35%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: -0.5cm;
+    }
+
+.medalla{
+    width: 30%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: -0.5cm;
+    }
+
+.people{
+    width: 40%;
+    height: 40%;
+    display: block;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: -0.2cm;
+    }
+
+.presencia{
+    width: 15%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    margin-bottom: -0.2cm;
+    }
+
+.mb-3{
+    text-align: center;
+}
+
+p{
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 1.1vw;
+    color : #164194;
+}
+
+.azul {
+    color : #00C3FF;
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+
+.azul-text {
+    color : #164194;
+    font-size: 1.2vw;
+}
+
+.resaltado {
+    color : #164194;
+    font-size: 1.9vw;
+}
+
+.rojo{
+    color : #e60000;
+    font-weight: bold;
+}
+
+.fortalezas{
+    width: 100%;
+    height: 80px;    
+}
+
+.azul-oscuro {
+    color : #164194;
+    font-size: 1.8vw;
+    font-weight: bold;  
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.9vw;
+    color : #164194;
+    text-align: center;
+}
+
+.card-group{
+    width: 70%;
+    margin: auto;
+    border: none;
+}
+
+.card{
+    border: 0;
+    height: 250px;
+}
+
+.azul-fortalezas{
+    font-weight: bold;  
+}
+
+.footer-lib{
+    background-color:#00C3FF;
+}
+
+.col-md-6{
+    margin-bottom: 1.5cm; 
+    margin-top: 1cm;
+}
+
+.logo-foot1.{
+    display: block;
+    margin-left: 2cm;
+}

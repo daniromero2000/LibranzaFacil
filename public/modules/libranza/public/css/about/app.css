@@ -1,0 +1,92 @@
+.imgBanner{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    }
+
+.vectorial-50{
+    width: 35%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    }
+
+.manito{
+    width: 25%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    }
+
+.medalla{
+    width: 25%;
+    height: 40%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    }
+
+.mb-3{
+    text-align: center;
+}
+
+p{
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 1.1vw;
+    color : #164194;
+}
+
+.azul {
+    color : #00C3FF;
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+
+.azul-text {
+    color : #164194;
+    font-size: 1.2vw;
+}
+
+.resaltado {
+    color : #164194;
+    font-size: 1.9vw;
+}
+
+.rojo{
+    color : #e60000;
+    font-weight: bold;
+}
+
+.fortalezas{
+    width: 100%;
+    height: 80px;    
+}
+
+.azul-oscuro {
+    color : #164194;
+    font-size: 1.8vw;
+    font-weight: bold;  
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 1.1vw;
+    color : #164194;
+    text-align: center;
+}

@@ -1,16 +1,13 @@
 <div id="footer" class="footer-lib">
-
-    <div class="row">
-        <div class="col-md-6">
-            <img class="logo-foot1" src="{{asset('modules/libranza/public/img/logos/logo-alternativo-libranzafacil.png')}}" alt="">
-        </div>
-        <div class="col-md-6">
-            <img class="logo-foot2" src="{{asset('modules/libranza/public/img/logos/logo-alternativo-oportunidades.png')}}" alt="">
-        </div>
-    </div>
-
+    
     <div style="padding-bottom: 25px;" class="row text-center row-reset">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">            
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <img class="w-imgLogFooter"
+                        src="{{asset('modules/libranza/public/resources/assets/OportunidadesLibranza.png')}}" alt="">
+                </div>
+            </div>
             <div class="row mt-4">
                 <div class="col-12 col-md-12">
                     <div class="text-left">
