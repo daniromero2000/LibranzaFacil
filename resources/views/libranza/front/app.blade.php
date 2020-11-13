@@ -2,17 +2,24 @@
 <html lang="es">
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
-        <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
-        <meta name="author" content="Oportunidadaes Libranza">
         <title>Libranza Fácil - Oportunidades Libranza</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oportunidadaes Libranza">
+        <meta name="language" content="ES">
+        <meta name="subject" content="Oportunidadaes Libranza">
+        <meta name="copyright" content="Oportunidadaes Libranza">
+        <meta name="tags" content="Credito por libranza, Crédito, Libranzas">
+        <meta name="keywords" content="Credito por libranza, Crédito, Libranzas">
+        <meta name="description" content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados,
+            docentes y militares muy fácil, solicítalo Online." />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
+        @yield('styles')
         <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/app.min.css')}}" />
         <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
-        @yield('styles')
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         @include('libranza.front.layouts.og_labels')
         @yield('og')

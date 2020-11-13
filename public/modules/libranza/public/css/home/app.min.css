@@ -1,0 +1,502 @@
+.container-icons-carousel {
+    width           : 34.8%;
+    height          : 7.5%;
+    background-color: white;
+    border-radius   : 64%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.button-carousel {
+    position          : absolute;
+    bottom            : 18%;
+    left              : 19.8%;
+    width             : 15%;
+    font-size         : 1.2vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 0.8%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.button-carousel:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}
+
+article {
+    padding-top   : 3.5%;
+    padding-bottom: 3.5%;
+    text-align    : center;
+    color         : #164194;
+}
+
+.main-text-container {
+    background-color: #F7FAFF;
+}
+
+.main-text-container h2 {
+    font-size    : 2.1vw;
+    margin-bottom: 1.7%;
+    font-weight  : normal;
+}
+
+.main-text-container p {
+    width    : 64%;
+    margin   : auto;
+    font-size: 1.1vw;
+}
+
+.main-text-container span {
+    color      : #c70f0f;
+    font-weight: 700;
+}
+
+.container-text-benefits h2 {
+    font-size    : 2.1vw;
+    margin-bottom: 2.3%;
+    font-weight  : normal;
+}
+
+.container-text-benefits .row {
+    width    : 70%;
+    margin   : auto;
+    font-size: 1.1vw;
+}
+
+.container-text-benefits .row .icon-card {
+    padding: 12%;
+}
+
+.container-text-benefits .row .container-icon-cards {
+    padding: 6%;
+    height : 100%;
+}
+
+.container-text-benefits .row .container-icon-cards:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 0.5rem #00C3FF17;
+    -moz-box-shadow   : 0px 0px 3rem 0.5rem #00C3FF17;
+    box-shadow        : 0px 0px 3rem 0.5rem #00C3FF17;
+}
+
+.icon-price {
+    width: 46%;
+}
+
+.icon-cards {
+    width: 53.7%;
+}
+
+.icon-call {
+    width: 51.1%;
+}
+
+.icon-age {
+    width        : 53%;
+    margin-bottom: 5.8%;
+}
+
+.icon-like {
+    width        : 51%;
+    margin-bottom: 2.9%;
+}
+
+.icon-cash {
+    width: 50%;
+}
+
+.video-container .col-info-video {
+    width   : 46%;
+    position: relative;
+}
+
+.video-container .col-info-video img {
+    width: 100%;
+}
+
+.video-container .col-info-video .play {
+    position     : absolute;
+    top          : 38%;
+    left         : 47%;
+    width        : 9%;
+    border-radius: 65%;
+}
+
+.video-container .col-info-video .play:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    -moz-box-shadow   : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    box-shadow        : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+}
+
+.video-container .col-info {
+    display: flex;
+    width  : 50%;
+}
+
+.video-container .col-info section {
+    width        : 72%;
+    text-align   : center;
+    position     : relative;
+    margin-top   : 9%;
+    margin-bottom: auto;
+    margin-left  : 7%;
+}
+
+.video-container .col-info p {
+    color: #5C5C5C;
+}
+
+.video-container .col-info section a {
+    margin-top        : 3%;
+    width             : 36%;
+    right             : 33%;
+    position          : absolute;
+    font-size         : 1vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 2.7%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.video-container .col-info section a:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}
+
+.video-container .col-info section h1 {
+    font-size    : 2vw;
+    font-weight  : normal;
+    margin-bottom: 5%;
+}
+
+.video-container .col-info section p {
+    font-size: 1.1vw;
+}
+
+.banner-last {
+    width   : 100%;
+    position: relative;
+}
+
+.banner-last img {
+    width: 100%;
+}
+
+.banner-last a {
+    position          : absolute;
+    bottom            : 12%;
+    right             : 17.6%;
+    width             : 15%;
+    font-size         : 1.2vw;
+    background-color  : #C60B0B;
+    text-align        : center;
+    border-radius     : 100px;
+    padding           : 0.8%;
+    color             : white;
+    font-weight       : 600;
+    -webkit-transition: 0.2s linear;
+    transition        : 0.2s linear;
+}
+
+.banner-last a:hover {
+    text-decoration   : none;
+    color             : white;
+    cursor            : pointer;
+    background-color  : #d04242;
+    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+}
+
+.container-covenants h2 {
+    font-size  : 2.1vw;
+    font-weight: 600;
+}
+
+.container-covenants .row {
+    padding  : 3% 5%;
+    width    : 74%;
+    margin   : auto;
+    font-size: 0.9vw;
+}
+
+.container-covenants .row div {
+    padding        : 3%;
+    border         : 1px solid #e9ecef5c;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 15%;
+    margin         : 0.7%;
+    font-weight    : 600;
+}
+
+.container-covenants .row div:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 0.3rem #00C3FF17;
+    -moz-box-shadow   : 0px 0px 3rem 0.3rem #00C3FF17;
+    box-shadow        : 0px 0px 3rem 0.3rem #00C3FF17;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-icons-carousel {
+        width : 46.8%;
+        height: 10.5%;
+    }
+
+    .button-carousel {
+        bottom   : 18%;
+        left     : 17.7%;
+        width    : 20%;
+        font-size: 1.7vw;
+        padding  : 1.1%;
+    }
+
+    .main-text-container h2 {
+        font-size    : 2.6vw;
+        margin-bottom: 2.5%;
+    }
+
+    .main-text-container p {
+        width    : 84%;
+        font-size: 1.7vw;
+    }
+
+    .container-text-benefits h2 {
+        font-size    : 2.6vw;
+        margin-bottom: 2.3%;
+    }
+
+    .container-text-benefits .row {
+        width    : 95%;
+        font-size: 1.7vw;
+    }
+
+    .icon-price {
+        width: 50%;
+    }
+
+    .icon-cards {
+        width: 58.7%;
+    }
+
+    .icon-call {
+        width: 56.1%;
+    }
+
+    .icon-age {
+        width        : 55%;
+        margin-bottom: 5.8%;
+    }
+
+    .icon-like {
+        width        : 53%;
+        margin-bottom: 2.9%;
+    }
+
+    .icon-cash {
+        width: 53%;
+    }
+
+    .video-container .col-info-video {
+        width: 47%;
+    }
+
+    .video-container .col-info section {
+        width     : 92%;
+        margin-top: 4.1%;
+    }
+
+    .video-container .col-info section h1 {
+        font-size: 2.6vw;
+    }
+
+    .video-container .col-info section p {
+        font-size: 1.6vw;
+    }
+
+    .video-container .col-info section a {
+        width    : 36%;
+        right    : 31%;
+        font-size: 1.3vw;
+    }
+
+    .banner-last a {
+        right    : 16.2%;
+        width    : 16.5%;
+        font-size: 1.4vw;
+    }
+
+    .container-covenants h2 {
+        font-size: 2.6vw;
+    }
+
+    .container-covenants .row {
+        padding  : 3% 2%;
+        width    : 90%;
+        font-size: 1.3vw;
+    }
+
+    .container-covenants .row div {
+        padding: 3%;
+        width  : 15%;
+        margin : 0.6%;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+    .container-icons-carousel {
+        width : 58.9%;
+        height: 12.5%;
+    }
+
+    .button-carousel {
+        bottom   : 14%;
+        left     : 16%;
+        width    : 23.6%;
+        font-size: 2vw;
+        padding  : 1.2%;
+    }
+
+    .main-text-container h2 {
+        font-size    : 3.8vw;
+        margin-bottom: 3%;
+    }
+
+    .main-text-container p {
+        width    : 93%;
+        font-size: 2.6vw;
+    }
+
+    article {
+        padding-top: 4%;
+    }
+
+    .container-text-benefits h2 {
+        font-size    : 3.8vw;
+        margin-bottom: 2.9%;
+    }
+
+    .container-text-benefits .row {
+        width    : 97%;
+        font-size: 2.3vw;
+    }
+
+    .container-text-benefits .row .col-4 {
+        padding-left : 1.1% !important;
+        padding-right: 1.2% !important;
+    }
+
+    .container-text-benefits .row .container-icon-cards {
+        padding: 6%;
+        height : 100%;
+    }
+
+    .icon-price {
+        width: 61%;
+    }
+
+    .icon-cards {
+        width: 72.7%;
+    }
+
+    .icon-call {
+        width: 69.1%;
+    }
+
+    .icon-age {
+        width        : 72%;
+        margin-bottom: 9.8%;
+    }
+
+    .icon-like {
+        width        : 68%;
+        margin-bottom: 2.9%;
+    }
+
+    .icon-cash {
+        width: 66%;
+    }
+
+    .video-container .col-info-video {
+        width: 100%;
+    }
+
+    .video-container .col-info {
+        display: flex;
+        width  : 100%;
+    }
+
+    .video-container .col-info section {
+        width        : 94.7%;
+        margin-top   : 6.1%;
+        margin-bottom: 5%;
+        margin-left  : 3%;
+    }
+
+    .video-container .col-info section h1 {
+        font-size: 3.8vw;
+    }
+
+    .video-container .col-info section p {
+        font-size: 2.6vw;
+    }
+
+    .video-container .col-info section a {
+        width    : 32.4%;
+        right    : 31%;
+        font-size: 2.5vw;
+        position : initial;
+        display  : block;
+        margin   : auto;
+    }
+
+    .banner-last a {
+        right    : 12.2%;
+        width    : 24.5%;
+        padding  : 1.3%;
+        font-size: 2.1vw;
+        bottom   : 9%;
+    }
+
+    .container-covenants {
+        margin-top: 3%;
+    }
+
+    .container-covenants h2 {
+        font-size: 3.8vw;
+    }
+
+    .container-covenants .row {
+        padding  : 3% 0%;
+        width    : 100%;
+        font-size: 2.3vw;
+    }
+
+    .container-covenants .row div {
+        padding: 3%;
+        width  : 22.9%;
+        margin : 0.6%;
+    }
+
+}

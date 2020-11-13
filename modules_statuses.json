@@ -5,7 +5,7 @@
     "Ecommerce": false,
     "Pqrs": true,
     "CamStudio": false,
-    "Courses": false,
+    "Courses": true,
     "CallCenter": false,
     "Commercial": true,
     "CreditFactory": false,

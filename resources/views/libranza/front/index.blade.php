@@ -1,7 +1,9 @@
 @extends('libranza.front.app')
-
+<link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/home/app.min.css')}}" />
+@section('styles')
+@endsection
 @section('content')
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+<div id="carousel-libranza" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="10000">
             <img src="{{asset('modules/libranza/public/img/sliders/slider-1.png')}}" class="d-block w-100"
@@ -17,13 +19,13 @@
                 alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades">
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carousel-libranza" role="button" data-slide="prev">
         <div class="container-icons-carousel">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </div>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carousel-libranza" role="button" data-slide="next">
         <div class="container-icons-carousel">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
@@ -52,7 +54,7 @@
     <div class="row">
         <div class="col-4">
             <div class="container-icon-cards">
-                <img src="{{asset('modules/libranza/public/img/icons/price.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/price.png')}}" alt="" class="icon-card icon-price">
                 <p>
                     Estudio y desembolso de crédito para <b>libre inversión, compra de cartera</b> y/o
                     <b>electrodomésticos</b>
@@ -61,35 +63,35 @@
         </div>
         <div class="col-4">
             <div class="container-icon-cards">
-                <img src="{{asset('modules/libranza/public/img/icons/cards.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/cards.png')}}" alt="" class="icon-card icon-cards">
                 <p>Políticas de <b>crédito flexibles para pensionados</b> con reportes en centrales de riesgo</p>
             </div>
 
         </div>
         <div class="col-4">
             <div class="container-icon-cards">
-                <img src="{{asset('modules/libranza/public/img/icons/call.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/call.png')}}" alt="" class="icon-card icon-call">
                 <p><b>Atención personalizada y asistida</b>, por nuestro personal a nivel nacional</p>
             </div>
         </div>
         <div class="col-4">
             <div class="container-icon-cards">
 
-                <img src="{{asset('modules/libranza/public/img/icons/age.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/age.png')}}" alt="" class="icon-card icon-age">
                 <p>Prestamos hasta los <b>84 años de edad</b></p>
             </div>
         </div>
         <div class="col-4">
             <div class="container-icon-cards">
 
-                <img src="{{asset('modules/libranza/public/img/icons/like.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/like.png')}}" alt="" class="icon-card icon-like">
                 <p>Descontamos de tu cuenta de pensión para que no te preocupes por fecha de pagos</p>
             </div>
         </div>
         <div class="col-4">
             <div class="container-icon-cards">
 
-                <img src="{{asset('modules/libranza/public/img/icons/cash.png')}}" alt="" class="icon-card">
+                <img src="{{asset('modules/libranza/public/img/icons/cash.png')}}" alt="" class="icon-card icon-cash">
                 <p>Desde <b>500 mil</b> hasta <b>80 millones</b></p>
             </div>
         </div>
@@ -100,7 +102,8 @@
         <div class="col-info-video">
             <img src="{{asset('modules/libranza/public/img/banners/banner-2.png')}}" class="img-fluid"
                 alt="Con-tu-crédito-por-libranza-ahora-es-más-fácil-unificar-tus-deudas">
-            <img src="{{asset('modules/libranza/public/img/icons/play.png')}}" alt="" class="play">
+            <img src="{{asset('modules/libranza/public/img/icons/play.png')}}" data-toggle="modal"
+                data-target="#exampleModal" alt="" class="play">
         </div>
         <div class="col-info">
             <section>
@@ -152,4 +155,21 @@
 {{--
 @include('libranza.front.layouts.banners.banner_covenants')
 --}}
+
+<!-- Modal -->
+<div class="modal fade" data-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-reset">
+        <div class="modal-content">
+            <a class="" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">x</span>
+            </a>
+            <div class="embed-responsive embed-responsive-16by9 content-video content-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7vphBBaZNjk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

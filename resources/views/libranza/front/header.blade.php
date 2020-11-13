@@ -12,7 +12,7 @@
                             <img src="{{asset('modules/libranza/public/img/icons/call-light.png')}}" class="icon-call"
                                 alt="">
                         </div>
-                        <div class="col pl-2">
+                        <div class="col pl-2 pr-0">
                             <span>Linea nacional</span>
                             <br>
                             <span>
@@ -30,12 +30,12 @@
                 </div>
             </div>
         </div>
-        <div class="col d-flex px-0">
+        <div class="col d-flex px-0 col-header-responsive">
             <img src="{{asset('modules/libranza/public/img/logos/logo-oportunidades.png')}}" alt=""
                 class=" m-auto second-logo">
         </div>
 
-        <div class="last-div-header pl-0">
+        <div class="last-div-header pl-0" id="logo-hide">
             <img src="{{asset('modules/libranza/public/img/icons/50-años.png')}}" alt="" class="logo-yellow-header">
         </div>
     </div>
