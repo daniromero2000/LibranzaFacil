@@ -3,21 +3,15 @@
 @endsection
 @section('content')
 <div class="row row-reset">
-    <div class="col-12 col-md-12">
-        <div style="padding: 10px 0px 20px 0px;" class="row text-center row-reset">
-            <div class="col-12 col-md-12">
-                <h4 class="TitleLegal">TÉRMINOS Y CONDICIONES GENERALES</h4>
-            </div>
-        </div>
-    </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
+    <h4 class="TitleLegal">TÉRMINOS Y CONDICIONES GENERALES</h4>
+    <div>
         <p>El cupo y cuota del crédito, producto de esta simulación, son aproximados e informativos y podrán variar
             de acuerdo
             a las políticas de financiación y de crédito vigentes al momento de su estudio y aprobación por parte de
             LAGOBO DISTRIBUCIONES S.A.S.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
+    <div>
         <p>Al iniciar el uso del simulador en la página web
             www.serviciosoportunidades.com en sus funciones de simulación y
             solicitud de créditos de descuento por nómina (libranza), el usuario
@@ -29,8 +23,8 @@
             asesoría y dar continuidad al proceso para la aprobación de su crédito.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">1. OBJETO:</h4>
+    <div>
+        <h4>1. OBJETO:</h4>
         <p> El objeto del presente simulador es el de permitir al usuario que luego
             de utilizar la simulación de un crédito confirme de manera voluntaria
             que desea ser contactado con base en los datos o información que ha
@@ -77,8 +71,8 @@
             cual pueda ser sujeto el usuario.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">2. USO DE INFORMACIÓN:</h4>
+    <div>
+        <h4>2. USO DE INFORMACIÓN:</h4>
         <p> Acepto y autorizo el envío de mis datos personales (tales como número de
             identificación, nombre y apellidos, correo electrónico, número teléfono,
             ingresos y descuentos, monto, plazo y cuota simulada en caso de haber
@@ -111,8 +105,8 @@
             mecanismo de contacto.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">3. RESPONSABILIDAD DEL SERVICIO:</h4>
+    <div>
+        <h4>3. RESPONSABILIDAD DEL SERVICIO:</h4>
         <p> LAGOBO DISTRIBUCIONES S.A.S. sus filiales o quien represente sus
             derechos no asume responsabilidad en caso de que el Usuario no pueda
             navegar a través del SIMULADOR o acceder a los servicios ofrecidos por
@@ -156,8 +150,8 @@
             o quien represente sus derechos.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">4. CONDICIONES MÍNIMAS DE ACCESO:</h4>
+    <div>
+        <h4>4. CONDICIONES MÍNIMAS DE ACCESO:</h4>
         <p> El Usuario deberá contar con medios de hardware y software que le
             permitan recibir a través de Internet, la información asociada a
             cualquiera de los servicios ofrecidos y señalados en los presentes
@@ -169,8 +163,8 @@
             768px, Desktop 769px a 1280px, Huge 1281px en adelante.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">5. OBLIGACIONES DEL USUARIO</h4>
+    <div>
+        <h4>5. OBLIGACIONES DEL USUARIO</h4>
         <p> El Usuario se obliga a no acceder, ni intervenir en el funcionamiento,
             ni usar o disponer en cualquier forma de los archivos, sistemas,
             programas, aplicaciones o cualquier otro elemento del SIMULADOR, como
@@ -187,8 +181,8 @@
             los presentes términos y condiciones.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">6. AL UTILIZAR EL SIMULADOR, QUEDA PROHIBIDO:</h4>
+    <div>
+        <h4>6. AL UTILIZAR EL SIMULADOR, QUEDA PROHIBIDO:</h4>
         <p> Enviar o publicar o transmitir material sexual u obsceno o cualquier
             otra publicación de tipo sensible penalizada por ley constitucional y
             penal Colombiana.
@@ -222,8 +216,8 @@
             presentes CONDICIONES.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">7. DURACIÓN:</h4>
+    <div>
+        <h4>7. DURACIÓN:</h4>
         <p> Los presentes términos y condiciones de uso del SIMULADOR son de
             duración indefinida. Sin embargo, por las condiciones del servicio
             brindado a través de esta, a LAGOBO DISTRIBUCIONES S.A.S. sus filiales o
@@ -231,16 +225,16 @@
             alguno y sin responsabilidad alguna.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">8. MODIFICACIONES</h4>
+    <div>
+        <h4>8. MODIFICACIONES</h4>
         <p> El Usuario manifiesta que conoce el presente reglamento y que lo acepta
             íntegramente, igualmente acepta cualquier reforma, modificación o
             cancelación que se haga de los términos y condiciones aquí previstas,
             sin necesidad de aviso previo.
         </p>
     </div>
-    <div class="row row-reset" style="width: 80%; margin:auto">
-        <h4 style="color: #0063AB">9. TERMINACIÓN</h4>
+    <div>
+        <h4>9. TERMINACIÓN</h4>
         <p> El incumplimiento por parte del Usuario de cualquiera de las
             obligaciones aquí mencionadas dará lugar a la terminación del servicio,
             quedando a LAGOBO DISTRIBUCIONES S.A.S. sus filiales o quien represente
