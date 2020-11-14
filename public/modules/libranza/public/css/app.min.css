@@ -310,3 +310,139 @@ header .icon-call {
         font-size: 3vw;
     }
 }
+
+.footer-lib{
+    background-color:#00C3FF;
+}
+
+.col-md-6{
+    margin-bottom: 1.5cm; 
+    margin-top: 1cm;
+}
+
+.logo-foot1{
+    display: block;
+    margin-left: 9.8cm;
+    margin-top: 0.2cm;
+}
+
+.title-foot{
+    color:#FFFF;
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 1.6vw;
+}
+
+.text-foot{
+    color:#164194;
+    font-family: 'Montserrat';
+    src        : url('../fonts/MontserratAlternates-SemiBold.woff2') format('woff2'),
+    url('../fonts/MontserratAlternates-SemiBold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.8vw;
+    font-weight: bold;  
+}
+
+ul {
+    list-style: none;
+}
+
+.title-foot{
+    margin-bottom: 0.5cm;  
+    font-weight: bold;
+}
+
+.nosotros{
+  margin-left: 3.5cm;    
+}
+
+.servicio{
+  margin-left: 0.3cm;
+}
+
+.text-central{
+  text-align: center;
+}
+
+.linea{
+  color:#ffff;
+  font-family: 'Montserrat';
+  src        : url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+  font-size: 0.8vw;
+  text-justify: left;
+}
+
+.tels{
+  color:#164194;
+  font-family: 'Montserrat';
+  src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+
+.horario{
+  color:#ffff;
+  font-family: 'Montserrat';
+  src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+
+.siguenos{
+   color:#ffff;
+   font-family: 'Montserrat';
+   src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+   url('../fonts/Montserrat-Bold.woff') format('woff');
+   font-weight : normal;
+   font-style  : normal;
+   font-display: swap;
+   font-size: 0.8vw;   
+}
+
+.icon-call2{
+    width: 100%;
+    height: 40%;
+    margin-left: 1cm;
+}
+
+.pr-00{
+    text-justify: left;
+    margin-left: -0.8cm;
+}
+
+.ml-2-responsive1{
+    color:#ffff;   
+    font-size: 0.8vw;
+}
+
+.pl-11{
+    margin-left: -1.4cm;
+}
+
+.text-foot2{
+    text-align: left;
+    margin-left: 1cm;
+    margin-bottom: 0.2cm;
+}
+
+.footer-lib{
+    padding-bottom: 0.5cm;
+}

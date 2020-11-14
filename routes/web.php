@@ -56,3 +56,9 @@ Route::namespace('Front')->group(function () {
         return view('libranza.front.information.frequent_questions');
     })->name('frequent.questions');
 });
+
+
+Route::get('thank', function () {
+    return view('libranza.front.thank_you_page');
+})->name('terms.and.conditions');
+

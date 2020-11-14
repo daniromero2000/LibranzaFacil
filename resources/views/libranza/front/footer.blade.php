@@ -1,6 +1,6 @@
 <div id="footer" class="footer-lib">
 
-    <div class="row">
+    <div class="row mx-0">
         <div class="col-md-6">
             <img class="logo-foot1" src="{{asset('modules/libranza/public/img/logos/logo-alternativo-libranzafacil.png')}}" alt="">
         </div>
@@ -9,8 +9,8 @@
         </div>
     </div>
 
-    <div class="row text-center row-reset">
-        <div class="col-md-4">                
+    <div class="row mx-0 text-center row-reset">
+        <div class="col-md-3.5">                
             <div class="text-left">
                    <ul class="nosotros">
                       <h5 class="title-foot">Nosotros</h5>
@@ -22,7 +22,7 @@
             </div>           
         </div>
                
-        <div class="col-md-4">
+        <div class="col-md-3.5">
             <div class="text-left">
                 <ul class="servicio">
                     <h5 class="title-foot">Servicio al cliente</h5>
@@ -40,20 +40,19 @@
                 <div class="col-12 px-0 m-auto py-2">
                     <div class="row w-100 mx-0">
                         <div class="container-icon-call d-flex">
-                            <img src="{{asset('modules/libranza/public/img/icons/call-bold.png')}}" class="icon-call" alt="">
+                            <img src="{{asset('modules/libranza/public/img/icons/call-bold.png')}}" class="icon-call2" alt="">
                         </div>
-                        <div class="col pl-2 pr-0">
-                            <span class="linea">Linea nacional</span>
-                            <br>
+                        <div class="col pl-2 pr-00">
+                            <p class="text-foot2"><span class="linea">Linea nacional</span><br>
                             <span class="tels"><b>57 (1)484-2122 - 01 000 18 05 20</b></span><br>
-                            <span class="horario">Lunes a Viernes 8:00 am <br>a 5:00 pm</span>
+                            <span class="horario">Lunes a Viernes 8:00 am <br>a 5:00 pm</span></p>
                         </div>
                     </div>
                 </div>
-                <div class=" col pl-1">
+                <div class="col pl-11">
                     <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo-bold.png')}}" class="icons" alt="">
                     <img src="{{asset('modules/libranza/public/img/icons/instagram-logo-bold.png')}}" class="icons ml-2-responsive" alt="">
-                    <span class="ml-2-responsive">Síguenos</span>
+                    <span class="ml-2-responsive1">Síguenos</span>
                 </div>
             </div>
           </div>
