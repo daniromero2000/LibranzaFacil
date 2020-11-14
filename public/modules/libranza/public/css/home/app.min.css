@@ -20,8 +20,8 @@
     padding           : 0.8%;
     color             : white;
     font-weight       : 600;
-    -webkit-transition: 0.2s linear;
-    transition        : 0.2s linear;
+    -webkit-transition: 0.2s ease-out;
+    transition        : 0.2s ease-out;
 }
 
 .button-carousel:hover {
@@ -29,8 +29,8 @@
     color             : white;
     cursor            : pointer;
     background-color  : #d04242;
-    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    box-shadow        : 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
 }
 
 article {
@@ -169,8 +169,8 @@ article {
     padding           : 2.7%;
     color             : white;
     font-weight       : 600;
-    -webkit-transition: 0.2s linear;
-    transition        : 0.2s linear;
+    -webkit-transition: 0.2s ease-out;
+    transition        : 0.2s ease-out;
 }
 
 .video-container .col-info section a:hover {
@@ -178,8 +178,8 @@ article {
     color             : white;
     cursor            : pointer;
     background-color  : #d04242;
-    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    box-shadow        : 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
 }
 
 .video-container .col-info section h1 {
@@ -213,8 +213,8 @@ article {
     padding           : 0.8%;
     color             : white;
     font-weight       : 600;
-    -webkit-transition: 0.2s linear;
-    transition        : 0.2s linear;
+    -webkit-transition: 0.2s ease-out;
+    transition        : 0.2s ease-out;
 }
 
 .banner-last a:hover {
@@ -222,8 +222,8 @@ article {
     color             : white;
     cursor            : pointer;
     background-color  : #d04242;
-    box-shadow        : 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 0px 1rem 1px rgba(0, 0, 0, 0.47);
+    box-shadow        : 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 0px 1vw 0.1vw rgba(0, 0, 0, 0.47);
 }
 
 .container-covenants h2 {
@@ -240,7 +240,7 @@ article {
 
 .container-covenants .row div {
     padding        : 3%;
-    border         : 1px solid #e9ecef5c;
+    border         : 0.1vw solid #e9ecef9e;
     display        : flex;
     align-items    : center;
     justify-content: center;

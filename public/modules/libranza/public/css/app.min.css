@@ -44,9 +44,9 @@
 }
 
 .logo-yellow-header {
-    -webkit-box-shadow: 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
-    -moz-box-shadow   : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
-    box-shadow        : 0px 0px 3rem 4px rgba(255, 206, 0, 0.68);
+    -webkit-box-shadow: 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
+    -moz-box-shadow   : 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
+    box-shadow        : 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
     border-radius     : 0px 0px 16% 16%;
 }
 
@@ -114,15 +114,18 @@ header .icon-call {
 }
 
 .navbar {
-    padding    : 1% 17%;
-    border-top : 1px solid #dee2e66b;
-    font-weight: 500;
+    padding           : 1% 17%;
+    border-top        : 0.1vw solid #dee2e66b;
+    font-weight       : 500;
+    -webkit-transition: 0.4s ease-out;
+    transition        : 0.4s ease-out;
+    text-align        : center;
 }
 
 .button-nav {
     padding      : 0.8% 1.8%;
     background   : #FFCE00;
-    border-radius: 48px;
+    border-radius: 48vw;
     display      : flex;
     width        : 25%;
 }
@@ -137,13 +140,13 @@ header .icon-call {
 }
 
 .navbar-expand .navbar-nav .nav-link {
-    padding-right: 0.7rem;
-    padding-left : 0.7rem;
+    padding-right: 0.7vw;
+    padding-left : 0.7vw;
 }
 
 .navbar .nav-link:hover {
-    border       : #FFCE00 1.6px solid;
-    border-radius: 40px;
+    border       : #FFCE00 0.1vw solid;
+    border-radius: 40vw;
 }
 
 /* slider */
@@ -191,6 +194,10 @@ header .icon-call {
     cursor         : pointer;
 }
 
+.nav-link {
+    display: block;
+    padding: .5vw 1vw;
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
 
@@ -224,7 +231,8 @@ header .icon-call {
     }
 
     .button-nav {
-        width: 29%;
+        width      : 29%;
+        margin-left: 1%;
     }
 
     .carousel-control-next-icon,
@@ -281,7 +289,8 @@ header .icon-call {
     }
 
     .button-nav {
-        width: 38.1%;
+        width      : 38.1%;
+        margin-left: 1%;
     }
 
     .carousel-control-next-icon,
@@ -300,118 +309,4 @@ header .icon-call {
         padding  : 1% 2.4%;
         font-size: 3vw;
     }
-}
-
-/* Formulario */
-
-input,
-select {
-    outline: none;
-}
-
-.container-banner-form {
-    position       : relative;
-    display        : flex;
-    justify-content: center;
-}
-
-.container-form {
-    position     : absolute;
-    top          : 88%;
-    background   : white;
-    width        : 64%;
-    margin       : auto;
-    border-radius: 4.2vw;
-    padding      : 2.1% 2% 2% 2%;
-    text-align   : center;
-    color        : #164194;
-}
-
-.container-form h1 {
-    font-size: 1.8vw;
-}
-
-.container-form h2 {
-    font-size: 1.1vw;
-}
-
-.container-form .form {
-    margin-top: 4.4%;
-}
-
-.container-form .form h3 {
-    font-size: 1.2vw;
-}
-
-.container-form .form form {
-    padding: 2%;
-}
-
-.container-form .form .col-6,
-.container-form .form .col-12 {
-    margin : 0.8% 0%;
-    padding: 0% 0.7%;
-}
-
-.container-form .form .row input,
-.container-form .form .row select {
-    display      : block;
-    width        : 100%;
-    height       : 3.6vw;
-    border-radius: 0.6vw;
-    border       : 1px solid #bbb0b052;
-    padding      : .375% 3.35%;
-    font-family  : "Montserrat",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        "Helvetica Neue",
-        Arial;
-    font-size: 1vw;
-    color    : #818EA8;
-}
-
-.container-form .form .row input:focus,
-.container-form .form .row select:focus {
-    border: 1px solid #00C3FF;
-    color : #164194;
-}
-
-.form-check-input {
-    margin-left: 0.6vw !important;
-    margin-top : 0.3vw;
-}
-
-.container-conditions {
-    margin-top: 3%;
-}
-
-.btn-form {
-    color           : #164194;
-    background-color: #FFCE00;
-    font-weight     : 600;
-    padding         : 1vw;
-    width           : 34%;
-    border-radius   : 2.2vw;
-    border          : 1px solid transparent;
-    font-size       : 1.1vw;
-    margin-top      : 2%
-}
-
-.btn-form:hover {
-    -webkit-box-shadow: 0px 0px 1.1vw 0.4vw rgba(255, 206, 0, 0.68);
-    -moz-box-shadow   : 0px 0px 1.1vw 0.4vw rgba(255, 206, 0, 0.68);
-    box-shadow        : 0px 0px 1.1vw 0.4vw rgba(255, 206, 0, 0.68);
-    background-color  : #ffd10f;
-    -webkit-transition: 0.4s linear;
-    transition        : 0.4s linear;
-}
-
-.text-exeption {
-    margin-top  : 3.4%;
-    width       : 57%;
-    margin-left : auto;
-    margin-right: auto;
-    font-size   : 0.8vw;
 }

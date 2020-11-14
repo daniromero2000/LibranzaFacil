@@ -3,6 +3,7 @@
 @section('styles')
 @endsection
 @section('content')
+@include('libranza.front.layouts.carousel')
 @include('libranza.front.layouts.main_text')
 @include('libranza.front.layouts.benefits')
 @include('libranza.front.layouts.credit_for_pensioners')
