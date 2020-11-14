@@ -2,7 +2,8 @@
 
 input,
 select {
-    outline: none;
+    outline   : none;
+    background: white;
 }
 
 .container-banner-form {
@@ -171,51 +172,55 @@ select {
 
 @media (min-width: 310px) and (max-width: 479px) {
     .container-form {
-        width  : 72%;
+        width  : 90%;
         padding: 3.6% 3% 3% 4%;
     }
 
     .container-form h1 {
-        font-size: 2.1vw;
+        font-size: 2.9vw;
     }
 
     .container-form h2 {
-        font-size: 1.4vw;
+        font-size: 2.1vw;
+    }
+
+    .container-form .form {
+        margin-top: 4.4%;
     }
 
     .container-form .form h3 {
-        font-size: 1.5vw;
+        font-size: 2.2vw;
     }
 
     .container-form .form .row input,
     .container-form .form .row select {
-        height       : 4.8vw;
-        border-radius: 0.6vw;
-        font-size    : 1.2vw;
+        height       : 7.6vw;
+        border-radius: 1.5vw;
+        font-size    : 2vw;
     }
 
     .container-conditions {
         margin-top: 4%;
-        font-size : 1.3vw;
+        font-size : 2.3vw;
     }
 
     .form-check-input {
         margin-left: 0.6vw !important;
         margin-top : -0.4vw;
         background : white;
-        width      : 2.5%;
+        width      : 2.8%;
     }
 
     .btn-form {
-        padding      : 1.3vw;
-        width        : 40%;
-        border-radius: 2.2vw;
-        font-size    : 1.4vw;
+        padding      : 1.7vw;
+        width        : 51.2%;
+        border-radius: 3.6vw;
+        font-size    : 2.3vw;
     }
 
     .text-exeption {
-        margin-top: 5.3%;
-        width     : 84.8%;
-        font-size : 1.3vw;
+        margin-top: 6.4%;
+        width     : 91.6%;
+        font-size : 2vw;
     }
 }

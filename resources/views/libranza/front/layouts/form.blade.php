@@ -166,7 +166,7 @@
 
                     @if ($product)
                     <div class="col-12">
-                        <select name="lead_product_id" id="lead_product_id" class="custom-select" required>
+                        <select name="lead_product_id" id="lead_product_id" required>
 
                         </select>
                     </div>
