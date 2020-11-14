@@ -59,7 +59,7 @@
     <body>
         @include('libranza.front.header')
         @yield('content')
-        {{-- @include('libranza.front.footer') --}}
+        @include('libranza.front.footer')
 
     </body>
 

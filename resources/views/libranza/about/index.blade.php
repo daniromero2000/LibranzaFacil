@@ -6,11 +6,11 @@
 <div class="row mx-0 mb-3">
     <div class="col-md-12">
          <h5><span class="resaltado">Somos tu mejor opción en </span><span class="azul">crédito por libranza</span></h5><br>
-         <p> <span class="azul-text">El </span><span class="rojo">crédito por Libranza </span>es un crédito de consumo que incluye un mecanismo de recaudo, en donde el deudor autoriza <br>
+         <p class="text-central"> <span class="azul-text">El </span><span class="rojo">crédito por Libranza </span>es un crédito de consumo que incluye un mecanismo de recaudo, en donde el deudor autoriza <br>
          a su empleador  o entidad pagadora para que le realice un descuento de su salario o pensión, con el objetivo de que <br>
          esos dineros descontados, sean destinados al pago de las cuotas del crédito adquirido</p>
 
-         <p> <span class="azul-text">a través de su </span><span class="rojo">experiencia de 50 años</span> en la originación y administración adecuada y segura de los activos derivados de <br>
+         <p class="text-central"> <span class="azul-text">a través de su </span><span class="rojo">experiencia de 50 años</span> en la originación y administración adecuada y segura de los activos derivados de <br>
          sus operaciones de crédito, ha logrado una colocación que supera los $200.000 millones de pesos en libranzas, a través <br>
          de diferentes pagadurías, de orden Nacional, Departamental, Militares y Fondos Privados de pensiones<br>
          Nuestra operación ha sido evaluada y revisada por las diferentes Superintendencia de vigilancia y control, mediante <br>
@@ -62,7 +62,6 @@
 
 <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/about/app.min.css')}}" />
 
-@include('libranza.front.footer')
 @endsection
 
 

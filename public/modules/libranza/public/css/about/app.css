@@ -8,27 +8,47 @@
     }
 
 .vectorial-50{
+    width: 40%;
+    height: 35%;
+    display: block;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: -0.5cm;
+    }
+
+.manito{
     width: 35%;
     height: 35%;
     display: block;
     padding: 15px;
     margin: auto;
+    margin-bottom: -0.5cm;
     }
 
-.manito{
-    width: 25%;
+.medalla{
+    width: 30%;
     height: 35%;
     display: block;
     padding: 15px;
     margin: auto;
+    margin-bottom: -0.5cm;
     }
 
-.medalla{
-    width: 25%;
+.people{
+    width: 40%;
     height: 40%;
     display: block;
-    padding: 15px;
+    padding: 20px;
     margin: auto;
+    margin-bottom: -0.2cm;
+    }
+
+.presencia{
+    width: 15%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    margin-bottom: -0.2cm;
     }
 
 .mb-3{
@@ -86,7 +106,157 @@ p{
     font-weight : normal;
     font-style  : normal;
     font-display: swap;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
     color : #164194;
     text-align: center;
+}
+
+.card-group{
+    width: 70%;
+    margin: auto;
+    border: none;
+}
+
+.card{
+    border: 0;
+    height: 250px;
+}
+
+.azul-fortalezas{
+    font-weight: bold;  
+}
+
+.footer-lib{
+    background-color:#00C3FF;
+}
+
+.col-md-6{
+    margin-bottom: 1.5cm; 
+    margin-top: 1cm;
+}
+
+.logo-foot1{
+    display: block;
+    margin-left: 9.8cm;
+    margin-top: 0.2cm;
+}
+
+.title-foot{
+    color:#FFFF;
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 1.6vw;
+}
+
+.text-foot{
+    color:#164194;
+    font-family: 'Montserrat';
+    src        : url('../fonts/MontserratAlternates-SemiBold.woff2') format('woff2'),
+    url('../fonts/MontserratAlternates-SemiBold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.8vw;
+    font-weight: bold;  
+}
+
+ul {
+    list-style: none;
+}
+
+.title-foot{
+    margin-bottom: 0.5cm;  
+    font-weight: bold;
+}
+
+.nosotros{
+  margin-left: 3.5cm;    
+}
+
+.servicio{
+  margin-left: 0.3cm;
+}
+
+.text-central{
+  text-align: center;
+}
+
+.linea{
+  color:#ffff;
+  font-family: 'Montserrat';
+  src        : url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+  font-size: 0.8vw;
+}
+
+.tels{
+    color:#164194;
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.8vw;
+    font-weight: bold;
+  }
+
+  .horario{
+    color:#ffff;
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.8vw;
+    font-weight: bold;
+  }
+
+  .siguenos{
+    color:#ffff;
+    font-family: 'Montserrat';
+    src        : url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: swap;
+    font-size: 0.8vw;   
+  }
+
+.icon-call2{
+    width: 100%;
+    height: 40%;
+    margin-left: 1cm;
+}
+
+.linea{
+   text-justify: left;
+}
+
+.pr-00{
+    text-justify: left;
+    margin-left: -0.8cm;
+}
+
+.ml-2-responsive1{
+    color:#ffff;   
+    font-size: 0.8vw;
+}
+
+.pl-11{
+    margin-left: -1.4cm;
+}
+
+.text-foot2{
+    text-align: left;
+    margin-left: 1cm;
+    margin-bottom: 0.2cm;
 }
