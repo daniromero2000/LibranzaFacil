@@ -17,8 +17,8 @@
             docentes y militares muy fácil, solicítalo Online." />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
-        @yield('styles')
         <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/app.min.css')}}" />
+        @yield('styles')
         <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         @include('libranza.front.layouts.og_labels')

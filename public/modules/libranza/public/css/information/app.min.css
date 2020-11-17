@@ -1,0 +1,30 @@
+.contianer-text-information {
+    max-width: 85%;
+    padding-bottom: 5%;
+    margin   : auto;
+}
+
+.contianer-text-information h1 {
+    font-size : 1.9vw;
+    text-align: center;
+    margin-top: 4%;
+    color: #164194;
+}
+
+.contianer-text-information h2 {
+    font-size : 1.7vw;
+    margin-top: 3%;
+    color: #164194;
+}
+
+.contianer-text-information h3 {
+    font-size : 1.5vw;
+    margin-top: 3%;
+    color     : #164194;
+    margin-left: 1%;
+}
+
+.contianer-text-information p {
+    font-size : 1.1vw;
+    margin-top: 2%;
+}
