@@ -174,8 +174,8 @@
                 </div>
                 <div class="container-conditions">
                     <p>
-                        <a target="_blank" href="">Acepto Términos, condiciones</a> y <a target="_blank"
-                            href="">Política de tratamiento
+                        <a target="_blank" href="{{route('terms.and.conditions')}}">Acepto Términos, condiciones</a> y <a target="_blank"
+                            href="{{route('data.treatment.policy')}}">Política de tratamiento
                             de
                             datos</a>
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
