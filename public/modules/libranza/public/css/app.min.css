@@ -311,10 +311,6 @@ header .icon-call {
     }
 }
 
-.footer-lib{
-    background-color:#00C3FF;
-}
-
 .col-md-6{
     margin-bottom: 1.5cm; 
     margin-top: 1cm;
@@ -445,4 +441,5 @@ ul {
 
 .footer-lib{
     padding-bottom: 0.5cm;
+    background-color:#00C3FF;
 }

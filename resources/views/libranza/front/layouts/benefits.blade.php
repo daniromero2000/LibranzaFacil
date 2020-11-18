@@ -17,7 +17,6 @@
                 <img src="{{asset('modules/libranza/public/img/icons/cards.png')}}" alt="" class="icon-card icon-cards">
                 <p>Políticas de <b>crédito flexibles para pensionados</b> con reportes en centrales de riesgo</p>
             </div>
-
         </div>
         <div class="col-4">
             <div class="container-icon-cards">

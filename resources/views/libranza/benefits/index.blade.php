@@ -3,7 +3,7 @@
 
   <div class="row mx-0 mb-3">
     <div class="col-md-6">
-      <img src="modules/libranza/public/img/banners/Rectangulo redondeado.png" class="card-img img-left" alt="...">
+      <img src="{{asset('modules/libranza/public/img/banners/interview.png')}}" class="card-img img-left" alt="...">
     </div>
     <div class="col-md-6">
       <div class="card-body texto-right">
@@ -23,13 +23,13 @@
      </div>
     </div>
     <div class="col-md-6">
-      <img src="modules/libranza/public/img/banners/Rectangulo redondeado.png" class="card-img img-right" alt="...">
+      <img src="{{asset('modules/libranza/public/img/banners/grandparents.png')}}" class="card-img img-right" alt="...">
     </div>
   </div>
 
   <div class="row mx-0 mb-3">
     <div class="col-md-6">
-      <img src="modules/libranza/public/img/banners/Rectangulo redondeado.png" class="card-img img-left" alt="...">
+      <img src="{{asset('modules/libranza/public/img/banners/hug.png')}}" class="card-img img-left" alt="...">
     </div>
     <div class="col-md-6">
       <div class="card-body texto-right">
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <div class="row mx-0 mb-3 final-div">
+  <div class="row mx-0 final-div mb-3">
     <div class="col-md-6">
       <div class="card-body text-left">
         <h5 class="card-title">Crédito para <strong>pensionados</strong></h5>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <img src="modules/libranza/public/img/banners/Rectangulo redondeado.png" class="card-img img-right" alt="...">
+      <img src="{{asset('modules/libranza/public/img/banners/hug2.png')}}" class="card-img img-right" alt="...">
     </div>
   </div>
     
