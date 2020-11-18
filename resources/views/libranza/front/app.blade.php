@@ -18,9 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/app.min.css') }}" />
-    @yield('styles')
-    <link rel="icon" type="image/png" href="resources/assets/oportunidadesServicios.ico" />
+    <link rel="icon" type="image/png" href="{{ asset('favicon.ico') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @yield('styles')
     @include('libranza.front.layouts.og_labels')
     @yield('og')
 
@@ -73,15 +73,13 @@
 <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
 
 <script type="text/javascript">
-    function reloadUrl(url,type) {
-        if(type == 1){
-        window.location.href = url;
-        }else{
-        window.open(url);
+    function reloadUrl(url, type) {
+        if (type == 1) {
+            window.location.href = url;
+        } else {
+            window.open(url);
         }
     }
-
-
     //     var email = document.getElementById("email").value;
     // var emailConfirm = document.getElementById("emailConfirm").value;
 
