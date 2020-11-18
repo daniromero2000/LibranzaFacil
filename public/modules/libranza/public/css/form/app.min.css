@@ -110,11 +110,11 @@ select {
 }
 
 .text-exeption {
-    margin-top  : 3.4%;
-    width       : 57%;
+    margin-top  : 5.4%;
+    width       : 81%;
     margin-left : auto;
     margin-right: auto;
-    font-size   : 0.8vw;
+    font-size   : 1vw;
     color       : #94A4C3;
 }
 

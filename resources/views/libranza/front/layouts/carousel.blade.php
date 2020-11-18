@@ -3,7 +3,7 @@
         <div class="carousel-item active" data-interval="10000">
             <img src="{{ asset('modules/libranza/public/img/sliders/slider-1.png') }}" class="d-block w-100"
                 alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades">
-            <a href="#" class="button-carousel">Solicita tu crédito</a>
+            <a href="{{route('form-libranza')}}" class="button-carousel">Solicita tu crédito</a>
         </div>
         <div class="carousel-item" data-interval="10000">
             <img src="{{ asset('modules/libranza/public/img/sliders/slider-1.png') }}" class="d-block w-100"

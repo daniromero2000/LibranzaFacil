@@ -16,7 +16,7 @@
                     Oportunidades
                     para ti.
                 </p>
-                <a href="#">Solicita tu crédito</a>
+                <a href="{{route('form-libranza')}}">Solicita tu crédito</a>
             </section>
         </div>
     </div>

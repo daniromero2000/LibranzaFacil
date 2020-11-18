@@ -132,6 +132,7 @@ header .icon-call {
 
 .button-nav:hover {
     text-decoration: none;
+    opacity: 0.6;
 }
 
 .button-nav img {
