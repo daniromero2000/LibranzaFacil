@@ -2,7 +2,7 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
     <style>
-     .contianer-text-information h3 { margin-top: 1%; } p { padding: 1vw; font-size: 1.3vw; } section { margin-top: 3%; }
+     .contianer-text-information h3 { margin-top: 1%; } .contianer-text-information p { padding: 1vw; font-size: 1.3vw; } section { margin-top: 3%; }
     </style>
 @endsection
 @section('content')

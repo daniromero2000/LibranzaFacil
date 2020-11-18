@@ -118,6 +118,10 @@ select {
     color       : #94A4C3;
 }
 
+.min-container {
+    min-height: 84vw;
+}
+
 
 @media (min-width: 481px) and (max-width: 767px) {
     .container-form {
@@ -168,9 +172,13 @@ select {
         width     : 84.8%;
         font-size : 1.3vw;
     }
+
+    .min-container {
+        min-height: 103vw;
+    }
 }
 
-@media (min-width: 310px) and (max-width: 479px) {
+@media (min-width: 310px) and (max-width: 480px) {
     .container-form {
         width  : 90%;
         padding: 3.6% 3% 3% 4%;
@@ -222,5 +230,9 @@ select {
         margin-top: 6.4%;
         width     : 91.6%;
         font-size : 2vw;
+    }
+
+    .min-container {
+        min-height: 146vw;
     }
 }
