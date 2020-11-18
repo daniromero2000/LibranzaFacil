@@ -1,16 +1,13 @@
 @extends('libranza.front.app')
 @section('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
 @endsection
 @section('content')
-    <article>
-        <div >
-            <div >
-                <h3 class="TitleLegal">POLÍTICAS DE TRATAMIENTO DE LA INFORMACIÓN <br> Y PROTECCIÓN DE DATOS
-                    PERSONALES </h3>
-            </div>
-        </div>
-        <div >
-            <h4 >OBJETIVO:</h4>
+    <article class="contianer-text-information">
+        <h1 >POLÍTICAS DE TRATAMIENTO DE LA INFORMACIÓN <br> Y PROTECCIÓN DE DATOS
+            PERSONALES </h1>
+        <section>
+            <h2>OBJETIVO:</h2>
             <p>Establecer y divulgar las Políticas de Tratamiento de la Información y Protección de Datos
                 Personales, implementados
                 por LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S, con el fin de garantizar el adecuado cumplimiento de
@@ -28,9 +25,9 @@
                 procedimientos para
                 garantizar el cumplimiento de éste precepto y estas regulaciones normativas.
             </p>
-        </div>
-        <div >
-            <h4 >ALCANCE</h4>
+        </section>
+        <section>
+            <h2>ALCANCE</h2>
             <p>El presente documento aplica para los datos de carácter personal, registrados en cualquier base de
                 datos que administre
                 la compañía y que los haga susceptibles de Tratamiento.
@@ -51,11 +48,11 @@
                 terminación de
                 cualquier vínculo laboral y/o comercial.
             </p>
-        </div>
-        <div >
-            <h4 >DEFINICIONES</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>DEFINICIONES</h2>
+        </section>
+        <section>
             <p>Autorización: consentimiento previo, expreso e informado del Titular para llevar a cabo el
                 tratamiento de datos personales.
             </p>
@@ -114,9 +111,9 @@
                 recolección, almacenamiento,
                 uso, circulación o supresión.
             </p>
-        </div>
-        <div >
-            <h4 >LINEAMIENTOS GENERALES</h4>
+        </section>
+        <section>
+            <h2>LINEAMIENTOS GENERALES</h2>
             <p>5.1 Artículo 15 de la Constitución Política. “Todas las personas tienen derecho a su intimidad
                 personal y familiar y
                 a su buen nombre, y el Estado debe respetarlos y hacerlos respetar. De igual modo, tienen derecho a
@@ -149,17 +146,17 @@
                 terminación de
                 cualquier vínculo laboral y/o comercial.
             </p>
-        </div>
-        <div >
-            <h4 >LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S EN LA NORMATIVIDAD</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S EN LA NORMATIVIDAD</h2>
+        </section>
+        <section>
             <p>Somos una fuente de información.
-        </div>
-        <div >
-            <h4 >¿POR QUÉ SOMOS UNA FUENTE DE INFORMACIÓN?</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>¿POR QUÉ SOMOS UNA FUENTE DE INFORMACIÓN?</h2>
+        </section>
+        <section>
             <p>Como quiera que LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S es una sociedad que se encarga de recabar la
                 información
                 crediticia de los usuarios a los que se les ofertan bienes mediante sistemas de pago la modalidad
@@ -181,11 +178,11 @@
                 terceros, se sujeta al cumplimiento de los deberes y responsabilidades previstas para garantizar la
                 protección de los
                 derechos del titular de los datos”(…)
-        </div>
-        <div >
-            <h4 >DEBERES DE LAS FUENTES DE LA INFORMACIÓN ARTÍCULO 8, LEY 1266 DEL 2008</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>DEBERES DE LAS FUENTES DE LA INFORMACIÓN ARTÍCULO 8, LEY 1266 DEL 2008</h2>
+        </section>
+        <section>
             <p>Las fuentes de la información deberán cumplir las siguientes obligaciones, sin perjuicio del
                 cumplimiento de las demás
                 disposiciones previstas en la presente ley y en otras que rijan su actividad: a. Garantizar que la
@@ -219,11 +216,11 @@
                 en relación con el cumplimiento de la presente ley. j. Los demás que se deriven de la Constitución o
                 de la presente ley:
             </p>
-        </div>
-        <div >
-            <h6><strong>TRATAMIENTO DE DATOS PERSONALES</strong></h6>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h3><strong>TRATAMIENTO DE DATOS PERSONALES</strong></h3>
+        </section>
+        <section>
             <p>Principios para el tratamiento de datos personales
             </p>
             <p>Los siguientes principios serán tenidos en cuenta por LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S, en el
@@ -386,11 +383,11 @@
                 Acceder en forma gratuita en las condiciones definidas en este documento, a sus datos personales que
                 hayan sido objeto de tratamiento.
             </p>
-        </div>
-        <div >
-            <h4 >CONDICIONES PARA EL TRATAMIENTO DE DATOS</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>CONDICIONES PARA EL TRATAMIENTO DE DATOS</h2>
+        </section>
+        <section>
             <p>8.1 Autorización: en desarrollo de los principios de finalidad y libertad, la recolección de los
                 datos realizada por
                 LAGOBO DISTRIBUCIONES S.A.S L.G.B. S.A.S, deberá limitarse a aquellos datos personales que son
@@ -435,44 +432,44 @@
                 el cambio se refiera a la Finalidad
                 del Tratamiento. Para la comunicación de los cambios y la autorización.
             </p>
-        </div>
-        <div >
-            <h4 >Casos en que no es necesaria la autorización</h4>
-        </div>
-        <div >
-            <div>
+        </section>
+        <section>
+            <h2>Casos en que no es necesaria la autorización</h2>
+        </section>
+        <section>
+            <section>
                 <p>Información requerida por una entidad pública o administrativa en ejercicio de sus funciones
                     legales o por orden judicial.
                 </p>
-            </div>
-        </div>
-        <div >
-            <div>
+            </section>
+        </section>
+        <section>
+            <section>
                 <p>Datos de naturaleza pública.
                 </p>
-            </div>
-        </div>
-        <div >
-            <div>
+            </section>
+        </section>
+        <section>
+            <section>
                 <p>Casos de urgencia médica o sanitaria.
                 </p>
-            </div>
-        </div>
-        <div >
-            <div>
+            </section>
+        </section>
+        <section>
+            <section>
                 <p>Tratamiento de información autorizado por la ley para fines históricos, estadísticos o
                     científicos.
                 </p>
-            </div>
-        </div>
-        <div >
-            <div>
+            </section>
+        </section>
+        <section>
+            <section>
                 <p>Datos relacionados con el Registro Civil de las personas.
                 </p>
-            </div>
-        </div>
-        <div >
-            <div>
+            </section>
+        </section>
+        <section>
+            <section>
                 <p>Suministro de la información:la información solicitada al Titular será suministrada a LAGOBO
                     DISTRIBUCIONES S.A.S L.G.B S.A
                     por cualquier medio; incluyendo los electrónicos, según lo requiera el Titular. La información
@@ -506,12 +503,12 @@
                 </p>
                 <p>A los terceros autorizados por el Titular o por la ley.
                 </p>
-            </div>
-        </div>
-        <div >
-            <h4 >DERECHOS DEL TITULAR</h4>
-        </div>
-        <div >
+            </section>
+        </section>
+        <section>
+            <h2>DERECHOS DEL TITULAR</h2>
+        </section>
+        <section>
             <p>Revocatoria de la autorización y/o supresión del dato:
             </p>
             <p>Los Titulares podrán en todo momento solicitar a LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S, la
@@ -534,8 +531,8 @@
             <p>LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S, responderá la consulta y/o reclamo por el mismo medio que
                 fue formulada.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Consulta:
             </p>
             <p>Los Titulares o sus causahabientes podrán consultar la información personal del Titular que repose en
@@ -571,36 +568,36 @@
                 mediante solicitud dirigida a LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S, como mínimo con la siguiente
                 información:
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Nombre del responsable del Tratamiento o el encargado del mismo.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Nombre del peticionario.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Número de identificación del peticionario.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Hechos en que se fundamenta la solicitud.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Objeto de la petición.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Dirección de envío de correspondencia.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Aportar los documentos que pretenda hacer valer.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes
                 a la recepción del
                 reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento,
@@ -624,18 +621,18 @@
                 días hábiles siguientes
                 al vencimiento del primer término.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Requisito de procedibilidad:
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>El Titular o causahabiente sólo podrá elevar queja ante la Superintendencia de Industria y Comercio
                 una vez haya agotado
                 el trámite de consulta o reclamo ante el responsable del tratamiento o encargado del mismo.
             </p>
-        </div>
-        <div >
+        </section>
+        <section>
             <p>Procedimiento para consultas y reclamos.
             </p>
             <p>Dando cumplimiento a lo anterior LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S,
@@ -681,12 +678,12 @@
                 de Servicio al Cliente por medio de la línea 018000117787 opción 1, y al correo electrónico
                 servicioalcliente@lagobo.com
             </p>
-        </div>
-        <div >
-            <h4 >DEBERES DE LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S, EN EL TRATAMIENTO DE
-                DATOS</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>DEBERES DE LAGOBO DISTRIBUCIONES S.A.S L.G.B S.A.S, EN EL TRATAMIENTO DE
+                DATOS</h2>
+        </section>
+        <section>
             <p>Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data.
             </p>
             <p>Solicitar y conservar, en las condiciones previstas en la Ley, copia de la respectiva autorización
@@ -779,11 +776,11 @@
             </p>
             <p>Guardar confidencialidad respecto del Tratamiento de los datos personales.
             </p>
-        </div>
-        <div >
-            <h4 >11. MEDIDAS DE SEGURIDAD</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>11. MEDIDAS DE SEGURIDAD</h2>
+        </section>
+        <section>
             <p>LAGOBO DISTRIBUCIONES S.A.S a partir de la declaración y publicación de su CÓDIGO DE ÉTICA Y BUEN
                 GOBIERNO CORPORATIVO,
                 como muestra de su compromiso con la actuación bajo sanas y buenas prácticas, espera que todos los
@@ -794,19 +791,19 @@
                 de infraestructura y
                 del conocimiento sano y con potencial de mejora continua.
             </p>
-        </div>
-        <div >
-            <h4 >12. MODIFICACIONES</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>12. MODIFICACIONES</h2>
+        </section>
+        <section>
             <p>- Reglamento Interno de Trabajo. - Manual de calidad. - Manual de Proveedores. - Aceptación código de
                 ética y SARLAFT.
             </p>
-        </div>
-        <div >
-            <h4 >13. FORMATOS QUE SE UTILIZAN</h4>
-        </div>
-        <div >
+        </section>
+        <section>
+            <h2>13. FORMATOS QUE SE UTILIZAN</h2>
+        </section>
+        <section>
             <p> - Se resuelve adoptar el código de ética y buen gobierno de LAGOBO DISTRIBUCIONES S.A.S por parte de
                 todos sus colaboradores.
             </p>
@@ -821,7 +818,7 @@
             <p> - Las políticas definidas a proveedores y colaboradores podrán ser evaluadas por LAGOBO en cualquier
                 momento
             </p>
-        </div>
+        </section>
     </article>
 
 @endsection
