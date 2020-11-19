@@ -28,51 +28,6 @@
 </div>    
 <br>
 
-{{-- <article class="container-text-strengths">
-
-  <div class="fortalezas">
-       <p class="azul-oscuro">Fortalezas</p>
-  </div>
-
-  <div class="row strengths">
-      <div class="col-4" >
-        <div class="container-icon-cards">
-             <img class="card-img-top vectorial-50" src="{{asset('modules/libranza/public/img/icons/50-vectorial.png')}}" alt="...">
-             <p class="card-text"><span class="azul-fortalezas">50 Años de experiencia</span><br>en el mercado.</p>
-        </div>
-      </div>  
-
-      <div class="col-4" >
-        <div class="container-icon-cards">
-             <img class="card-img-top manito" src="{{asset('modules/libranza/public/img/icons/manito-vectorial.png')}}" alt="...">
-             <p class="card-text"><span class="azul-fortalezas">Excelente reputación</span> en el sector<br>Financiero y proveedores.</p>
-        </div>
-      </div>
-
-      <div class="col-4" >
-        <div class="container-icon-cards">
-            <img class="card-img-top medalla" src="{{asset('modules/libranza/public/img/icons/medalla-vectorial.png')}}" alt="...">
-            <p class="card-text">Originación de crédito con procesos <br>homologados con el sector financiero y <br>con adecuados <span class="azul-fortalezas">estándares de calidad,</span><br> que se traducen en indicadores de cartera <br> controlados.</p>
-        </div>
-      </div>
-
-      <div class="col-4" >
-        <div class="container-icon-cards">
-             <img class="card-img-top people" src="{{asset('modules/libranza/public/img/icons/people.png')}}" alt="...">
-             <p class="card-text"><span class="azul-fortalezas">Gerencia altamente involucrada</span> en el<br>desarrollo de los clientes y el <br> crecimiento de la empresa</p>
-        </div>
-      </div>
-
-      <div class="col-4" >
-        <div class="container-icon-cards"> 
-             <img class="card-img-top presencia" src="{{asset('modules/libranza/public/img/icons/presencia.png')}}" alt="...">
-             <p class="card-text"> Presencia y cobertura en todo el <br><span class="azul-fortalezas">territorio nacional.</span></p>
-        </div>
-      </div>
-
-  </div>
-</article> --}}
-
 <article class="container-text-benefits">
     <div>
         <h2><b>Fortalezas</b></h2>
