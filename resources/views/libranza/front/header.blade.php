@@ -44,7 +44,7 @@
     <div class="mr-auto">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('home')}}">Inicio</a>
+                <a class="nav-link"  href="{{route('home')}}">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('benefit')}}">Beneficios</a>

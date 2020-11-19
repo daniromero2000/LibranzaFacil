@@ -1,5 +1,5 @@
 <div class="container-banner-form">
-    <img src="{{asset('modules/libranza/public/img/banners/banner-form.png')}}" class="w-100"
+    <img src="{{ asset('modules/libranza/public/img/banners/banner-form.png') }}" class="w-100"
         alt="Con-tu-crédito-por-libranza-ahora-es-más-fácil-unificar-tus-deudas">
     <div class="container-form">
         <h1>¡La manera mas fácil de tener <span>crédito por libranza!</span></h1>
@@ -7,29 +7,37 @@
 
         <div class="form">
             <h3>Cuéntanos sobre ti <b>(ingresa tus datos personales)</b></h3>
-            <form method="get" action="">
+            <form method="post" action="{{ route('libranza.store') }}">
+                @csrf
                 <div class="row">
                     <div class="col-6">
-                        <input type="text" name="" placeholder="Nombres*">
+                        <input type="text" name="name" placeholder="Nombres*" validation-pattern="name" required>
                     </div>
                     <div class="col-6">
-                        <input type="text" name="" placeholder="Apellidos*">
+                        <input type="text" name="last_name" placeholder="Apellidos*" validation-pattern="name" required>
                     </div>
                     <div class="col-6">
-                        <input type="text" name="" placeholder="Número de cédula*">
+                        <input type="text" name="identification_number" placeholder="Número de cédula*"
+                            validation-pattern="IdentificationNumber" required>
                     </div>
                     <div class="col-6">
-                        <input type="text" name="" placeholder="Teléfono celular*">
+                        <input type="text" name="telephone" placeholder="Teléfono celular*"
+                            validation-pattern="telephone" required>
                     </div>
                     <div class="col-6">
-                        <input type="email" name="" placeholder="Correo electrónico*">
+                        <input type="email" name="email" placeholder="Correo electrónico*" validation-pattern="email"
+                            required>
                     </div>
                     <div class="col-6">
-                        <input type="email" name="" placeholder="Confirmar correo electrónico*">
+                        <input type="email" name="emailConfirm" placeholder="Confirmar correo electrónico*"
+                            validation-pattern="email" required>
                     </div>
                     <div class="col-6">
                         <select id="city_id" name="city_id" required>
                             <option value="" selected>Busca tu ciudad*</option>
+                            @foreach ($cities as $city)
+                            <option value="{{ $city->id }}">{{ $city->city }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-6">
@@ -165,24 +173,23 @@
                     </div>
 
                     @if ($product)
-                    <div class="col-12">
-                        <select name="lead_product_id" id="lead_product_id" required>
+                        <div class="col-12">
+                            <select name="lead_product_id" id="lead_product_id" required>
 
-                        </select>
-                    </div>
+                            </select>
+                        </div>
                     @endif
                 </div>
                 <div class="container-conditions">
                     <p>
-                        <a target="_blank" href="{{route('terms.and.conditions')}}">Acepto Términos, condiciones</a> y <a target="_blank"
-                            href="{{route('data.treatment.policy')}}">Política de tratamiento
-                            de
+                        <a target="_blank" href="{{ route('terms.and.conditions') }}">Acepto Términos, condiciones</a> y
+                        <a target="_blank" href="{{ route('data.treatment.policy') }}">Política de tratamiento de
                             datos</a>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" required>
                     </p>
                 </div>
                 <div>
-                    <button type="button" name="" id="" class="btn-form">Ya estoy listo para solicitarlo</button>
+                    <button type="submit" class="btn-form">Ya estoy listo para solicitarlo</button>
 
                     <p class="text-exeption">La aprobación del monto y plazo sujetos a políticas de crédito. Dejanos tus
                         datos y un asesor se

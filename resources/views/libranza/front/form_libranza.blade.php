@@ -7,3 +7,6 @@
 @include('libranza.front.layouts.form',['product'=> request()->input()])
 </div>
 @endsection
+@section('scripts')
+<script src="{{ asset('js/admin/validate.js') }}"></script>
+@endsection

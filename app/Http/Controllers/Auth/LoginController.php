@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Modules\Companies\Entities\Admins\Requests\LoginRequest;
+use Modules\Companies\Entities\Employees\Requests\LoginRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
