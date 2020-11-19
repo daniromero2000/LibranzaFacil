@@ -7,48 +7,76 @@
     padding: 20px;
     }
 
+article {
+    padding-top   : 3.5%;
+    padding-bottom: 3.5%;
+    text-align    : center;
+    color         : #164194;
+    background-color: rgb(241, 238, 238);
+    }
+
+.container-text-strength .row .icon-card {
+    padding: 12%; 
+    }
+
+.strengths{
+    background-color: rgb(253, 250, 250);
+    }
+
+.container-icon-cards:hover {
+    cursor            : pointer;
+    -webkit-box-shadow: 0px 0px 3rem 0.5rem #00C3FF17;
+    -moz-box-shadow   : 0px 0px 3rem 0.5rem #00C3FF17;
+    box-shadow        : 0px 0px 3rem 0.5rem #00C3FF17;
+    }
+
+.container-text-strengths .row {
+    width : 100%;
+    padding-left: 8%;   
+    }
+
 .vectorial-50{
-    width: 40%;
-    height: 35%;
+    width: 60%;
+    height: 50%;
     display: block;
-    padding: 15px;
-    margin: auto;
-    margin-bottom: -0.5cm;
+    padding: 7%;
+    margin: auto;    
     }
 
 .manito{
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
     display: block;
-    padding: 15px;
+    padding: 9%;
     margin: auto;
-    margin-bottom: -0.5cm;
     }
 
 .medalla{
-    width: 30%;
-    height: 35%;
+    width: 42%;
+    height: 52%;
     display: block;
-    padding: 15px;
+    padding: 7%;
     margin: auto;
-    margin-bottom: -0.5cm;
+    padding-top: 1%;
     }
 
 .people{
-    width: 40%;
-    height: 40%;
+    width: 65%;
+    height: 55%;
     display: block;
-    padding: 20px;
+    padding: 8%;  
+    margin-left: 12%;  
+    padding-top: 2%;
     margin: auto;
-    margin-bottom: -0.2cm;
     }
 
 .presencia{
-    width: 15%;
-    height: 40%;
+    width: 38%;
+    height: 60%;
     display: block;
+    padding: 7%;   
     margin: auto;
-    margin-bottom: -0.2cm;
+    padding-top: 2%;
     }
 
 .mb-3{
