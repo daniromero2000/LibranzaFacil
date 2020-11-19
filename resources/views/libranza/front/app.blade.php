@@ -71,26 +71,7 @@
 
 <script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
-
-<script type="text/javascript">
-    function reloadUrl(url, type) {
-        if (type == 1) {
-            window.location.href = url;
-        } else {
-            window.open(url);
-        }
-    }
-    //     var email = document.getElementById("email").value;
-    // var emailConfirm = document.getElementById("emailConfirm").value;
-
-    // if (email != emailConfirm) {
-    //     document.getElementById("emailAlert").style.display = "block";
-    //     document.getElementById("email").value = "";
-    // } else {
-    //     document.getElementById("emailAlert").style.display = "none";
-    // }
-
-</script>
+<script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script>
 @yield('scripts')
 
 </html>

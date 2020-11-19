@@ -1,2 +1,2 @@
-<title>Example</title>
-<link rel="icon" href="{{asset('modules/generals/argonTemplate/img/icons/shop.png')}}" type="image/png">
+<title>Oportudata</title>
+<link rel="icon" type="image/png" href="{{ asset('favicon.ico') }}" />

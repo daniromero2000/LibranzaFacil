@@ -9,4 +9,5 @@
 @endsection
 @section('scripts')
 <script src="{{ asset('js/admin/validate.js') }}"></script>
+<script src="{{ asset('modules/libranza/public/js/front/form/app.min.js') }}"></script>
 @endsection

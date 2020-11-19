@@ -7,36 +7,47 @@
 
         <div class="form">
             <h3>Cuéntanos sobre ti <b>(ingresa tus datos personales)</b></h3>
-            <form method="post" action="{{ route('libranza.store') }}">
+            <form method="post" id="form-libranza" onsubmit="event.preventDefault();validateEmails()" action="{{ route('libranza.store') }}">
                 @csrf
                 <div class="row">
                     <div class="col-6">
                         <input type="text" name="name" placeholder="Nombres*" validation-pattern="name" required>
+                      
                     </div>
                     <div class="col-6">
                         <input type="text" name="last_name" placeholder="Apellidos*" validation-pattern="name" required>
+                   
                     </div>
                     <div class="col-6">
                         <input type="text" name="identification_number" placeholder="Número de cédula*"
                             validation-pattern="IdentificationNumber" required>
+                     
                     </div>
                     <div class="col-6">
                         <input type="text" name="telephone" placeholder="Teléfono celular*"
                             validation-pattern="telephone" required>
+                      
                     </div>
                     <div class="col-6">
-                        <input type="email" name="email" placeholder="Correo electrónico*" validation-pattern="email"
-                            required>
-                    </div>
-                    <div class="col-6">
-                        <input type="email" name="emailConfirm" placeholder="Confirmar correo electrónico*"
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico*"
                             validation-pattern="email" required>
+                      
+                    </div>
+                    <div class="col-6">
+                        <input type="email" id="emailConfirm" class="" name="emailConfirm"
+                            placeholder="Confirmar correo electrónico*" validation-pattern="email" required>
+                         <div id="invalid" class="invalid hide">
+                           Las correos no coinciden, vuelve a intentar !
+                        </div>
+                        <div id="valid" class="valid hide">
+                            Las correos coinciden.
+                        </div>
                     </div>
                     <div class="col-6">
                         <select id="city_id" name="city_id" required>
                             <option value="" selected>Busca tu ciudad*</option>
                             @foreach ($cities as $city)
-                            <option value="{{ $city->id }}">{{ $city->city }}</option>
+                                <option value="{{ $city->id }}">{{ $city->city }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -186,6 +197,9 @@
                         <a target="_blank" href="{{ route('data.treatment.policy') }}">Política de tratamiento de
                             datos</a>
                         <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
                     </p>
                 </div>
                 <div>

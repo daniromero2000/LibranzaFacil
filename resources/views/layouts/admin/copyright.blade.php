@@ -1,3 +1,3 @@
-<div class="copyright text-center  text-lg-left  text-muted">
-    © 2020 <a href="" class="font-weight-bold ml-1" target="_blank">Example</a>
+<div class="copyright d-flex text-muted">
+  Copyright © 2020 - 2021 <a href="" class="font-weight-bold ml-1" target="_blank">Oportudata</a> <span class="ml-auto">Versión 2.0.1</span>
 </div>

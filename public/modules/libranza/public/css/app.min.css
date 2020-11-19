@@ -147,11 +147,17 @@ header .icon-call {
 }
 
 .navbar-expand .navbar-nav .nav-link {
-    padding-right: 0.7vw;
-    padding-left : 0.7vw;
+    padding-right: 0.9vw;
+    padding-left : 0.9vw;
+    margin-left  : 0.3vw;
 }
 
 .navbar .nav-link:hover {
+    border       : #FFCE00 0.1vw solid;
+    border-radius: 40vw;
+}
+
+.navbar .active {
     border       : #FFCE00 0.1vw solid;
     border-radius: 40vw;
 }
@@ -329,6 +335,7 @@ footer .icons {
     width       : 9%;
     margin-right: 2%;
 }
+
 
 @media (min-width: 481px) and (max-width: 767px) {
 
