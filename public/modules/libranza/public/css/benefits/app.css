@@ -12,8 +12,10 @@
     font-weight : normal;
     font-style  : normal;
     font-display: swap;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     text-justify: left; 
+    color: #164194;   
+    padding-top: 7%;
     }
 
 .card-title{
@@ -55,10 +57,34 @@
     margin-left: 3cm;
 }
 
-.text-left{
-    margin-left: 4.5cm;
+.texto-left{
+    margin-left: 4.5cm;  
+}
+
+.text-red{
+    color: rgb(201, 11, 11);
 }
 
 .mb-3 {
-    height: 350px;    
+   height: 280px;  
+}
+
+.final-div{
+    padding-bottom: 27%;
+}
+
+.img-right{
+   display: block;
+   margin-left: -1.6cm;
+ }
+
+ .btn-bene {
+    color           : #FFFF;
+    background-color: hsl(0, 91%, 41%);
+    font-weight     : 600;
+    padding         : 0.7vw;
+    width           : 13%;
+    border-radius   : 2.2vw;
+    border          : 0.1vw solid transparent;
+    font-size       : 0.8vw;    
 }
