@@ -62,7 +62,7 @@
                 <div class="row w-100 mx-0">
                     <div class="col-12 px-0 m-auto py-2">
                         <div class="row w-100 mx-0">
-                            <div class="container-icon-call d-flex">
+                            <div class="container-icon-call ">
                                 <img src="{{ asset('modules/libranza/public/img/icons/call-bold.png') }}"
                                     class="icon-call2" alt="">
                             </div>
