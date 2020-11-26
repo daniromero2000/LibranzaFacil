@@ -24,8 +24,7 @@ class HomeController
             ['img' => 'seguros.jpg', 'texto' => '<p class="sliderPrincipal-textSlider">Asegura tu patrimonio y el bienestar <br /> de quienes están a tu lado</p>', 'textoBoton' => 'Asegúrate Ya', 'title' => 'Seguros', 'color' => '#2aace0', 'position_text' => 'bottom', 'enlace' => '/seguros']
         ]);
         return view('libranza.front.index', [
-            'cities' => $this->cityInterface->listCities(), 
-            'sliderPrincipal' => $sliders
+            'cities' => $this->cityInterface->listCities()
         ]);
     }
 }

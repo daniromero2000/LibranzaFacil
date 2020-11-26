@@ -68,9 +68,6 @@
     @include('libranza.front.footer')
 
 </body>
-
-<script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script>
 @yield('scripts')
 

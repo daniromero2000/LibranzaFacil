@@ -44,7 +44,7 @@
     <div class="mr-auto">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link {{ (request()->url() == route('home') || request()->url() == route('form-libranza')) ? 'active' : '' }}"  href="{{route('home')}}">Inicio</a>
+                <a class="nav-link {{ request()->url() == route('home')  ? 'active' : '' }}"  href="{{route('home')}}">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->url() == route('benefit') ? 'active' : '' }}" href="{{route('benefit')}}">Beneficios</a>
@@ -53,7 +53,7 @@
                 <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">¿como adquirir tu crédito?</a>
+                <a class="nav-link {{ request()->url() == route('form-libranza') ? 'active' : '' }}"  href="{{route('form-libranza')}}">¿como adquirir tu crédito?</a>
             </li>
         </ul>
     </div>
