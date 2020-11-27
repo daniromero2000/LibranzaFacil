@@ -62,7 +62,7 @@
 
 </head>
 
-<body>
+<body style=" margin: 0%; ">
 
   <img src="{{asset('modules/libranza/public/img/index.jfif')}}" style="width: 100%" class="icon-call"
                                 alt="">
