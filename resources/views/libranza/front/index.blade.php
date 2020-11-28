@@ -1,6 +1,6 @@
- @extends('libranza.front.app')
+@extends('libranza.front.app')
 
-{{-- <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/home/app.min.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/home/app.min.css')}}" />
 @section('styles')
 @endsection
 @section('content')
@@ -14,4 +14,4 @@
 @section('scripts')
 <script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
-@endsection --}}
+@endsection
