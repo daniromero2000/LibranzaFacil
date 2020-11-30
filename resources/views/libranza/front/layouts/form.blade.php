@@ -60,87 +60,9 @@
                     <div class="col-6">
                         <select name="amount" id="amount" class="select" required>
                             <option value selected>Indícanos el monto a solicitar*</option>
-                            <option value="500000">$ 500.000</option>
-                            <option value="1000000">$ 1.000.000</option>
-                            <option value="2000000">$ 2.000.000</option>
-                            <option value="3000000">$ 3.000.000</option>
-                            <option value="4000000">$ 4.000.000</option>
-                            <option value="5000000">$ 5.000.000</option>
-                            <option value="6000000">$ 6.000.000</option>
-                            <option value="7000000">$ 7.000.000</option>
-                            <option value="8000000">$ 8.000.000</option>
-                            <option value="9000000">$ 9.000.000</option>
-                            <option value="10000000">$ 10.000.000</option>
-                            <option value="11000000">$ 11.000.000</option>
-                            <option value="12000000">$ 12.000.000</option>
-                            <option value="13000000">$ 13.000.000</option>
-                            <option value="14000000">$ 14.000.000</option>
-                            <option value="15000000">$ 15.000.000</option>
-                            <option value="16000000">$ 16.000.000</option>
-                            <option value="17000000">$ 17.000.000</option>
-                            <option value="18000000">$ 18.000.000</option>
-                            <option value="19000000">$ 19.000.000</option>
-                            <option value="20000000">$ 20.000.000</option>
-                            <option value="21000000">$ 21.000.000</option>
-                            <option value="22000000">$ 22.000.000</option>
-                            <option value="23000000">$ 23.000.000</option>
-                            <option value="24000000">$ 24.000.000</option>
-                            <option value="25000000">$ 25.000.000</option>
-                            <option value="26000000">$ 26.000.000</option>
-                            <option value="27000000">$ 27.000.000</option>
-                            <option value="28000000">$ 28.000.000</option>
-                            <option value="29000000">$ 29.000.000</option>
-                            <option value="30000000">$ 30.000.000</option>
-                            <option value="31000000">$ 31.000.000</option>
-                            <option value="32000000">$ 32.000.000</option>
-                            <option value="33000000">$ 33.000.000</option>
-                            <option value="34000000">$ 34.000.000</option>
-                            <option value="35000000">$ 35.000.000</option>
-                            <option value="36000000">$ 36.000.000</option>
-                            <option value="37000000">$ 37.000.000</option>
-                            <option value="38000000">$ 38.000.000</option>
-                            <option value="39000000">$ 39.000.000</option>
-                            <option value="40000000">$ 40.000.000</option>
-                            <option value="41000000">$ 41.000.000</option>
-                            <option value="42000000">$ 42.000.000</option>
-                            <option value="43000000">$ 43.000.000</option>
-                            <option value="44000000">$ 44.000.000</option>
-                            <option value="45000000">$ 45.000.000</option>
-                            <option value="46000000">$ 46.000.000</option>
-                            <option value="47000000">$ 47.000.000</option>
-                            <option value="48000000">$ 48.000.000</option>
-                            <option value="49000000">$ 49.000.000</option>
-                            <option value="50000000">$ 50.000.000</option>
-                            <option value="51000000">$ 51.000.000</option>
-                            <option value="52000000">$ 52.000.000</option>
-                            <option value="53000000">$ 53.000.000</option>
-                            <option value="54000000">$ 54.000.000</option>
-                            <option value="55000000">$ 55.000.000</option>
-                            <option value="56000000">$ 56.000.000</option>
-                            <option value="57000000">$ 57.000.000</option>
-                            <option value="58000000">$ 58.000.000</option>
-                            <option value="59000000">$ 59.000.000</option>
-                            <option value="60000000">$ 60.000.000</option>
-                            <option value="61000000">$ 61.000.000</option>
-                            <option value="62000000">$ 62.000.000</option>
-                            <option value="63000000">$ 63.000.000</option>
-                            <option value="64000000">$ 64.000.000</option>
-                            <option value="65000000">$ 65.000.000</option>
-                            <option value="66000000">$ 66.000.000</option>
-                            <option value="67000000">$ 67.000.000</option>
-                            <option value="68000000">$ 68.000.000</option>
-                            <option value="69000000">$ 69.000.000</option>
-                            <option value="70000000">$ 70.000.000</option>
-                            <option value="71000000">$ 71.000.000</option>
-                            <option value="72000000">$ 72.000.000</option>
-                            <option value="73000000">$ 73.000.000</option>
-                            <option value="74000000">$ 74.000.000</option>
-                            <option value="75000000">$ 75.000.000</option>
-                            <option value="76000000">$ 76.000.000</option>
-                            <option value="77000000">$ 77.000.000</option>
-                            <option value="78000000">$ 78.000.000</option>
-                            <option value="79000000">$ 79.000.000</option>
-                            <option value="80000000">$ 80.000.000</option>
+                              @foreach ($amounts as $amount)
+                                <option {{ $amountOrigin == $amount ? 'selected="selected"' : ''}} value="{{ $amount }}">$ {{ number_format($amount) }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-6">
@@ -187,7 +109,9 @@
                     @if ($product)
                         <div class="col-12">
                             <select name="lead_product_id" class="select" id="lead_product_id" required>
-
+                                @foreach ($products as $product)
+                                    <option {{ request()->input('linea') == $product->product ? 'selected="selected"' : ''}} value="{{ $product->id }}">{{ $product->product }}</option>
+                                @endforeach
                             </select>
                         </div>
                     @endif

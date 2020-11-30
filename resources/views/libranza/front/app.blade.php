@@ -64,11 +64,10 @@
 
 <body style=" margin: 0%; ">
 
-  <img src="{{asset('modules/libranza/public/img/index.jfif')}}" style="width: 100%" class="icon-call"
-                                alt=""> 
-    {{-- @include('libranza.front.header')
+  {{-- <img src="{{asset('modules/libranza/public/img/index.jfif')}}" style="width: 100%" class="icon-call" alt="">  --}}
+    @include('libranza.front.header')
     @yield('content')
-    @include('libranza.front.footer') --}}
+    @include('libranza.front.footer')
 
 </body>
 <script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script>
