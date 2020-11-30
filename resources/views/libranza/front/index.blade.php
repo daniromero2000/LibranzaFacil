@@ -1,6 +1,7 @@
 @extends('libranza.front.app')
-
 <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/home/app.min.css')}}" />
+<style>body{margin:0;height:100%;}</style>
+<script src="{{ asset('js/front/libranza/snow.js') }}"></script>
 @section('styles')
 @endsection
 @section('content')
