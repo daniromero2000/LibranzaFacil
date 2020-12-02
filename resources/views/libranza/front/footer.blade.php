@@ -76,9 +76,9 @@
                     </div>
                     <div class="col pl-11">
                         <img src=" {{ asset('modules/libranza/public/img/icons/facebook-logo-bold.png') }}"
-                            class="icons" alt="">
+                            class="icons" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)" alt="">
                         <img src="{{ asset('modules/libranza/public/img/icons/instagram-logo-bold.png') }}"
-                            class="icons ml-2-responsive" alt="">
+                            class="icons ml-2-responsive" onclick="reloadUrl('https://www.instagram.com/almacenes.oportunidades/',2)" alt="">
                         <span class="ml-2-responsive1">Síguenos</span>
                     </div>
                 </div>

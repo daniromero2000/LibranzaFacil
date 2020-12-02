@@ -13,7 +13,7 @@
                                 alt="">
                         </div>
                         <div class="col pl-2 pr-0">
-                            <span>Linea nacional</span>
+                            <span>Línea nacional</span>
                             <br>
                             <span>
                                 <b>57 (1)484-2122 - 01 000 18 05 20</b> </span>
@@ -21,11 +21,11 @@
                     </div>
                 </div>
                 <div class=" col pl-1">
-                    <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" class="icons" alt="">
-                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}"
+                    <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)"  class="icons" alt="">
+                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}" onclick="reloadUrl('https://www.instagram.com/almacenes.oportunidades/',2)"
                         class="icons ml-2-responsive" alt="">
                     <span class="ml-2-responsive">
-                        <b>Siguenos</b>
+                        <b>Síguenos</b>
                     </span>
                 </div>
             </div>
