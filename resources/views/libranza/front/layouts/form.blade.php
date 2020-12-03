@@ -155,6 +155,8 @@
                             <option value="96">96</option>
                             <option value="108">108</option>
                             <option value="120">120</option>
+                            <option value="120">132</option>
+                            <option value="120">144</option>
                         </select>
                     </div>
                     <div class="col-12">
