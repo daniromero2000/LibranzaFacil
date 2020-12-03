@@ -13,7 +13,7 @@
                                 alt="">
                         </div>
                         <div class="col pl-2 pr-0">
-                            <span>Linea nacional</span>
+                            <span>Línea nacional</span>
                             <br>
                             <span>
                                 <b>57 (1)484-2122 - 01 000 18 05 20</b> </span>
@@ -21,11 +21,11 @@
                     </div>
                 </div>
                 <div class=" col pl-1">
-                    <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" class="icons" alt="">
-                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}"
+                    <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)"  class="icons" alt="">
+                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}" onclick="reloadUrl('https://www.instagram.com/almacenes.oportunidades/',2)"
                         class="icons ml-2-responsive" alt="">
                     <span class="ml-2-responsive">
-                        <b>Siguenos</b>
+                        <b>Síguenos</b>
                     </span>
                 </div>
             </div>
@@ -44,7 +44,7 @@
     <div class="mr-auto">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link {{ (request()->url() == route('home') || request()->url() == route('form-libranza')) ? 'active' : '' }}"  href="{{route('home')}}">Inicio</a>
+                <a class="nav-link {{ request()->url() == route('home')  ? 'active' : '' }}"  href="{{route('home')}}">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->url() == route('benefit') ? 'active' : '' }}" href="{{route('benefit')}}">Beneficios</a>
@@ -53,7 +53,7 @@
                 <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">¿como adquirir tu crédito?</a>
+                <a class="nav-link {{ request()->url() == route('form-libranza') ? 'active' : '' }}"  href="{{route('form-libranza')}}">¿como adquirir tu crédito?</a>
             </li>
         </ul>
     </div>

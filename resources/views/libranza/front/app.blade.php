@@ -26,7 +26,7 @@
 
     @include('libranza.front.layouts.tracking_labels')
     @yield('tracing')
-    {{-- <script>
+ <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -58,19 +58,18 @@
             p.parentNode.insertBefore(m, p);
         })(window, document, 'script', 'https://u.heatmap.it/log.js');
 
-    </script> --}}
+    </script> 
 
 </head>
 
-<body>
+<body style=" margin: 0%; ">
+
+  {{-- <img src="{{asset('modules/libranza/public/img/index.jfif')}}" style="width: 100%" class="icon-call" alt="">  --}}
     @include('libranza.front.header')
     @yield('content')
     @include('libranza.front.footer')
 
 </body>
-
-<script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script>
 @yield('scripts')
 
