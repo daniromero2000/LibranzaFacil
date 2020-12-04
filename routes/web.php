@@ -23,14 +23,6 @@ Route::namespace('Auth')->group(function () {
     Route::get('logout', 'LoginController@logout');
 });
 
-
-
 Route::namespace('Front')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
-
-
-Route::get('thank', function () {
-    return view('libranza.front.thank_you_page');
-})->name('terms.and.conditions');
-

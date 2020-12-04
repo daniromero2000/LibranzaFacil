@@ -1,9 +1,35 @@
 @extends('libranza.front.app')
 @section('styles')
-
 <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/about/app.min.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('modules/libranza/public/css/home/app.min.css')}}" />
+@endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'nosotros',
+            'page_path': "/about-us"
+        });
+
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-781153823', {
+            'page_title': 'nosotros',
+            'page_path': "/about-us"
+        });
+
+    </script>
 @endsection
 
 @section('content')

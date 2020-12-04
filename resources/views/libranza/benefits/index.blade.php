@@ -1,4 +1,32 @@
 @extends('libranza.front.app')
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'beneficios',
+            'page_path': "/benefits"
+        });
+
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-781153823', {
+            'page_title': 'beneficios',
+            'page_path': "/benefits"
+        });
+
+    </script>
+@endsection
 @section('content')
 
   <div class="row mx-0 row-benefits">
