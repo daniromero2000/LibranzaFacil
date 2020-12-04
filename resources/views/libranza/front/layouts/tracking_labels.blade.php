@@ -27,7 +27,9 @@
         "@type": "WebSite",
         "name": "Libranza Facil",
         "url": "https://libranzafacil.com/",
-        "sameAs": ["https://co.linkedin.com/company/almacenes-oportunidades",
+        "sameAs": [
+            "https://twitter.com/aloportunidades",
+            "https://co.linkedin.com/company/almacenes-oportunidades",
             "https://www.facebook.com/almacenes.oportunidades/",
             "https://www.instagram.com/almacenes.oportunidades/"
         ]
