@@ -31,11 +31,6 @@
             "https://www.facebook.com/almacenes.oportunidades/",
             "https://www.instagram.com/almacenes.oportunidades/"
         ]
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://libranzafacil.com/{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
     }
 
 </script>
