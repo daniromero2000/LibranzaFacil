@@ -18,7 +18,7 @@
             <a href="{{route('home')}}" class="btn-thank">Volver al inicio</a>
         </div>
         <div class="dialogThakPage">
-            <p class="texto-solicitud2"><b>La aprobación del monto y plazo sujetos a políticas de crédito.<br> Déjanos tus datos y un asesor se comunicará contigo para continuar con tu solicitud. <br> Si quieres más información comunicate con nosotros a este WhatsApp 312 2399959<b></p>
+            <p class="texto-solicitud2"><b>La aprobación del monto y plazo están sujetos a políticas de crédito.<br> Déjanos tus datos y un asesor se comunicará contigo para continuar con tu solicitud. <br> Si quieres más información comunícate con nosotros a este WhatsApp 312 2399959<b></p>
         </div>
     </div>
 </div>
