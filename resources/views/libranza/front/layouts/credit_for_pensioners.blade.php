@@ -4,7 +4,7 @@
             <img src="{{asset('modules/libranza/public/img/banners/banner-2.png')}}" class="img-fluid"
                 alt="Con-tu-crédito-por-libranza-ahora-es-más-fácil-unificar-tus-deudas">
             <img src="{{asset('modules/libranza/public/img/icons/play.png')}}" data-toggle="modal"
-                data-target="#video-libranza" alt="" class="play">
+                data-target="#video-libranza" id="playvideo" alt="" class="play">
         </div>
         <div class="col-info">
             <section>
@@ -24,11 +24,11 @@
         aria-labelledby="video-libranzaLabel" aria-hidden="true">
         <div class="modal-dialog modal-reset">
             <div class="modal-content">
-                <a class="" data-dismiss="modal" aria-label="Close">
+                <a class="" data-dismiss="modal" id="close" aria-label="Close">
                     <span aria-hidden="true">x</span>
                 </a>
                 <div class="embed-responsive embed-responsive-16by9 content-video content-iframe">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7vphBBaZNjk" frameborder="0"
+                    <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/7vphBBaZNjk" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>

@@ -14,8 +14,6 @@
     @include('libranza.front.footer')
 </body>
 <script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script>
-<script src="{{ asset('modules/libranza/public/js/front/sliderShow.js') }}"></script>
 @yield('scripts')
-
 </html>
 

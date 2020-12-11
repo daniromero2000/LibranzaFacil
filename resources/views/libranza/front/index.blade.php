@@ -1,36 +1,9 @@
 @extends('libranza.front.app')
 @section('styles')
-    <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/home/app.min.css') }}" />
-    <style>body{margin:0;height:100%}</style>
-    <script src="{{ asset('js/front/libranza/snow.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/home/app.min.css') }}" /> <style> body { margin: 0; height: 100% } </style> <script src="{{ asset('js/front/libranza/snow.min.js') }}"></script>
 @endsection
 @section('tags')
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-164894259-1', {
-            'page_title': 'home',
-            'page_path': "/"
-        });
-
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'AW-781153823', {
-            'page_title': 'home',
-            'page_path': "/"
-        });
-
-    </script>
+   <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-164894259-1', { 'page_title': 'home', 'page_path': "/" }); </script> <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-781153823', { 'page_title': 'home', 'page_path': "/" }); </script>
 @endsection
 @section('content')
     @include('libranza.front.layouts.carousel')
@@ -43,4 +16,5 @@
 @section('scripts')
     <script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+  <script> $("#playvideo").click(function(){var c=-1<$("#video1")[0].src.indexOf("?")?"&":"?";$("#video1")[0].src+=c+"autoplay=1"}),$("#close").click(function(){var c=-1<$("#video1")[0].src.indexOf("?")?"&":"?";$("#video1")[0].src+=c+"autoplay=0"}); </script>
 @endsection

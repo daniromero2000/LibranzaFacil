@@ -12,5 +12,6 @@
     "Insurances": false,
     "Warranty": false,
     "Libranza": true,
-    "Leads": true
+    "Leads": true,
+    "DocumentManagement": true
 }

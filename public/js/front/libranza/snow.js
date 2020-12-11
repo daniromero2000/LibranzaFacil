@@ -10,7 +10,7 @@ var snowMax = 350;
 var snowEntity = "&#x2022;";
 
 // Falling Velocity
-var snowSpeed = 0.75;
+var snowSpeed = 0.65;
 
 // Minimum Flake Size
 var snowMinSize = 8;
