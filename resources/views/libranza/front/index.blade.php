@@ -16,5 +16,5 @@
 @section('scripts')
     <script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
-  <script> $("#playvideo").click(function(){var c=-1<$("#video1")[0].src.indexOf("?")?"&":"?";$("#video1")[0].src+=c+"autoplay=1"}),$("#close").click(function(){var c=-1<$("#video1")[0].src.indexOf("?")?"&":"?";$("#video1")[0].src+=c+"autoplay=0"}); </script>
+    <script> $("#playvideo").click(function(){ var symbol = $("#video1")[0].src.indexOf("?") > -1 ? "&" : "?"; $("#video1")[0].src += symbol + "autoplay=1"; }); </script>
 @endsection

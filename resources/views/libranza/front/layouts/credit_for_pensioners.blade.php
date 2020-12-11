@@ -28,7 +28,7 @@
                     <span aria-hidden="true">x</span>
                 </a>
                 <div class="embed-responsive embed-responsive-16by9 content-video content-iframe">
-                    <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/7vphBBaZNjk" frameborder="0"
+                    <iframe id="video1" width="560" class="youtube-iframe" height="315" src="https://www.youtube.com/embed/7vphBBaZNjk" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
