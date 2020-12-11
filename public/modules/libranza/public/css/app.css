@@ -1,14 +1,14 @@
 @font-face {
-    font-family : 'Montserrat';
-    src         : url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
-    font-weight : bold;
+    font-family : Montserrat;
+    src         : url(../fonts/Montserrat-Bold.woff2) format('woff2'), url(../fonts/Montserrat-Bold.woff) format('woff');
+    font-weight : 700;
     font-style  : normal;
     font-display: swap
 }
 
 @font-face {
-    font-family : 'Montserrat';
-    src         : url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-family : Montserrat;
+    src         : url(../fonts/Montserrat-Medium.woff2) format('woff2'), url(../fonts/Montserrat-Medium.woff) format('woff');
     font-weight : 500;
     font-style  : normal;
     font-display: swap
@@ -16,33 +16,33 @@
 
 @font-face {
     font-family : 'Montserrat Alternates';
-    src         : url('../fonts/MontserratAlternates-SemiBold.woff2') format('woff2'), url('../fonts/MontserratAlternates-SemiBold.woff') format('woff');
+    src         : url(../fonts/MontserratAlternates-SemiBold.woff2) format('woff2'), url(../fonts/MontserratAlternates-SemiBold.woff) format('woff');
     font-weight : 600;
     font-style  : normal;
     font-display: swap
 }
 
 @font-face {
-    font-family : 'Montserrat';
-    src         : url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'), url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-family : Montserrat;
+    src         : url(../fonts/Montserrat-ExtraBold.woff2) format('woff2'), url(../fonts/Montserrat-ExtraBold.woff) format('woff');
     font-weight : 800;
     font-style  : normal;
     font-display: swap
 }
 
 @font-face {
-    font-family : 'Montserrat';
-    src         : url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
-    font-weight : normal;
+    font-family : Montserrat;
+    src         : url(../fonts/Montserrat-Regular.woff2) format('woff2'), url(../fonts/Montserrat-Regular.woff) format('woff');
+    font-weight : 400;
     font-style  : normal;
     font-display: swap
 }
 
 .logo-yellow-header {
-    -webkit-box-shadow: 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
-    -moz-box-shadow   : 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
-    box-shadow        : 0px 0px 3vw 0.4vw rgba(255, 206, 0, 0.68);
-    border-radius     : 0px 0px 16% 16%
+    -webkit-box-shadow: 0 0 3vw .4vw rgb(230 230 228 / .68);
+    -moz-box-shadow   : 0 0 3vw .4vw rgb(230 230 228 / .68);
+    box-shadow        : 0 0 3vw .4vw rgb(230 230 228 / .68);
+    border-radius     : 0 0 16% 16%
 }
 
 .first-div-header {
@@ -71,20 +71,20 @@
 
 body {
     font-size  : 1vw;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial
 }
 
 header {
     padding-bottom: 1%
 }
 
-header span,
-.navbar a {
+.navbar a,
+header span {
     font-size: 1vw
 }
 
-header,
-.navbar a {
+.navbar a,
+header {
     color: #164194 !important
 }
 
@@ -110,16 +110,16 @@ header .icon-call {
 
 .navbar {
     padding           : 1% 17%;
-    border-top        : 0.1vw solid #dee2e66b;
+    border-top        : .1vw solid #dee2e66b;
     font-weight       : 500;
-    -webkit-transition: 0.4s ease-out;
-    transition        : 0.4s ease-out;
+    -webkit-transition: .4s ease-out;
+    transition        : .4s ease-out;
     text-align        : center
 }
 
 .button-nav {
-    padding      : 0.8% 1.8%;
-    background   : #FFCE00;
+    padding      : .8% 1.8%;
+    background   : #ffce00;
     border-radius: 48vw;
     display      : flex;
     width        : 25%
@@ -127,7 +127,7 @@ header .icon-call {
 
 .button-nav:hover {
     text-decoration: none;
-    opacity        : 0.6
+    opacity        : .6
 }
 
 .button-nav img {
@@ -136,18 +136,18 @@ header .icon-call {
 }
 
 .navbar-expand .navbar-nav .nav-link {
-    padding-right: 0.9vw;
-    padding-left : 0.9vw;
-    margin-left  : 0.3vw
+    padding-right: .9vw;
+    padding-left : .9vw;
+    margin-left  : .3vw
 }
 
 .navbar .nav-link:hover {
-    border       : #FFCE00 0.1vw solid;
+    border       : #ffce00 .1vw solid;
     border-radius: 40vw
 }
 
 .navbar .active {
-    border       : #FFCE00 0.1vw solid;
+    border       : #ffce00 .1vw solid;
     border-radius: 40vw
 }
 
@@ -160,7 +160,7 @@ header .icon-call {
 .carousel-control-next,
 .carousel-control-prev {
     width  : 9%;
-    opacity: 0.7
+    opacity: .7
 }
 
 .carousel-control-next-icon {
@@ -182,7 +182,7 @@ header .icon-call {
     z-index      : 9;
     top          : -5%;
     right        : -6%;
-    padding      : 0.9% 1.5%;
+    padding      : .9% 1.5%;
     background   : #f3f3f3;
     border-radius: 95%;
     font-weight  : 800;
@@ -200,7 +200,7 @@ header .icon-call {
 }
 
 .footer-lib {
-    background-color: #00C3FF
+    background-color: #00c3ff
 }
 
 .container-logo-footer {
@@ -223,14 +223,14 @@ header .icon-call {
 }
 
 .title-foot {
-    color    : #FFFF;
+    color    : #fffF;
     font-size: 1.6vw
 }
 
 .text-foot {
     color      : #164194;
-    font-size  : 0.8vw;
-    font-weight: bold
+    font-size  : .8vw;
+    font-weight: 700
 }
 
 ul {
@@ -238,8 +238,8 @@ ul {
 }
 
 .title-foot {
-    margin-bottom: 0.5vw;
-    font-weight  : bold
+    margin-bottom: .5vw;
+    font-weight  : 700
 }
 
 .servicio {
@@ -261,30 +261,30 @@ ul {
 }
 
 .col-text-footer ul {
-    padding: 0%
+    padding: 0
 }
 
 .linea {
     color       : #ffff;
-    font-size   : 0.8vw;
+    font-size   : .8vw;
     text-justify: left
 }
 
 .tels {
     color      : #164194;
-    font-size  : 0.8vw;
-    font-weight: bold
+    font-size  : .8vw;
+    font-weight: 700
 }
 
 .horario {
     color      : #ffff;
-    font-size  : 0.8vw;
-    font-weight: bold
+    font-size  : .8vw;
+    font-weight: 700
 }
 
 .siguenos {
     color    : #ffff;
-    font-size: 0.8vw
+    font-size: .8vw
 }
 
 .icon-call2 {
@@ -293,7 +293,7 @@ ul {
 
 .ml-2-responsive1 {
     color    : #ffff;
-    font-size: 0.9vw
+    font-size: .9vw
 }
 
 .pl-11 {
@@ -303,12 +303,12 @@ ul {
 
 .text-foot2 {
     text-align   : left;
-    margin-left  : 0.4vw;
-    margin-bottom: 0.6vw
+    margin-left  : .4vw;
+    margin-bottom: .6vw
 }
 
 .footer-lib {
-    padding-bottom: 0.5vw
+    padding-bottom: .5vw
 }
 
 footer .container-icon-call {
@@ -320,10 +320,10 @@ footer .icons {
     margin-right: 2%
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width:481px) and (max-width:767px) {
 
-    header span,
-    .navbar a {
+    .navbar a,
+    header span {
         font-size: 1.9vw
     }
 
@@ -428,10 +428,10 @@ footer .icons {
     }
 }
 
-@media (min-width: 310px) and (max-width: 479px) {
+@media (min-width:310px) and (max-width:479px) {
 
-    header span,
-    .navbar a {
+    .navbar a,
+    header span {
         font-size: 2.3vw
     }
 
@@ -452,11 +452,11 @@ footer .icons {
     }
 
     .navbar .nav-link:hover {
-        border: #FFCE00 0.2vw solid
+        border: #ffce00 .2vw solid
     }
 
     .navbar .active {
-        border: #FFCE00 0.2vw solid
+        border: #ffce00 .2vw solid
     }
 
     .second-logo {
@@ -468,8 +468,8 @@ footer .icons {
     }
 
     .navbar-expand .navbar-nav .nav-link {
-        padding-right: 0.3rem;
-        padding-left : 0.3rem
+        padding-right: .3rem;
+        padding-left : .3rem
     }
 
     .button-nav {
@@ -488,7 +488,7 @@ footer .icons {
     }
 
     .modal-reset a {
-        right    : -0.9%;
+        right    : -.9%;
         top      : -15%;
         padding  : 1% 2.4%;
         font-size: 3vw
