@@ -23,7 +23,7 @@
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="collapse{{ $key }}" class="collapse show" aria-labelledby="heading{{ $key }}"
+                                <div id="collapse{{ $key }}" class="collapse {{ $key == $active ? 'show' : ''}}" aria-labelledby="heading{{ $key }}"
                                     data-parent="#indicador{{ $key }}">
                                     <div class="card-body-reset">
                                         @foreach ($item as $document)
