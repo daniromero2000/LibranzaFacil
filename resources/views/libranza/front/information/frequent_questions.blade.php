@@ -86,3 +86,7 @@
         </section>
     </article>
 @endsection
+@section('scripts')
+    <script src="{{ asset('js/bootstrap/jquery.slim.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+@endsection

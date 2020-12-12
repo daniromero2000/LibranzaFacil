@@ -54,6 +54,10 @@
                         <a class="text-foot" href="/preguntas-frecuentes" class="footer-menuItem"
                             title="Preguntas Frecuentes">Preguntas Frecuentes</a>
                     </li>
+                     <li>
+                        <a class="text-foot" href="/indicadores" class="footer-menuItem"
+                            title="Preguntas Frecuentes">Indicadores</a>
+                    </li>
                 </ul>
             </div>
         </div>

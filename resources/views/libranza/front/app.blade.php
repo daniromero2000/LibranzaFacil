@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     @include('libranza.front.layouts.meta')
+    
     @yield('styles')
     @include('libranza.front.layouts.og_labels')
     @yield('og')
