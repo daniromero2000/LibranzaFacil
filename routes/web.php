@@ -26,3 +26,5 @@ Route::namespace('Auth')->group(function () {
 Route::namespace('Front')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
 });
+
+
