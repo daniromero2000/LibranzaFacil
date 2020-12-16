@@ -48,7 +48,7 @@ return [
 
         'api' => [
             'driver'   => 'passport',
-            'provider' => 'client',
+            'provider' => 'users',
         ],
 
         'employee' => [
@@ -77,7 +77,9 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model'  => Modules\Customers\Entities\Customers\Customer::class,
+            'model'  => App\User::class
+            // 'driver' => 'eloquent',
+            // 'model'  => Modules\Customers\Entities\Customers\Customer::class,
         ],
 
         'client' => [
