@@ -6,19 +6,7 @@
 
         <div class="col px-0 d-flex">
             <div class="row w-100 mx-0">
-                <div class="col-12 px-0 m-auto py-2">
-                    <div class="row w-100 mx-0">
-                        <div class="container-icon-call d-flex">
-                            <img src="{{asset('modules/libranza/public/img/icons/call-light.png')}}" class="icon-call"
-                                alt="">
-                        </div>
-                        <div class="col pl-2 pr-0">
-                            <span>Línea nacional</span>
-                            <br>
-                            <span>
-                                <b>57 (1)484-2122 - 01 000 18 05 20</b> </span>
-                        </div>
-                    </div>
+                <div class="col-12 px-0 m-auto">
                 </div>
                 <div class=" col pl-1">
                     <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)"  class="icons" alt="">
