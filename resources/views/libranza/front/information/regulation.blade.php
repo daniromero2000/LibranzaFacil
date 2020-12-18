@@ -83,35 +83,31 @@
             <div class="row container-indicadores w-100 mx-0">
                 <div style=" width: 80%; margin:auto; ">
                     @foreach ($categories as $key => $item)
-                        <div id="collapse{{ $key }}" class="collapse my-reset-3 {{ $key == $active ? 'show' : '' }}"
-                            aria-labelledby="heading{{ $key }}" data-parent="#indicador{{ $key }}">
-                            <div class="card-body-reset">
-                                @foreach ($item as $document)
-                                    <div class="card mb-reset-3">
-                                        <div class="card-body-reset">
-                                            <div class="row mx-0">
-                                                <div class="logo-pdf">
-                                                    <img src="{{ asset('img/pdf.png') }}" class="w-100" alt="pdf">
-                                                </div>
-                                                <div class="text-pdf">
-                                                    <h3>{{ $document->name }}</h3>
-                                                    <a href="/indicadores?id={{ $document->id }}">Descargar</a>
-                                                </div>
+                        <div class="card-body-reset">
+                            @foreach ($item as $document)
+                                <div class="card mb-reset-3">
+                                    <div class="card-body-reset">
+                                        <div class="row mx-0">
+                                            <div class="logo-pdf">
+                                                <img src="{{ asset('img/pdf.png') }}" class="w-100" alt="pdf">
                                             </div>
-                                        </div>
-                                        <div class="card-footer py-0 text-muted">
-                                            <div class="row">
-                                                <div class="ml-auto">
-                                                    <p class="card-text mt-0">Descargas:
-                                                        {{ $document->downloads }}
-                                                    </p>
-                                                </div>
+                                            <div class="text-pdf">
+                                                <h3>{{ $document->name }}</h3>
+                                                <a href="/indicadores?id={{ $document->id }}">Descargar</a>
                                             </div>
                                         </div>
                                     </div>
-
-                                @endforeach
-                            </div>
+                                    <div class="card-footer py-0 text-muted">
+                                        <div class="row">
+                                            <div class="ml-auto">
+                                                <p class="card-text mt-0">Descargas:
+                                                    {{ $document->downloads }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     @endforeach
                 </div>
