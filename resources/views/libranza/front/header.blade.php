@@ -11,7 +11,7 @@
                 <div class=" col pl-1">
                     <img src=" {{asset('modules/libranza/public/img/icons/whatsapp.png')}}" class="icons" alt="">
                     <span class="ml-2-responsive">
-                        <b>3204752096</b><br>
+                        <b>312 2399959</b><br>
                     </span>                    
                     <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)"  class="icons" alt="">
                     <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}" onclick="reloadUrl('https://www.instagram.com/almacenes.oportunidades/',2)"
