@@ -10,7 +10,7 @@
         <h1>Indicadores Financieros</h1>
         @if (isset($categories))
             <div class="row container-indicadores w-100 mx-0">
-                <div style=" width: 75%; ">
+                <div style=" width: 80%; margin:auto; ">
                     @foreach ($categories as $key => $item)
                         <div class="accordion" id="indicador{{ $key }}">
                             <div class="card my-reset-3">
@@ -57,7 +57,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div style="width: 25%;padding-left: 2%;padding-right: 1.5%;">
+                {{-- <div style="width: 25%;padding-left: 2%;padding-right: 1.5%;">
                     @foreach ($categories as $key => $item)
                         <div class="border p-0" id="heading{{ $key }}">
                             <h2 class="mb-0 mt-0">
@@ -69,9 +69,9 @@
                             </h2>
                         </div>
                     @endforeach
-                </div>
+                </div> --}}
             </div>
-            </div>
+            {{-- </div> --}}
         @endif
     </article>
 @endsection

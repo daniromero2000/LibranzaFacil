@@ -53,7 +53,7 @@
                 <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ request()->url() == route('form-libranza') ? 'active' : '' }}"  href="{{route('form-libranza')}}">¿como adquirir tu crédito?</a>
+                <a class="nav-link {{ request()->url() == route('regulation') ? 'active' : '' }}"  href="{{route('regulation')}}">¿como adquirir tu crédito?</a>
             </li>
         </ul>
     </div>
