@@ -72,7 +72,7 @@
                             </div>
                             <div class="col pl-2 pr-00">
                                 <p class="text-foot2"><span class="linea">Linea nacional</span><br>
-                                    <span class="tels"><b>57 (1)484-2122 - 01 8000 18 05 20</b></span><br>
+                                    <span class="tels"><b>312 2399959 - 01 8000 18 05 20</b></span><br>
                                     <span class="horario">Lunes a Viernes 8:00 am <br>a 5:00 pm</span>
                                 </p>
                             </div>
