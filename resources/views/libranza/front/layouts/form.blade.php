@@ -54,7 +54,12 @@
                     </div>
                     <div class="col-6">
                         <select id="kind_of_person" class="select" name="kind_of_person" required>
-                            <option value="Pensionado" selected>Pensionado</option>
+                           <option value="" selected>Tipo de cliente</option>
+                            <option value="Pensionado" >Pensionado</option>
+                            <option value="Docente" >Docente</option>
+                            <option value="Policia" >Policía</option>
+                            <option value="Militar" >Militar</option>
+
                         </select>
                     </div>
                     <div class="col-6">
