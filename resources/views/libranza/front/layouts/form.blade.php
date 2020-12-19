@@ -44,51 +44,18 @@
                             Los correos coinciden.
                         </div>
                     </div>
-                    <div class="col-6">
-                        <select id="city_id" class="select" name="city_id" required>
-                            <option value="" selected>Busca tu ciudad*</option>
-                            @foreach ($cities as $city)
-                                <option value="{{ $city->id }}">{{ $city->city }}</option>
-                            @endforeach
-                        </select>
-                    </div>
+
                     <div class="col-6">
                         <select id="kind_of_person" class="select" name="kind_of_person" required>
-                           <option value="" selected>Tipo de cliente</option>
-                            <option value="Pensionado" >Pensionado</option>
-                            <option value="Docente" >Docente</option>
-                            <option value="Policia" >Policía</option>
-                            <option value="Militar" >Militar</option>
+                            <option value="" selected>Tipo de cliente</option>
+                            <option value="Pensionado">Pensionado</option>
+                            <option value="Docente">Docente</option>
+                            <option value="Policia">Policía</option>
+                            <option value="Militar">Militar</option>
 
                         </select>
                     </div>
                     <div class="col-6">
-                        <select name="amount" id="amount" class="select" required>
-                            <option value selected>Indícanos el monto a solicitar*</option>
-                            <option value="500000">$ 500.000 </option>
-                              @foreach ($amounts as $amount)
-                                <option {{ $amountOrigin == $amount ? 'selected="selected"' : ''}} value="{{ $amount }}">$ {{ number_format($amount) }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="col-6">
-                        <select name="term" id="term" class="select" required>
-                            <option value selected>Indícanos el plazo que deseas*</option>
-                            <option value="13">13</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                            <option value="72">72</option>
-                            <option value="84">84</option>
-                            <option value="96">96</option>
-                            <option value="108">108</option>
-                            <option value="120">120</option>
-                            <option value="120">132</option>
-                            <option value="120">144</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
                         <select name="entity" class="select" id="entity" required>
                             <option value selected>De que entidad eres*</option>
                             <option value="Axa Colpatria Renta Vitalicia">Axa Colpatria Renta
@@ -113,12 +80,50 @@
                             <option value="Skandia">Skandia</option>
                         </select>
                     </div>
+                    <div class="col-6">
+                        <select id="city_id" class="select" name="city_id" required>
+                            <option value="" selected>Busca tu ciudad*</option>
+                            @foreach ($cities as $city)
+                                <option value="{{ $city->id }}">{{ $city->city }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select name="amount" id="amount" class="select" required>
+                            <option value selected>Indícanos el monto a solicitar*</option>
+                            <option value="500000">$ 500.000 </option>
+                            @foreach ($amounts as $amount)
+                                <option {{ $amountOrigin == $amount ? 'selected="selected"' : '' }}
+                                    value="{{ $amount }}">$ {{ number_format($amount) }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <select name="term" id="term" class="select" required>
+                            <option value selected>Indícanos el plazo que deseas*</option>
+                            <option value="13">13</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                            <option value="48">48</option>
+                            <option value="60">60</option>
+                            <option value="72">72</option>
+                            <option value="84">84</option>
+                            <option value="96">96</option>
+                            <option value="108">108</option>
+                            <option value="120">120</option>
+                            <option value="120">132</option>
+                            <option value="120">144</option>
+                        </select>
+                    </div>
+
 
                     @if ($product)
                         <div class="col-12">
                             <select name="lead_product_id" class="select" id="lead_product_id" required>
                                 @foreach ($products as $product)
-                                    <option {{ request()->input('linea') == $product->product ? 'selected="selected"' : ''}} value="{{ $product->id }}">{{ $product->product }}</option>
+                                    <option
+                                        {{ request()->input('linea') == $product->product ? 'selected="selected"' : '' }}
+                                        value="{{ $product->id }}">{{ $product->product }}</option>
                                 @endforeach
                             </select>
                         </div>
