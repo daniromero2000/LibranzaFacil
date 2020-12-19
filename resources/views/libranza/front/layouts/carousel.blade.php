@@ -25,6 +25,11 @@
                 alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades">
             <a href="{{ route('form-libranza') }}" class="button-carousel">Solicita tu crédito</a>
         </div>
+        <div class="carousel-item slider-six" data-interval="7000">
+            <img src="{{ asset('modules/libranza/public/img/sliders/slider-6.jpg') }}" class="d-block w-100"
+                alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades">
+            <a href="{{ route('form-libranza') }}" class="button-carousel">Solicita tu crédito</a>
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carousel-libranza" role="button" data-slide="prev">
         <div class="container-icons-carousel">

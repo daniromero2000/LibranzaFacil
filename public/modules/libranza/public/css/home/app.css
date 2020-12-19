@@ -33,6 +33,11 @@
     left  : 21.4%
 }
 
+.slider-six .button-carousel {
+    bottom: 8.5%;
+    left  : 8.4%
+}
+
 .button-carousel {
     position          : absolute;
     width             : 15%;
@@ -310,6 +315,11 @@ article {
         left  : 18.8%
     }
 
+    .slider-six .button-carousel {
+        bottom: 6.7%;
+        left  : 7.5%
+    }
+
     .button-carousel {
         width    : 20%;
         font-size: 1.7vw;
@@ -437,6 +447,11 @@ article {
     .slider-five .button-carousel {
         bottom: 6.7%;
         left  : 16.5%
+    }
+
+    .slider-six .button-carousel {
+        bottom: 5.0%;
+        left  : 5.0%
     }
 
     .button-carousel {
