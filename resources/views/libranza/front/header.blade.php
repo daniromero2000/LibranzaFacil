@@ -9,7 +9,7 @@
                 <div class="col-12 px-0 m-auto">
                 </div>
                 <div class=" col pl-1">
-                    <img src=" {{asset('modules/libranza/public/img/icons/whatsapp.png')}}" class="icons" alt="">
+                    <img  style=" border-radius: 2vw; margin-bottom: 0.5vw; " src=" {{asset('modules/libranza/public/img/icons/whatsapp.png')}}" class="icons" alt="">
                     <span class="ml-2-responsive">
                         <b>312 2399959</b><br>
                     </span>                    

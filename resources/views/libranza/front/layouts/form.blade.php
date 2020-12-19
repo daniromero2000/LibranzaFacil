@@ -1,5 +1,5 @@
 <div class="container-banner-form">
-    <img src="{{ asset('modules/libranza/public/img/banners/banner-form.png') }}" class="w-100"
+    <img src="{{ asset('modules/libranza/public/img/banners/banner2-form.jpg') }}" class="w-100"
         alt="Con-tu-crédito-por-libranza-ahora-es-más-fácil-unificar-tus-deudas">
     <div class="container-form">
         <h1>¡La manera mas fácil de tener <span>crédito por libranza!</span></h1>

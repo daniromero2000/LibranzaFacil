@@ -67,14 +67,14 @@
                     <div class="col-12 px-0 m-auto py-2">
                         <div class="row w-100 mx-0">
                             <div class="container-icon-call ">
-                                <img src="{{ asset('modules/libranza/public/img/icons/call-bold.png') }}"
+                                <img style=" border-radius: 2vw; " src="{{ asset('modules/libranza/public/img/icons/whatsapp.png') }}"
                                     class="icon-call2" alt="">
                             </div>
                             <div class="col pl-2 pr-00">
                                 <p class="text-foot2"><span class="linea">Linea nacional</span><br>
                                     <span class="tels"><b>312 2399959 - 01 8000 18 05 20</b></span><br>
                                     <span class="horario">Lunes a Viernes 8:00 am <br>a 5:00 pm</span>
-                                </p>
+                                </p>    
                             </div>
                         </div>
                     </div>
