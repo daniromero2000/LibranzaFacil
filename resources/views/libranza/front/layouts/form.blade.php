@@ -58,26 +58,9 @@
                     <div class="col-6">
                         <select name="entity" class="select" id="entity" required>
                             <option value selected>De que entidad eres*</option>
-                            <option value="Axa Colpatria Renta Vitalicia">Axa Colpatria Renta
-                                Vitalicia
-                            </option>
-                            <option value="BBVA Seguros">BBVA Seguros </option>
-                            <option value="Casur">Casur</option>
-                            <option value="Colfondos">Colfondos</option>
-                            <option value="Colpensiones">Colpensiones</option>
-                            <option value="Ferrocarriles">Ferrocarriles</option>
-                            <option value="Foncep">Foncep</option>
-                            <option value="Fopep">Fopep</option>
-                            <option value="Global Seguros ">Global Seguros </option>
-                            <option value="Mapfre">Mapfre</option>
-                            <option value="Porvenir">Porvenir</option>
-                            <option value="Protección">Proteccion</option>
-                            <option value="Seguros Alfa">Seguros Alfa </option>
-                            <option value="Seguros Bolívar ARL">Seguros Bolivar ARL </option>
-                            <option value="Seguros Bolívar Renta">Seguros Bolivar Renta </option>
-                            <option value="Seguros Alfa">Seguros Alfa</option>
-                            <option value="Suramericana">Suramericana</option>
-                            <option value="Skandia">Skandia</option>
+                           @foreach ($covenants as $item)
+                                <option value="{{ $item->covenant }}">{{ $item->covenant }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-6">
