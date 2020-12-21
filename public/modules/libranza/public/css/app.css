@@ -229,7 +229,7 @@ header .icon-call {
 
 .text-foot {
     color      : #164194;
-    font-size  : .8vw;
+    font-size  : .9vw;
     font-weight: 700
 }
 
@@ -251,7 +251,7 @@ ul {
 }
 
 .container-text-footer {
-    width         : 80%;
+    width         : 84%;
     margin        : auto;
     padding-bottom: 2%
 }
@@ -266,13 +266,13 @@ ul {
 
 .linea {
     color       : #ffff;
-    font-size   : .8vw;
+    font-size   : 1vw;
     text-justify: left
 }
 
 .tels {
     color      : #164194;
-    font-size  : .8vw;
+    font-size  : .9vw;
     font-weight: 700
 }
 
@@ -284,7 +284,7 @@ ul {
 
 .siguenos {
     color    : #ffff;
-    font-size: .8vw
+    font-size: .9vw
 }
 
 .icon-call2 {
@@ -293,7 +293,7 @@ ul {
 
 .ml-2-responsive1 {
     color    : #ffff;
-    font-size: .9vw
+    font-size: 1vw
 }
 
 .pl-11 {
