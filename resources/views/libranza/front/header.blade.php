@@ -4,26 +4,12 @@
             <img src="{{asset('modules/libranza/public/img/logos/logo-libranzafacil.png')}}" alt="" onclick="reloadUrl('{{route('home')}}',1)" class="m-auto">
         </div>        
 
-        <div class="col px-0 d-flex">
-            <div class="row w-100 mx-0">
-                <div class="col-12 px-0 m-auto">
-                </div>
-                <div class=" col pl-1">
-                    <img  style=" border-radius: 2vw; margin-bottom: 0.5vw; " src=" {{asset('modules/libranza/public/img/icons/whatsapp.png')}}" class="icons" alt="">
-                    <span class="ml-2-responsive">
-                        <b>312 2399959</b><br>
-                    </span>                    
-                    <img src=" {{asset('modules/libranza/public/img/icons/facebook-logo.png')}}" onclick="reloadUrl('https://www.facebook.com/almacenes.oportunidades/',2)"  class="icons" alt="">
-                    <img src="{{asset('modules/libranza/public/img/icons/instagram-logo.png')}}" onclick="reloadUrl('https://www.instagram.com/almacenes.oportunidades/',2)"
-                        class="icons ml-2-responsive" alt="">
-                    <span class="ml-2-responsive">
-                        <b>Síguenos</b>
-                    </span>
-                </div>
-            </div>
-        </div>
         <div class="col d-flex px-0 col-header-responsive">
             <img src="{{asset('modules/libranza/public/img/logos/logo-oportunidades.png')}}" alt="" onclick="reloadUrl('https://www.oportunidades.com.co/',2)" class="m-auto second-logo">
+        </div>
+
+         <div class="col d-flex px-0 col-header-responsive">
+            <img src="{{asset('modules/libranza/public/img/logos/lagobo.png')}}" alt="" onclick="reloadUrl('https://www.lagobo.com/',2)" class="m-auto second-logo">
         </div>
 
         <div class="last-div-header pl-0" id="logo-hide">
