@@ -30,6 +30,12 @@
                         <a class="text-foot" href="/terminos-y-condiciones" title="Términos y condiciones">Términos y
                             condiciones</a>
                     </li>
+                    <li>
+                        <a class="text-foot" href="{{route('regulation')}}" title="Reglamentos y condiciones de Credito">Reglamentos y condiciones de Crédito</a>
+                    </li>
+                    <li>
+                        <a class="text-foot" href="/tasas-y-tarifas" title="Tasas y Tarifas">Tasas y Tarifas</a>
+                    </li>
                 </ul>
             </div>
         </div>

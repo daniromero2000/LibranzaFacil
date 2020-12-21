@@ -44,9 +44,9 @@
             <li class="nav-item">
                 <a class="nav-link {{ request()->url() == route('about') ? 'active' : '' }}" href="{{route('about')}}">Nosotros</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link {{ request()->url() == route('regulation') ? 'active' : '' }}"  href="{{route('regulation')}}">¿como adquirir tu crédito?</a>
-            </li>
+            </li> --}}
         </ul>
     </div>
     <a href="{{route('form-libranza')}}" class="button-nav">
