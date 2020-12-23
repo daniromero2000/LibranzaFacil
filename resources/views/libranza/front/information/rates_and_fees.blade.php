@@ -76,6 +76,21 @@
 
     </style>
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'tasas y tarifas',
+            'page_path': "/tasas-y-tarifas"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
         <h1>TASAS Y TARIFAS</h1>

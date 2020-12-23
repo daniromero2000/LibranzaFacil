@@ -2,6 +2,21 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'PRESENTACIÓN CÓDIGO DE ÉTICA Y BUEN GOBIERNO PARA PROVEEDORES',
+            'page_path': "/codigo-etica"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
         <h1>PRESENTACIÓN CÓDIGO DE ÉTICA Y <br>BUEN GOBIERNO PARA PROVEEDORES</h1>

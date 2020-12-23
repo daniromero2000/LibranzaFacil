@@ -3,5 +3,6 @@
     "/js/customers.js": "/js/customers.js",
     "/js/ecommerce.js": "/js/ecommerce.js",
     "/js/leads.js": "/js/leads.js",
-    "/css/leads.css": "/css/leads.css"
+    "/css/leads.css": "/css/leads.css",
+    "/js/companies.js": "/js/companies.js"
 }

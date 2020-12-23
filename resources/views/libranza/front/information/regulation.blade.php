@@ -76,6 +76,21 @@
 
     </style>
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'REGLAMENTO PRODUCTO Y CONDICIONES DE CRÉDITO',
+            'page_path': "/reglamento-producto-condiciones-credito"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
         <h1>REGLAMENTO PRODUCTO Y CONDICIONES DE CRÉDITO</h1>

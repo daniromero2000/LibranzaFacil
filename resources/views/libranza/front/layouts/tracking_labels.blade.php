@@ -1,15 +1,4 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164894259-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-164894259-1');
-
-</script> <!-- Global site tag (gtag.js) - Google Ads: 781153823 -->
+ <!-- Global site tag (gtag.js) - Google Ads: 781153823 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-781153823"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,6 +10,16 @@
     gtag('config', 'AW-781153823');
 
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164894259-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-164894259-1');
+</script>
+
 <script type="application/ld+json">
     {
         "@context": "https://schema.org/",

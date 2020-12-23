@@ -3,7 +3,9 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/home/app.min.css') }}" /> <style> body { margin: 0; height: 100% } </style> <script src="{{ asset('js/front/libranza/snow.min.js') }}"></script>
 @endsection
 @section('tags')
-   <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-164894259-1', { 'page_title': 'home', 'page_path': "/" }); </script> <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-781153823', { 'page_title': 'home', 'page_path': "/" }); </script>
+   <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-164894259-1',{'page_title':'home','page_path':"/"});
+</script>
 @endsection
 @section('content')
     @include('libranza.front.layouts.carousel')

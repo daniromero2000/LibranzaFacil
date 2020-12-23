@@ -2,6 +2,21 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'quienes-somos',
+            'page_path': "/quienes-somos"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
 <div class="container-title">

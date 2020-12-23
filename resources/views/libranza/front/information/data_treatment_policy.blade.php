@@ -2,6 +2,21 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'proteccion de datos personales',
+            'page_path': "/proteccion-de-datos-personales"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
         <h1 >POLÍTICAS DE TRATAMIENTO DE LA INFORMACIÓN <br> Y PROTECCIÓN DE DATOS

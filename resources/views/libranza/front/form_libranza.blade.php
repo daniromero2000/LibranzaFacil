@@ -17,19 +17,6 @@
         });
 
     </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'AW-781153823', {
-            'page_title': 'formulario',
-            'page_path': "/formulario-libranza"
-        });
-
-    </script>
 @endsection
 @section('content')
 <div class="min-container">

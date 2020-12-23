@@ -3,6 +3,21 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
     <style>.contianer-text-information h3{margin-top:1%}.contianer-text-information p{padding:1vw;font-size:1.3vw}section{margin-top:3%}@media (min-width: 481px) and (max-width: 767px){.contianer-text-information p{padding:2.6vw;font-size:2.2vw}}@media (min-width: 310px) and (max-width: 480px){.contianer-text-information p{padding-left:3vw;padding-right:3px;font-size:2.9vw}}</style>
 @endsection
+@section('tags')
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164894259-1', {
+            'page_title': 'Preguntas frecuentes',
+            'page_path': "/preguntas-frecuentes"
+        });
+
+    </script>
+@endsection
 @section('content')
     <article class="contianer-text-information">
         <h1>Preguntas Frecuentes</h1>

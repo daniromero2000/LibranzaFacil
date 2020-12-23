@@ -17,19 +17,6 @@
         });
 
     </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'AW-781153823', {
-            'page_title': 'nosotros',
-            'page_path': "/about-us"
-        });
-
-    </script>
 @endsection
 
 @section('content')
@@ -47,13 +34,14 @@
                 empresas líderes en la comercialización de electrodomésticos en Colombia, <br>
                 ofreciendo líneas de crédito de consumo, libranza y empresarial.</p>
 
-                {{-- <p class="text-central"> <span class="azul-text">El </span><span
-                class="rojo">crédito por Libranza </span>es un crédito de consumo que incluye un mecanismo de recaudo,
+            {{-- <p class="text-central"> <span class="azul-text">El </span><span
+                    class="rojo">crédito por Libranza </span>es un crédito de consumo que incluye un mecanismo de recaudo,
                 en donde el deudor autoriza <br>
                 a su empleador o entidad pagadora para que le realice un descuento de su salario o pensión, con el objetivo
                 de que <br>
-                esos dineros descontados, sean destinados al pago de las cuotas del crédito adquirido</p> --}}
-            
+                esos dineros descontados, sean destinados al pago de las cuotas del crédito adquirido</p>
+            --}}
+
             <p class="text-central"><span class="rojo">Más de 50 años de experiencia</span> otorgando crédito a los
                 Colombianos <br><br>
                 Nuestra línea de crédito por libranza se encuentra regulada por la ley 1527 de 2012,<br>
@@ -94,7 +82,8 @@
                         src="{{ asset('modules/libranza/public/img/icons/medalla-vectorial.png') }}" alt="...">
                     <p class="card-text">Originación de crédito con procesos <br>homologados con el sector financiero y
                         <br>con adecuados <span class="azul-fortalezas">estándares de calidad,</span><br> que se traducen en
-                        indicadores de cartera controlados.</p>
+                        indicadores de cartera controlados.
+                    </p>
                 </div>
             </div>
 
