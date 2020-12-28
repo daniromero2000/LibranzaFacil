@@ -188,7 +188,7 @@
     <div id="particles-js"></div>
     <div class="denied__wrapper">
         <h1>404</h1>
-        <h3>Ooops, No podemos encontrar lo que estas buscando. Por favor intenta de nuevo.</h3>
+        <h3>Ooops, No podemos encontrar lo que estas buscando.</h3>
         <svg id="astronaut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <style>
                 .st0 {
@@ -445,7 +445,7 @@
                     d="M112.456 363.093c-.056 7.866-6.478 14.197-14.344 14.142 7.866.056 14.198 6.48 14.142 14.345.056-7.866 6.48-14.198 14.345-14.142-7.868-.057-14.2-6.48-14.144-14.345zM432.436 274.908c-.056 7.866-6.478 14.198-14.344 14.142 7.866.057 14.197 6.48 14.142 14.345.056-7.866 6.48-14.197 14.345-14.142-7.868-.056-14.2-6.48-14.144-14.345zM159.75 58.352c-.12 16.537-13.62 29.848-30.157 29.73 16.537.118 29.848 13.62 29.73 30.156.118-16.537 13.62-29.848 30.156-29.73-16.54-.117-29.85-13.62-29.73-30.156z" />
             </g>
         </svg>
-        <a href="/"><button class="denied__link">Volver</button></a>
+        <a href="{{ URL::previous() }}"><button class="denied__link">Volver</button></a>
     </div>
 </body>
 <script>
