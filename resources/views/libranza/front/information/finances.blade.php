@@ -1,9 +1,7 @@
 @extends('libranza.front.app')
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/information/app.min.css') }}" />
-    <style>
-       .contianer-text-information h2 { margin-top: 1%; } .contianer-text-information h3 { margin-top: 1% } .contianer-text-information p { padding: 1vw; font-size: 1.1vw } .logo-pdf { width: 7%; padding: 0.6%; } .text-pdf { padding: 0.6%; width: 93% } .text-pdf a { margin-left: 1%; } .mb-reset-3, .my-reset-3 { margin-bottom: 2% !important; } .card-body-reset { flex: 1 1 auto; padding: 2%; } .container-indicadores { margin-top: 4%; } .btn { padding: 0.675% 1.05% !important; } section { margin-top: 3% } @media (min-width: 481px) and (max-width: 767px) { .contianer-text-information p { padding: 2.6vw; font-size: 2.2vw } .text-pdf a { font-size: 1.8vw; } } @media (min-width: 310px) and (max-width: 480px) { .contianer-text-information p { padding-left: 3vw; padding-right: 3px; font-size: 2.9vw } .text-pdf a { font-size: 2.6vw; } }
-    </style>
+ <style> .contianer-text-information h2 { margin-top: 1%; } .contianer-text-information h3 { margin-top: 1% } .contianer-text-information p { padding: 1vw; font-size: 1.1vw } .logo-pdf { width: 7%; padding: 0.6%; } .text-pdf { padding: 0.6%; width: 93% } .text-pdf a { margin-left: 1%; } .mb-reset-3, .my-reset-3 { margin-bottom: 2% !important; } .card-body-reset { flex: 1 1 auto; padding: 2%; } .container-indicadores { margin-top: 4%; } .btn { padding: 0.675% 1.05% !important; } .container-regulation { width: 80%; margin: auto; } section { margin-top: 3% } @media (min-width: 481px) and (max-width: 767px) { .contianer-text-information p { padding: 2.6vw; font-size: 2.2vw } .text-pdf a { font-size: 1.8vw; } .container-regulation { width: 90%; margin: auto; } } @media (min-width: 310px) and (max-width: 480px) { .contianer-text-information p { padding-left: 3vw; padding-right: 3px; font-size: 2.9vw } .text-pdf a { font-size: 2.6vw; } .container-regulation { width: 100%; margin: auto; } } </style>
 @endsection
 @section('tags')
     <script>
@@ -25,7 +23,7 @@
         <h1>Indicadores Financieros</h1>
         @if (isset($categories))
             <div class="row container-indicadores w-100 mx-0">
-                <div style=" width: 80%; margin:auto; ">
+                <div class="container-regulation">
                     @foreach ($categories as $key => $item)
                         <div class="accordion" id="indicador{{ $key }}">
                             <div class="card my-reset-3">
@@ -38,8 +36,8 @@
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="collapse{{ $key }}" class="collapse {{ $key == $active ? 'show' : ''}}" aria-labelledby="heading{{ $key }}"
-                                    data-parent="#indicador{{ $key }}">
+                                <div id="collapse{{ $key }}" class="collapse {{ $key == $active ? 'show' : '' }}"
+                                    aria-labelledby="heading{{ $key }}" data-parent="#indicador{{ $key }}">
                                     <div class="card-body-reset">
                                         @foreach ($item as $document)
                                             <div class="card mb-reset-3">
