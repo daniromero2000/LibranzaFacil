@@ -10,7 +10,7 @@
 <meta name="keywords" content="Credito por libranza, Crédito, Libranzas">
 <meta name="description"
     content="Ingresa a Libranzafacil.com y Obten tu crédito por Libranza para pensionados, docentes y militares muy fácil, solicítalo Online." />
-<link href="https://libranzafacil.com" rel="canonical" />
+<link rel="canonical" href="https://libranzafacil.com/" />
 <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('modules/libranza/public/css/app.min.css') }}" />
 <link rel="icon" type="image/png" href="{{ asset('favicon.ico') }}" />
