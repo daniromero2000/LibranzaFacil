@@ -6,7 +6,7 @@
     "Pqrs": true,
     "CamStudio": false,
     "Courses": true,
-    "CallCenter": false,
+    "CallCenter": true,
     "Commercial": true,
     "CreditFactory": false,
     "Insurances": false,

@@ -34,8 +34,8 @@
 }
 
 .slider-six .button-carousel {
-    bottom: 8.5%;
-    left  : 8.4%
+    bottom: 18.5%;
+    left  : 10.4%;
 }
 
 .button-carousel {
@@ -317,7 +317,7 @@ article {
 
     .slider-six .button-carousel {
         bottom: 6.7%;
-        left  : 7.5%
+        left  : 10.3%;
     }
 
     .button-carousel {
@@ -450,8 +450,11 @@ article {
     }
 
     .slider-six .button-carousel {
-        bottom: 5.0%;
-        left  : 5.0%
+        bottom   : 16%;
+        left     : 10%;
+        width    : 20.9%;
+        font-size: 1.9vw;
+        padding  : 1.2%;
     }
 
     .button-carousel {
