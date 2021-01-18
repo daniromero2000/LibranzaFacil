@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -50,11 +51,12 @@ class AuthController  extends Controller
             ], 401);
 
         $user = $request->user();
+
         $tokenResult = $user->createToken('Personal Access Token');
 
         $token = $tokenResult->token;
         if ($request->remember_me)
-            $token->expires_at = Carbon::now()->addYears(1);
+            $token->expires_at = Carbon::now()->add('hour', 1);
         $token->save();
 
         return response()->json([
@@ -90,8 +92,8 @@ class AuthController  extends Controller
     public function user(Request $request)
     {
         $user = auth()->guard('api')->user();
-        
-        if(!$user){
+
+        if (!$user) {
             return response()->json([
                 'message' => 'unauthenticated'
             ]);
