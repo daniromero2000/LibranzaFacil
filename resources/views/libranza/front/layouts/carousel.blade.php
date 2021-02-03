@@ -1,7 +1,11 @@
 <div id="carousel-libranza" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active slider-six" data-interval="10000"> <img
-                src="{{ asset('modules/libranza/public/img/sliders/slider-6.jpeg') }}" class="d-block w-100"
+        <div class="carousel-item active slider-seven" data-interval="10000"> <img
+                src="{{ asset('modules/libranza/public/img/sliders/sliderNew-2.jpg') }}" class="d-block w-100"
+                alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades"> <a href="{{ route('form-libranza') }}"
+                class="button-carousel">Solicita tu crédito</a> </div>
+        <div class="carousel-item  slider-eight" data-interval="10000"> <img
+                src="{{ asset('modules/libranza/public/img/sliders/sliderNew-1.jpg') }}" class="d-block w-100"
                 alt="¿Reportado?-aqui-creemos-en-las-segundas-oportunidades"> <a href="{{ route('form-libranza') }}"
                 class="button-carousel">Solicita tu crédito</a> </div>
         <div class="carousel-item slider-one" data-interval="7000"> <img

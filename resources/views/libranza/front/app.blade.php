@@ -13,7 +13,8 @@
     <meta name="twitter:image" content="{{ asset('modules/libranza/public/img/logos/logo-libranzafacil.png') }}" />
 </head>
 
-<body> @include('libranza.front.header') @yield('content') @include('libranza.front.footer') </body>
+<body> @include('libranza.front.header') @yield('content') @include('libranza.front.footer')
+ </body>
 <script src="{{ asset('modules/libranza/public/js/front/app.min.js') }}"></script> @yield('scripts')
 
 </html>
