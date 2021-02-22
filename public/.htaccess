@@ -19,9 +19,14 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    Redirect 301 https://libranzafacil.com/ https://libranzafacil.com/
-    Redirect 301 https://www.libranzafacil.com/ https://libranzafacil.com/
+    Options +FollowSymlinks
+    RewriteEngine on
 
+    RewriteCond %{HTTP_HOST} ^libranzafacil.com [NC]
+
+    RewriteRule ^(.*)$
+    https://www.libranzafacil.com/$1
+    [R=301,L]
 </IfModule>
 
 <IfModule mod_headers.c>
