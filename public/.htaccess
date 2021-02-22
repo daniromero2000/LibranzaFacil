@@ -20,7 +20,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    RewriteCond %{HTTP_HOST} ^http://libranzafacil.com[NC,OR]
+    RewriteCond %{HTTP_HOST} ^https://libranzafacil.com[NC,OR]
     RewriteRule ^(.*)$ https://www.libranzafacil.com/$1 [L,R=301,NC]
     
 </IfModule>
