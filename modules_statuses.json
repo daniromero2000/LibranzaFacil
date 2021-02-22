@@ -13,5 +13,6 @@
     "Warranty": false,
     "Libranza": true,
     "Leads": true,
-    "DocumentManagement": true
+    "DocumentManagement": true,
+    "SupplierInvoices": true
 }
