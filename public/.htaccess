@@ -4,6 +4,7 @@
     </IfModule>
 
     RewriteEngine On
+    Options +FollowSymlinks
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -19,9 +20,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    Options +FollowSymlinks
     RewriteCond %{HTTP_HOST} ^libranzafacil.com [NC]
-    RewriteRule ^(.*)$ https://www.libranzafacil.com/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://www.libranzafacil.com [L,R=301]
     
 </IfModule>
 
