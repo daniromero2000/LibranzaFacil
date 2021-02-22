@@ -5,16 +5,16 @@
 
     RewriteEngine On
     Options +FollowSymLinks
-    
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    RewriteCond %{HTTP_HOST} ^https://libranzafacil.com/[NC,OR]
-    RewriteRule ^(.*)$ https://www.libranzafacil.com/$1 [L,R=301,NC]
+    RewriteCond %{HTTP_HOST} ^libranzafacil.com/[NC,OR]
+    RewriteRule ^(.*)$ www.libranzafacil.com/$1 [L,R=301,NC]
 
-    RewriteCond %{HTTP_HOST} ^https://www.libranzafacil.com/[NC,OR]
-    RewriteRule ^(.*)$ https://www.libranzafacil.com/$1 [L,R=301,NC]
+    RewriteCond %{HTTP_HOST} ^www.libranzafacil.com/[NC,OR]
+    RewriteRule ^(.*)$ www.libranzafacil.com/$1 [L,R=301,NC]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
