@@ -18,12 +18,17 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    Redirect 301 https://libranzafacil.com/ https://libranzafacil.com/
+    Redirect 301 https://www.libranzafacil.com/ https://libranzafacil.com/
+
 </IfModule>
 
 <IfModule mod_headers.c>
     Header unset ETag
     Header set Connection keep-alive
 </IfModule>
+
 FileETag None
  
 <IfModule mod_expires.c>
