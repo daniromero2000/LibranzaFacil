@@ -35,7 +35,17 @@
 
 .slider-six .button-carousel {
     bottom: 18.5%;
-    left  : 10.4%;
+    left  : 10.4%
+}
+
+.slider-seven .button-carousel {
+    bottom: 14.9%;
+    right : 14.8%;
+}
+
+.slider-eight .button-carousel {
+    bottom: 7.7%;
+    left  : 16.5%;
 }
 
 .button-carousel {
@@ -65,7 +75,7 @@ article {
     padding-top   : 3.5%;
     padding-bottom: 3.5%;
     text-align    : center;
-    color         : #164194
+    color         : #164194;
 }
 
 .main-text-container {
@@ -317,7 +327,19 @@ article {
 
     .slider-six .button-carousel {
         bottom: 6.7%;
-        left  : 10.3%;
+        left  : 10.3%
+    }
+
+    .slider-seven .button-carousel {
+        bottom: 12.6%;
+        right : 12.5%;
+    }
+
+    .slider-eight .button-carousel {
+        bottom   : 5%;
+        left     : 14.6%;
+        font-size: 1.6vw;
+        width    : 18.8%;
     }
 
     .button-carousel {
@@ -454,6 +476,22 @@ article {
         left     : 10%;
         width    : 20.9%;
         font-size: 1.9vw;
+        padding  : 1.2%
+    }
+
+    .slider-seven .button-carousel {
+        bottom   : 12.9%;
+        right    : 12.4%;
+        width    : 20%;
+        font-size: 1.7vw;
+        padding  : 1.2%;
+    }
+
+    .slider-eight .button-carousel {
+        bottom   : 5.6%;
+        left     : 14.3%;
+        width    : 19.8%;
+        font-size: 1.7vw;
         padding  : 1.2%;
     }
 
@@ -464,17 +502,17 @@ article {
     }
 
     .main-text-container h2 {
-        font-size    : 4.2vw;
-        margin-bottom: 3%
+        font-size    : 4.8vw;
+        margin-bottom: 8%;
     }
 
     .main-text-container p {
         width    : 95%;
-        font-size: 3vw
+        font-size: 4vw;
     }
 
     article {
-        padding-top: 4%
+        padding-top: 7%;
     }
 
     .container-text-benefits h2 {
@@ -484,7 +522,7 @@ article {
 
     .container-text-benefits .row {
         width    : 97%;
-        font-size: 3.1vw
+        font-size: 3.4vw;
     }
 
     .container-text-benefits .row .col-4 {
@@ -540,20 +578,20 @@ article {
     }
 
     .video-container .col-info section h1 {
-        font-size: 4.2vw
+        font-size: 4.9vw;
     }
 
     .video-container .col-info section p {
-        font-size: 3.1vw
+        font-size: 3.9vw;
     }
 
     .video-container .col-info section a {
-        width    : 36.5%;
+        width    : 41.2%;
         right    : 31%;
-        font-size: 3vw;
+        font-size: 3.4vw;
         position : initial;
         display  : block;
-        margin   : auto
+        margin   : auto;
     }
 
     .banner-last a {
@@ -575,7 +613,7 @@ article {
     .container-covenants .row {
         padding  : 3% 0;
         width    : 100%;
-        font-size: 2.9vw
+        font-size: 3.3vw;
     }
 
     .container-covenants .row div {
