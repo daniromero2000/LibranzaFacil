@@ -14,5 +14,6 @@
     "Libranza": true,
     "Leads": true,
     "DocumentManagement": true,
-    "SupplierInvoices": true
+    "SupplierInvoices": true,
+    "Blog": true
 }
