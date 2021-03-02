@@ -5,5 +5,10 @@
     "/js/leads.js": "/js/leads.js",
     "/css/leads.css": "/css/leads.css",
     "/js/companies.js": "/js/companies.js",
-    "/js/callcenter.js": "/js/callcenter.js"
+    "/js/callcenter.js": "/js/callcenter.js",
+    "/js/blog.js": "/js/blog.js",
+    "/css/blog.css": "/css/blog.css",
+    "/vendor/wink/app.js": "/vendor/wink/app.js",
+    "/vendor/wink/light.css": "/vendor/wink/light.css",
+    "/public/app.css": "/public/app.css"
 }

@@ -74,7 +74,9 @@
                                 <a href="{{route('blog.show', $post->slug)}}"><img alt="{{ $post->title }}"
                                         src="{{ asset($post->featured_image) }}" class="img-fluid rounded"></a>
                                 <div class="excerpt">
-                                    <span class="post-category text-white bg-secondary mb-3"></span>
+                                    @foreach ($post->tags as $tag)
+                                    <span class="post-category text-white bg-secondary mb-3">{{$tag->name}}</span>
+                                    @endforeach
                                     <h2><a
                                             href="{{route('blog.show', $post->slug)}}">{{ $post->title }}</a>
                                     </h2>
