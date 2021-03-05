@@ -196,7 +196,7 @@
         </section>
         <section>
             <p> En caso de tener un problema con su garantía o demora en el servicio se puede comunicar a
-                la línea telefónica (1) 4842120 ext 132
+                la línea telefónica (36) 3419000 ext 124
             </p>
         </section>
         <section>
@@ -205,7 +205,7 @@
             </p>
         </section>
         <section>
-            <p> Línea gratuita nacional: 01-8000 117787
+            <p> Línea gratuita nacional: 01-8000-180520 opción 2 
             </p>
         </section>
         <section>
@@ -213,7 +213,7 @@
             </p>
         </section>
         <section>
-            <p> Línea telefónica: (1) 4842120 ext 132
+            <p> Línea telefónica: (36) 3419000 ext 124
             </p>
         </section>
         <section>
@@ -286,7 +286,7 @@
             </p>
         </section>
         <section>
-            <p>Línea gratuita nacional: 01-8000 117787
+            <p>Línea gratuita nacional:: 01-8000-180520 opción 2
             </p>
         </section>
         <section>
@@ -294,7 +294,7 @@
             </p>
         </section>
         <section>
-            <p>Línea telefónica: (1) 4842120 ext 132
+            <p>Línea telefónica: (36) 3419000 ext 124
             </p>
         </section>
     </article>
