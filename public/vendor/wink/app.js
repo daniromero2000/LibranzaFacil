@@ -116,10 +116,11 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_croppie__WEBPACK_IMPORTED_MODULE_6__["default"]);
+console.log(Wink.path);
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
   routes: _routes__WEBPACK_IMPORTED_MODULE_3__["default"],
   mode: 'history',
-  base: '/' + Wink.path
+  base: '/admin/blog/'
 });
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('page-header', __webpack_require__(/*! ./components/PageHeader */ "./Resources/assets/js/components/PageHeader.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('preloader', __webpack_require__(/*! ./partials/Preloader */ "./Resources/assets/js/partials/Preloader.vue")["default"]);
@@ -2336,9 +2337,11 @@ module.exports = {
       var _this = this;
 
       this.http().get(this.baseURL + '?wink=wink' + (this.searchQuery ? '&search=' + this.searchQuery : '') + (this.filters && this.filters.status ? '&status=' + this.filters.status : '') + (this.filters && this.filters.author_id ? '&author_id=' + this.filters.author_id : '') + (this.filters && this.filters.tag_id ? '&tag_id=' + this.filters.tag_id : '')).then(function (response) {
-        _this.entries = response.data.data;
-        _this.hasMoreEntries = !!response.data.links.next;
-        _this.nextPageUrl = response.data.links.next;
+        _this.entries = response.data.data; // response.data.links.next
+
+        console.log(response.data.links);
+        _this.hasMoreEntries = !!'';
+        _this.nextPageUrl = '';
         _this.ready = true;
       });
     },
@@ -3033,10 +3036,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./Resources/assets/sass/app.scss":
-/*!****************************************!*\
-  !*** ./Resources/assets/sass/app.scss ***!
-  \****************************************/
+/***/ "./Resources/assets/sass/light.scss":
+/*!******************************************!*\
+  !*** ./Resources/assets/sass/light.scss ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -7069,7 +7072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_loadsEntries__WEBPACK_IMPORTED_MODULE_0___default.a],
   components: {
-    'filters': _partials_FilterDropdown_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    filters: _partials_FilterDropdown_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
 
   /**
@@ -7077,7 +7080,7 @@ __webpack_require__.r(__webpack_exports__);
    */
   data: function data() {
     return {
-      baseURL: '/api/posts',
+      baseURL: "/api/posts",
       tags: [],
       authors: [],
       entries: [],
@@ -7085,11 +7088,11 @@ __webpack_require__.r(__webpack_exports__);
       nextPageUrl: null,
       loadingMoreEntries: false,
       ready: false,
-      searchQuery: '',
+      searchQuery: "",
       filters: {
-        status: '',
-        author_id: '',
-        tag_id: ''
+        status: "",
+        author_id: "",
+        tag_id: ""
       }
     };
   },
@@ -7110,10 +7113,10 @@ __webpack_require__.r(__webpack_exports__);
     loadResources: function loadResources() {
       var _this = this;
 
-      this.http().get('/api/tags').then(function (response) {
+      this.http().get("/api/tags").then(function (response) {
         _this.tags = response.data.data;
       });
-      this.http().get('/api/team').then(function (response) {
+      this.http().get("/api/team").then(function (response) {
         _this.authors = response.data.data;
       });
     },
@@ -7122,7 +7125,7 @@ __webpack_require__.r(__webpack_exports__);
      * Format the given tags for display.
      */
     formatTags: function formatTags(tags) {
-      return _.chain(tags).map('name').join(', ').value();
+      return _.chain(tags).map("name").join(", ").value();
     },
 
     /**
@@ -7131,9 +7134,9 @@ __webpack_require__.r(__webpack_exports__);
     clearFilters: function clearFilters() {
       var _this2 = this;
 
-      this.searchQuery = '';
+      this.searchQuery = "";
       Object.keys(this.filters).forEach(function (filter) {
-        return _this2.filters[filter] = '';
+        return _this2.filters[filter] = "";
       });
     }
   }
@@ -66956,34 +66959,17 @@ var render = function() {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "mb-0" }, [
-        _vm._v("\n        Please "),
+        _vm._v("\n        Por favor "),
         _c(
           "label",
           {
             staticClass: "cursor-pointer underline",
             attrs: { for: "imageUpload" + _vm._uid }
           },
-          [_vm._v("upload")]
+          [_vm._v("cargar")]
         ),
-        _vm._v(" an image\n        "),
-        _vm.Wink.unsplash_key ? _c("span", [_vm._v("or")]) : _vm._e(),
-        _vm._v(" "),
-        _vm.Wink.unsplash_key
-          ? _c(
-              "a",
-              {
-                staticClass: "text-text-color",
-                attrs: { href: "#" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.openUnsplashModal($event)
-                  }
-                }
-              },
-              [_vm._v("search Unsplash")]
-            )
-          : _vm._e()
+        _vm._v(" una imagen\n        "),
+        _vm.Wink.unsplash_key ? _c("span", [_vm._v("or")]) : _vm._e()
       ]),
       _vm._v(" "),
       _vm.unsplashModalShown
@@ -67190,7 +67176,7 @@ var render = function() {
         spellcheck: "false",
         cols: "30",
         rows: "10",
-        placeholder: "Start writing *now*"
+        placeholder: "Empiece a escribir * ahora *"
       },
       domProps: { value: _vm.content },
       on: {
@@ -67478,43 +67464,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "border-b border-very-light mb-10" }, [
+  return _c("div", { staticClass: "border-b border-very-light mb-2" }, [
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "flex items-center py-2" }, [
-        _c(
-          "div",
-          { staticClass: "flex items-center mr-auto h-8" },
-          [
-            _c(
-              "h3",
-              {
-                staticClass: "mr-5 font-semibold font-serif",
-                class: {
-                  hidden: _vm.hideLogoOnSmallScreens,
-                  "sm:block": _vm.hideLogoOnSmallScreens
-                }
-              },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "no-underline text-text-color",
-                    attrs: { to: "/" }
-                  },
-                  [
-                    _c("span", { staticClass: "text-light" }, [_vm._v("W")]),
-                    _vm._v("ink.\n                    ")
-                  ]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _vm._t("left-side")
-          ],
-          2
-        ),
-        _vm._v(" "),
+      _c("div", { staticClass: "flex justify-content-end py-2" }, [
         _c(
           "div",
           { staticClass: "flex items-center" },
@@ -67553,25 +67505,6 @@ var render = function() {
                     "router-link",
                     {
                       staticClass:
-                        "no-underline text-text-color font-sans hover:text-primary w-full block py-2 px-4 border-b border-very-light",
-                      attrs: {
-                        to: {
-                          name: "team-edit",
-                          params: { id: _vm.Wink.author.id }
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Profile\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass:
                         "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
                       attrs: { to: "/posts" }
                     },
@@ -67592,34 +67525,6 @@ var render = function() {
                     [
                       _vm._v(
                         "\n                            Tags\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass:
-                        "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
-                      attrs: { to: "/team" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Team\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "no-underline text-text-color hover:text-primary w-full block py-2 px-4 border-t border-very-light",
-                      attrs: { href: "/" + _vm.Wink.path + "/logout" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Log out\n                        "
                       )
                     ]
                   )
@@ -69765,10 +69670,11 @@ var render = function() {
               _c(
                 "router-link",
                 {
-                  staticClass: "py-1 px-2 btn-primary text-sm",
+                  staticClass:
+                    "py-1 px-2 btn-primary text-sm text-white border-0",
                   attrs: { to: { name: "post-new" } }
                 },
-                [_vm._v("\n                New Post\n            ")]
+                [_vm._v("\n        Crear Post\n      ")]
               )
             ],
             1
@@ -69781,249 +69687,7 @@ var render = function() {
         "div",
         { staticClass: "container" },
         [
-          _c(
-            "div",
-            { staticClass: "mb-10 flex items-center" },
-            [
-              _c(
-                "h1",
-                { staticClass: "inline font-semibold text-3xl mr-auto" },
-                [_vm._v("Posts")]
-              ),
-              _vm._v(" "),
-              _c(
-                "filters",
-                {
-                  staticClass: "text-sm",
-                  attrs: { "is-filtered": _vm.isFiltered },
-                  on: { showing: _vm.focusSearchInput }
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.searchQuery,
-                        expression: "searchQuery"
-                      }
-                    ],
-                    ref: "searchInput",
-                    staticClass:
-                      "input mt-0 w-full pb-2 border-b border-very-light",
-                    attrs: { type: "text", placeholder: "Search..." },
-                    domProps: { value: _vm.searchQuery },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.searchQuery = $event.target.value
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center justify-between mt-5" },
-                    [
-                      _c("span", [_vm._v("Status")]),
-                      _vm._v(" "),
-                      _c(
-                        "select",
-                        {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.filters.status,
-                              expression: "filters.status"
-                            }
-                          ],
-                          staticClass:
-                            "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
-                          attrs: { name: "status" },
-                          on: {
-                            change: function($event) {
-                              var $$selectedVal = Array.prototype.filter
-                                .call($event.target.options, function(o) {
-                                  return o.selected
-                                })
-                                .map(function(o) {
-                                  var val = "_value" in o ? o._value : o.value
-                                  return val
-                                })
-                              _vm.$set(
-                                _vm.filters,
-                                "status",
-                                $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              )
-                            }
-                          }
-                        },
-                        [
-                          _c("option", { attrs: { value: "" } }, [
-                            _vm._v("All")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "live" } }, [
-                            _vm._v("Live")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "published" } }, [
-                            _vm._v("Published")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "scheduled" } }, [
-                            _vm._v("Scheduled")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "draft" } }, [
-                            _vm._v("Draft")
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center justify-between mt-3" },
-                    [
-                      _c("span", [_vm._v("Author")]),
-                      _vm._v(" "),
-                      _c(
-                        "select",
-                        {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.filters.author_id,
-                              expression: "filters.author_id"
-                            }
-                          ],
-                          staticClass:
-                            "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
-                          attrs: { name: "author" },
-                          on: {
-                            change: function($event) {
-                              var $$selectedVal = Array.prototype.filter
-                                .call($event.target.options, function(o) {
-                                  return o.selected
-                                })
-                                .map(function(o) {
-                                  var val = "_value" in o ? o._value : o.value
-                                  return val
-                                })
-                              _vm.$set(
-                                _vm.filters,
-                                "author_id",
-                                $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              )
-                            }
-                          }
-                        },
-                        [
-                          _c("option", { attrs: { value: "" } }, [
-                            _vm._v("All")
-                          ]),
-                          _vm._v(" "),
-                          _vm._l(_vm.authors, function(author) {
-                            return _c(
-                              "option",
-                              { domProps: { value: author.id } },
-                              [_vm._v(_vm._s(author.name))]
-                            )
-                          })
-                        ],
-                        2
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center justify-between mt-3" },
-                    [
-                      _c("span", [_vm._v("Tag")]),
-                      _vm._v(" "),
-                      _c(
-                        "select",
-                        {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.filters.tag_id,
-                              expression: "filters.tag_id"
-                            }
-                          ],
-                          staticClass:
-                            "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
-                          attrs: { name: "tag" },
-                          on: {
-                            change: function($event) {
-                              var $$selectedVal = Array.prototype.filter
-                                .call($event.target.options, function(o) {
-                                  return o.selected
-                                })
-                                .map(function(o) {
-                                  var val = "_value" in o ? o._value : o.value
-                                  return val
-                                })
-                              _vm.$set(
-                                _vm.filters,
-                                "tag_id",
-                                $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              )
-                            }
-                          }
-                        },
-                        [
-                          _c("option", { attrs: { value: "" } }, [
-                            _vm._v("All")
-                          ]),
-                          _vm._v(" "),
-                          _vm._l(_vm.tags, function(tag) {
-                            return _c(
-                              "option",
-                              { domProps: { value: tag.id } },
-                              [_vm._v(_vm._s(tag.name))]
-                            )
-                          })
-                        ],
-                        2
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.isFiltered
-                    ? _c(
-                        "button",
-                        {
-                          staticClass: "btn-sm btn-light w-full mt-5",
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.clearFilters($event)
-                            }
-                          }
-                        },
-                        [_vm._v("Reset\n                ")]
-                      )
-                    : _vm._e()
-                ]
-              )
-            ],
-            1
-          ),
+          _c("div", { staticClass: "mb-10 flex items-center" }),
           _vm._v(" "),
           !_vm.ready ? _c("preloader") : _vm._e(),
           _vm._v(" "),
@@ -70032,7 +69696,7 @@ var render = function() {
                 "div",
                 [
                   _vm._v(
-                    "\n            No posts were found, start by\n            "
+                    "\n      No se encontraron publicaciones, comience por\n      "
                   ),
                   _c(
                     "router-link",
@@ -70041,9 +69705,9 @@ var render = function() {
                         "no-underline text-primary hover:text-primary-dark",
                       attrs: { to: { name: "post-new" } }
                     },
-                    [_vm._v("writing your first post")]
+                    [_vm._v("escribir su primera publicación")]
                   ),
-                  _vm._v("\n            .\n        ")
+                  _vm._v("\n      .\n    ")
                 ],
                 1
               )
@@ -70052,203 +69716,576 @@ var render = function() {
           _vm.ready && _vm.entries.length == 0 && _vm.isFiltered
             ? _c("div", [
                 _vm._v(
-                  "\n            No posts matched the given search.\n        "
+                  "\n      Ninguna publicación coincidió con la búsqueda dada.\n    "
                 )
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.ready && _vm.entries.length > 0
-            ? _c(
-                "div",
-                [
-                  _vm._l(_vm.entries, function(entry) {
-                    return _c(
+            ? _c("div", [
+                _c("div", { staticClass: "card" }, [
+                  _c("div", { staticClass: "card-header d-flex" }, [
+                    _c("h5", { staticClass: "h3 mb-0" }, [_vm._v("Posts")]),
+                    _vm._v(" "),
+                    _c(
                       "div",
-                      {
-                        key: entry.id,
-                        staticClass:
-                          "border-t border-very-light flex items-center"
-                      },
+                      { staticClass: "ml-auto" },
                       [
                         _c(
-                          "div",
+                          "filters",
                           {
-                            staticClass: "py-4",
-                            attrs: { title: entry.title }
+                            staticClass: "text-sm",
+                            attrs: { "is-filtered": _vm.isFiltered },
+                            on: { showing: _vm.focusSearchInput }
                           },
                           [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.searchQuery,
+                                  expression: "searchQuery"
+                                }
+                              ],
+                              ref: "searchInput",
+                              staticClass:
+                                "input mt-0 w-full pb-2 border-b border-very-light",
+                              attrs: { type: "text", placeholder: "Search..." },
+                              domProps: { value: _vm.searchQuery },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.searchQuery = $event.target.value
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
                             _c(
-                              "h2",
-                              { staticClass: "text-xl font-semibold mb-3" },
+                              "div",
+                              {
+                                staticClass:
+                                  "flex items-center justify-between mt-5"
+                              },
                               [
+                                _c("span", [_vm._v("Estado")]),
+                                _vm._v(" "),
                                 _c(
-                                  "router-link",
+                                  "select",
                                   {
-                                    staticClass: "no-underline text-text-color",
-                                    attrs: {
-                                      to: {
-                                        name: "post-edit",
-                                        params: { id: entry.id }
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.filters.status,
+                                        expression: "filters.status"
+                                      }
+                                    ],
+                                    staticClass:
+                                      "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
+                                    attrs: { name: "status" },
+                                    on: {
+                                      change: function($event) {
+                                        var $$selectedVal = Array.prototype.filter
+                                          .call($event.target.options, function(
+                                            o
+                                          ) {
+                                            return o.selected
+                                          })
+                                          .map(function(o) {
+                                            var val =
+                                              "_value" in o ? o._value : o.value
+                                            return val
+                                          })
+                                        _vm.$set(
+                                          _vm.filters,
+                                          "status",
+                                          $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        )
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("option", { attrs: { value: "" } }, [
+                                      _vm._v("Todos")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "live" } }, [
+                                      _vm._v("Live")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "option",
+                                      { attrs: { value: "published" } },
+                                      [_vm._v("Publicada")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "option",
+                                      { attrs: { value: "scheduled" } },
+                                      [_vm._v("Programada")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "option",
+                                      { attrs: { value: "draft" } },
+                                      [_vm._v("Borrador")]
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "flex items-center justify-between mt-3"
+                              },
+                              [
+                                _c("span", [_vm._v("Author")]),
+                                _vm._v(" "),
+                                _c(
+                                  "select",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.filters.author_id,
+                                        expression: "filters.author_id"
+                                      }
+                                    ],
+                                    staticClass:
+                                      "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
+                                    attrs: { name: "author" },
+                                    on: {
+                                      change: function($event) {
+                                        var $$selectedVal = Array.prototype.filter
+                                          .call($event.target.options, function(
+                                            o
+                                          ) {
+                                            return o.selected
+                                          })
+                                          .map(function(o) {
+                                            var val =
+                                              "_value" in o ? o._value : o.value
+                                            return val
+                                          })
+                                        _vm.$set(
+                                          _vm.filters,
+                                          "author_id",
+                                          $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        )
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("option", { attrs: { value: "" } }, [
+                                      _vm._v("Todos")
+                                    ]),
+                                    _vm._v(" "),
+                                    _vm._l(_vm.authors, function(author) {
+                                      return _c(
+                                        "option",
+                                        { domProps: { value: author.id } },
+                                        [
+                                          _vm._v(
+                                            "\n                  " +
+                                              _vm._s(author.name) +
+                                              "\n                "
+                                          )
+                                        ]
+                                      )
+                                    })
+                                  ],
+                                  2
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "flex items-center justify-between mt-3"
+                              },
+                              [
+                                _c("span", [_vm._v("Tag")]),
+                                _vm._v(" "),
+                                _c(
+                                  "select",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.filters.tag_id,
+                                        expression: "filters.tag_id"
+                                      }
+                                    ],
+                                    staticClass:
+                                      "border border-lighter rounded w-3/5 focus:outline-none appearance-none py-1 px-3",
+                                    attrs: { name: "tag" },
+                                    on: {
+                                      change: function($event) {
+                                        var $$selectedVal = Array.prototype.filter
+                                          .call($event.target.options, function(
+                                            o
+                                          ) {
+                                            return o.selected
+                                          })
+                                          .map(function(o) {
+                                            var val =
+                                              "_value" in o ? o._value : o.value
+                                            return val
+                                          })
+                                        _vm.$set(
+                                          _vm.filters,
+                                          "tag_id",
+                                          $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        )
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("option", { attrs: { value: "" } }, [
+                                      _vm._v("Todos")
+                                    ]),
+                                    _vm._v(" "),
+                                    _vm._l(_vm.tags, function(tag) {
+                                      return _c(
+                                        "option",
+                                        { domProps: { value: tag.id } },
+                                        [
+                                          _vm._v(
+                                            "\n                  " +
+                                              _vm._s(tag.name) +
+                                              "\n                "
+                                          )
+                                        ]
+                                      )
+                                    })
+                                  ],
+                                  2
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _vm.isFiltered
+                              ? _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn-sm btn-light w-full mt-5",
+                                    on: {
+                                      click: function($event) {
+                                        $event.preventDefault()
+                                        return _vm.clearFilters($event)
                                       }
                                     }
                                   },
                                   [
                                     _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.truncate(entry.title, 68)) +
-                                        "\n                        "
+                                      "\n              Reset\n            "
                                     )
                                   ]
                                 )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "mb-3" }, [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.truncate(
-                                    entry.body.replace(/(<([^>]+)>)/gi, ""),
-                                    100
-                                  )
-                                )
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("small", { staticClass: "text-light" }, [
-                              entry.published &&
-                              !_vm.dateInTheFuture(entry.publish_date)
-                                ? _c("span", [
-                                    _vm._v(
-                                      "Published " +
-                                        _vm._s(_vm.timeAgo(entry.publish_date))
-                                    )
-                                  ])
-                                : _vm._e(),
-                              _vm._v(" "),
-                              entry.published &&
-                              _vm.dateInTheFuture(entry.publish_date)
-                                ? _c("span", { staticClass: "text-green" }, [
-                                    _vm._v(
-                                      "Scheduled " +
-                                        _vm._s(_vm.timeAgo(entry.publish_date))
-                                    )
-                                  ])
-                                : _vm._e(),
-                              _vm._v(" "),
-                              !entry.published
-                                ? _c("span", { staticClass: "text-red" }, [
-                                    _vm._v("Draft")
-                                  ])
-                                : _vm._e(),
-                              _vm._v(
-                                "\n                        — Updated " +
-                                  _vm._s(_vm.timeAgo(entry.updated_at)) +
-                                  "\n                        "
-                              ),
-                              entry.tags.length
-                                ? _c("span", [
-                                    _vm._v(
-                                      "— Tags: " +
-                                        _vm._s(_vm.formatTags(entry.tags))
-                                    )
-                                  ])
-                                : _vm._e()
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: "no-underline ml-auto hidden lg:block",
-                            attrs: {
-                              to: {
-                                name: "post-edit",
-                                params: { id: entry.id }
-                              }
-                            }
-                          },
-                          [
-                            entry.featured_image
-                              ? _c("div", {
-                                  staticClass:
-                                    "w-16 h-16 rounded-full bg-cover",
-                                  style: {
-                                    backgroundImage:
-                                      "url(" + entry.featured_image + ")"
-                                  }
-                                })
-                              : _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "w-16 h-16 rounded-full bg-light flex items-center justify-center text-4xl text-contrast"
-                                  },
-                                  [
-                                    _c(
-                                      "svg",
-                                      {
-                                        staticClass: "fill-current w-8",
-                                        attrs: {
-                                          xmlns: "http://www.w3.org/2000/svg",
-                                          viewBox: "0 0 20 20"
-                                        }
-                                      },
-                                      [
-                                        _c("path", {
-                                          attrs: {
-                                            d:
-                                              "M0 6c0-1.1.9-2 2-2h3l2-2h6l2 2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm10 10a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]
-                                )
+                              : _vm._e()
                           ]
                         )
                       ],
                       1
                     )
-                  }),
+                  ]),
                   _vm._v(" "),
-                  _vm.hasMoreEntries
-                    ? _c("div", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "py-8 uppercase",
-                            attrs: { colspan: "100" }
-                          },
-                          [
-                            !_vm.loadingMoreEntries
-                              ? _c(
-                                  "a",
-                                  {
-                                    staticClass: "no-underline text-primary",
-                                    attrs: { href: "#" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.loadOlderEntries($event)
-                                      }
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    _vm._l(_vm.entries, function(entry) {
+                      return _c(
+                        "div",
+                        {
+                          key: entry.id,
+                          staticClass:
+                            "border-t border-very-light flex items-center"
+                        },
+                        [
+                          _c(
+                            "ul",
+                            {
+                              staticClass:
+                                "list-group list-group-flush list my--3"
+                            },
+                            [
+                              _c(
+                                "li",
+                                { staticClass: "list-group-item px-0" },
+                                [
+                                  _c(
+                                    "div",
+                                    { staticClass: "row align-items-center" },
+                                    [
+                                      _c("div", { staticClass: "col-auto" }, [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "avatar rounded-circle"
+                                          },
+                                          [
+                                            _c(
+                                              "router-link",
+                                              {
+                                                staticClass:
+                                                  "no-underline ml-auto hidden lg:block",
+                                                attrs: {
+                                                  to: {
+                                                    name: "post-edit",
+                                                    params: { id: entry.id }
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                entry.featured_image
+                                                  ? _c("div", {
+                                                      staticClass:
+                                                        "w-16 h-16 rounded-full bg-cover",
+                                                      style: {
+                                                        backgroundImage:
+                                                          "url(" +
+                                                          entry.featured_image +
+                                                          ")"
+                                                      }
+                                                    })
+                                                  : _c(
+                                                      "div",
+                                                      {
+                                                        staticClass:
+                                                          "w-16 h-16 rounded-full bg-light flex items-center justify-center text-4xl text-contrast"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "svg",
+                                                          {
+                                                            staticClass:
+                                                              "fill-current w-8",
+                                                            attrs: {
+                                                              xmlns:
+                                                                "http://www.w3.org/2000/svg",
+                                                              viewBox:
+                                                                "0 0 20 20"
+                                                            }
+                                                          },
+                                                          [
+                                                            _c("path", {
+                                                              attrs: {
+                                                                d:
+                                                                  "M0 6c0-1.1.9-2 2-2h3l2-2h6l2 2h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm10 10a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                                                              }
+                                                            })
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                              ]
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "col" }, [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass: "py-4",
+                                            attrs: { title: entry.title }
+                                          },
+                                          [
+                                            _c(
+                                              "h2",
+                                              {
+                                                staticClass:
+                                                  "text-xl font-semibold mb-3"
+                                              },
+                                              [
+                                                _c(
+                                                  "router-link",
+                                                  {
+                                                    staticClass:
+                                                      "no-underline text-text-color",
+                                                    attrs: {
+                                                      to: {
+                                                        name: "post-edit",
+                                                        params: { id: entry.id }
+                                                      }
+                                                    }
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      "\n                          " +
+                                                        _vm._s(
+                                                          _vm.truncate(
+                                                            entry.title,
+                                                            68
+                                                          )
+                                                        ) +
+                                                        "\n                        "
+                                                    )
+                                                  ]
+                                                )
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c("p", { staticClass: "mb-3" }, [
+                                              _vm._v(
+                                                "\n                        " +
+                                                  _vm._s(
+                                                    _vm.truncate(
+                                                      entry.body.replace(
+                                                        /(<([^>]+)>)/gi,
+                                                        ""
+                                                      ),
+                                                      100
+                                                    )
+                                                  ) +
+                                                  "\n                      "
+                                              )
+                                            ]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-light" },
+                                              [
+                                                entry.published &&
+                                                !_vm.dateInTheFuture(
+                                                  entry.publish_date
+                                                )
+                                                  ? _c("span", [
+                                                      _vm._v(
+                                                        "Published " +
+                                                          _vm._s(
+                                                            _vm.timeAgo(
+                                                              entry.publish_date
+                                                            )
+                                                          )
+                                                      )
+                                                    ])
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                entry.published &&
+                                                _vm.dateInTheFuture(
+                                                  entry.publish_date
+                                                )
+                                                  ? _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "text-green"
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "Scheduled " +
+                                                            _vm._s(
+                                                              _vm.timeAgo(
+                                                                entry.publish_date
+                                                              )
+                                                            )
+                                                        )
+                                                      ]
+                                                    )
+                                                  : _vm._e(),
+                                                _vm._v(" "),
+                                                !entry.published
+                                                  ? _c(
+                                                      "span",
+                                                      {
+                                                        staticClass: "text-red"
+                                                      },
+                                                      [_vm._v("Draft")]
+                                                    )
+                                                  : _vm._e(),
+                                                _vm._v(
+                                                  "\n                        — Updated " +
+                                                    _vm._s(
+                                                      _vm.timeAgo(
+                                                        entry.updated_at
+                                                      )
+                                                    ) +
+                                                    "\n                        "
+                                                ),
+                                                entry.tags.length
+                                                  ? _c("span", [
+                                                      _vm._v(
+                                                        "— Tags: " +
+                                                          _vm._s(
+                                                            _vm.formatTags(
+                                                              entry.tags
+                                                            )
+                                                          )
+                                                      )
+                                                    ])
+                                                  : _vm._e()
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]
+                                  )
+                                ]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    }),
+                    0
+                  )
+                ]),
+                _vm._v(" "),
+                _vm.hasMoreEntries
+                  ? _c("div", [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "py-8 uppercase",
+                          attrs: { colspan: "100" }
+                        },
+                        [
+                          !_vm.loadingMoreEntries
+                            ? _c(
+                                "a",
+                                {
+                                  staticClass: "no-underline text-primary",
+                                  attrs: { href: "#" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.loadOlderEntries($event)
                                     }
-                                  },
-                                  [_vm._v("Load more posts")]
-                                )
-                              : _vm._e(),
-                            _vm._v(" "),
-                            _vm.loadingMoreEntries
-                              ? _c("span", [_vm._v("Loading...")])
-                              : _vm._e()
-                          ]
-                        )
-                      ])
-                    : _vm._e()
-                ],
-                2
-              )
+                                  }
+                                },
+                                [_vm._v("Load more posts")]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _vm.loadingMoreEntries
+                            ? _c("span", [_vm._v("Loading...")])
+                            : _vm._e()
+                        ]
+                      )
+                    ])
+                  : _vm._e()
+              ])
             : _vm._e()
         ],
         1
@@ -87089,14 +87126,14 @@ module.exports = function(module) {
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************!*\
-  !*** multi ./Resources/assets/js/app.js ./Resources/assets/sass/app.scss ***!
-  \***************************************************************************/
+/*!*****************************************************************************!*\
+  !*** multi ./Resources/assets/js/app.js ./Resources/assets/sass/light.scss ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\MIS DATOS\Documents\proyectos\test.libranza\Modules\Blog\Resources\assets\js\app.js */"./Resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! D:\MIS DATOS\Documents\proyectos\test.libranza\Modules\Blog\Resources\assets\sass\app.scss */"./Resources/assets/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\MIS DATOS\Documents\proyectos\test.libranza\Modules\Blog\Resources\assets\sass\light.scss */"./Resources/assets/sass/light.scss");
 
 
 /***/ })

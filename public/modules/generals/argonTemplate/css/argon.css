@@ -23381,7 +23381,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     right: 10px;
     left : auto
 }
-
+/* 
 .ql-container {
     font-family: Open Sans, sans-serif
 }
@@ -23756,7 +23756,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .ql-editor img {
     max-width: 100%;
     height   : auto
-}
+} */
 
 .scroll-wrapper {
     position: relative;

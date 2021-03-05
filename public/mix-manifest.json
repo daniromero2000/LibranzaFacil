@@ -10,5 +10,6 @@
     "/css/blog.css": "/css/blog.css",
     "/vendor/wink/app.js": "/vendor/wink/app.js",
     "/vendor/wink/light.css": "/vendor/wink/light.css",
-    "/public/app.css": "/public/app.css"
+    "/public/app.css": "/public/app.css",
+    "/vendor/wink/app.css": "/vendor/wink/app.css"
 }

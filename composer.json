@@ -24,8 +24,7 @@
         "nwidart/laravel-modules": "^7.2",
         "pusher/pusher-php-server": "~3.0",
         "santigarcor/laratrust": "^6.1",
-        "tenancy/tenancy": "^1.2",
-        "writingink/wink": "1.2"
+        "tenancy/tenancy": "^1.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.4",
