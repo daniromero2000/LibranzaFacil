@@ -6721,67 +6721,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     MarkdownEditor: _components_MarkdownEditor__WEBPACK_IMPORTED_MODULE_2__["default"],
-    'featured-image-uploader': _FeaturedImageUploader__WEBPACK_IMPORTED_MODULE_0__["default"],
-    'seo-modal': _components_SEOModal__WEBPACK_IMPORTED_MODULE_1__["default"]
+    "featured-image-uploader": _FeaturedImageUploader__WEBPACK_IMPORTED_MODULE_0__["default"],
+    "seo-modal": _components_SEOModal__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
       ready: false,
       entry: null,
-      currentTab: 'post',
+      currentTab: "post",
       tags: [],
       authors: [],
-      status: '',
+      status: "",
       saveKeyboardShortcut: null,
       settingsModalShown: false,
       publishingModalShown: false,
       seoModalShown: false,
-      id: this.$route.params.id || 'new',
+      id: this.$route.params.id || "new",
       errors: [],
       postBodyWatcher: null,
       form: {
-        id: '',
-        title: 'Draft',
-        slug: '',
-        excerpt: '',
+        id: "",
+        title: "Draft",
+        slug: "",
+        excerpt: "",
         tags: [],
-        author_id: '',
-        featured_image: '',
-        featured_image_caption: '',
-        body: '',
+        author_id: "",
+        featured_image: "",
+        featured_image_caption: "",
+        body: "",
         published: false,
         markdown: {
           "null": null,
-          'markdown': true,
-          'rich': false
+          markdown: true,
+          rich: false
         }[window.Wink.default_editor],
-        publish_date: '',
+        publish_date: "",
         meta: {
-          meta_description: '',
-          opengraph_title: '',
-          opengraph_description: '',
-          opengraph_image: '',
-          opengraph_image_width: '',
-          opengraph_image_height: '',
-          twitter_title: '',
-          twitter_description: '',
-          twitter_image: ''
+          meta_description: "",
+          opengraph_title: "",
+          opengraph_description: "",
+          opengraph_image: "",
+          opengraph_image_width: "",
+          opengraph_image_height: "",
+          twitter_title: "",
+          twitter_description: "",
+          twitter_image: ""
         }
       }
     };
   },
   watch: {
-    'form.slug': function formSlug(val) {
+    "form.slug": function formSlug(val) {
       var _this = this;
 
       this.debouncer(function () {
         _this.form.slug = _this.slugify(val);
       });
     },
-    'form.featured_image': function formFeatured_image() {
+    "form.featured_image": function formFeatured_image() {
       this.save();
     },
-    'form.published': function formPublished(val) {
+    "form.published": function formPublished(val) {
       if (this.postBodyWatcher) {
         this.postBodyWatcher();
       }
@@ -6790,7 +6790,7 @@ __webpack_require__.r(__webpack_exports__);
         this.watchBodyChangesAndSave();
       }
     },
-    '$route.params.id': function $routeParamsId() {
+    "$route.params.id": function $routeParamsId() {
       this.id = this.$route.params.id;
     }
   },
@@ -6803,7 +6803,7 @@ __webpack_require__.r(__webpack_exports__);
 
     document.title = "Edit Post — Wink.";
     this.loadResources();
-    this.http().get('/api/posts/' + this.id).then(function (response) {
+    this.http().get("/api/posts/" + this.id).then(function (response) {
       _this2.entry = _.cloneDeep(response.data.entry);
 
       _this2.fillForm(response.data.entry);
@@ -6817,7 +6817,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     postPreviewLink: function postPreviewLink() {
-      return this.Wink.preview_path.replace('{postSlug}', this.form.slug);
+      return this.Wink.preview_path.replace("{postSlug}", this.form.slug);
     }
   },
 
@@ -6825,7 +6825,7 @@ __webpack_require__.r(__webpack_exports__);
    * Clean after the component is destroyed.
    */
   destroyed: function destroyed() {
-    document.removeEventListener('keydown', this.saveKeyboardShortcut);
+    document.removeEventListener("keydown", this.saveKeyboardShortcut);
   },
   methods: {
     registerSaveKeyboardShortcut: function registerSaveKeyboardShortcut() {
@@ -6839,7 +6839,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
 
-      document.addEventListener('keydown', this.saveKeyboardShortcut);
+      document.addEventListener("keydown", this.saveKeyboardShortcut);
     },
 
     /**
@@ -6848,29 +6848,29 @@ __webpack_require__.r(__webpack_exports__);
     fillForm: function fillForm(data) {
       this.form.id = data.id;
       this.form.publish_date = data.publish_date;
-      this.form.slug = 'draft-' + this.form.id;
+      this.form.slug = "draft-" + this.form.id;
 
-      if (this.id != 'new') {
+      if (this.id != "new") {
         this.form.title = data.title;
         this.form.slug = data.slug;
         this.form.excerpt = data.excerpt;
         this.form.body = data.body;
         this.form.published = data.published;
         this.form.markdown = data.markdown;
-        this.form.tags = data.tags || '';
-        this.form.author_id = data.author_id || '';
+        this.form.tags = data.tags || "";
+        this.form.author_id = data.author_id || "";
         this.form.featured_image = data.featured_image;
         this.form.featured_image_caption = data.featured_image_caption;
         this.form.meta = {
-          meta_description: data.meta.meta_description || '',
-          opengraph_title: data.meta.opengraph_title || '',
-          opengraph_description: data.meta.opengraph_description || '',
-          opengraph_image: data.meta.opengraph_image || '',
-          opengraph_image_width: data.meta.opengraph_image_width || '',
-          opengraph_image_height: data.meta.opengraph_image_height || '',
-          twitter_title: data.meta.twitter_title || '',
-          twitter_description: data.meta.twitter_description || '',
-          twitter_image: data.meta.twitter_image || ''
+          meta_description: data.meta.meta_description || "",
+          opengraph_title: data.meta.opengraph_title || "",
+          opengraph_description: data.meta.opengraph_description || "",
+          opengraph_image: data.meta.opengraph_image || "",
+          opengraph_image_width: data.meta.opengraph_image_width || "",
+          opengraph_image_height: data.meta.opengraph_image_height || "",
+          twitter_title: data.meta.twitter_title || "",
+          twitter_description: data.meta.twitter_description || "",
+          twitter_image: data.meta.twitter_image || ""
         };
       }
 
@@ -6886,7 +6886,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this4 = this;
 
       setTimeout(function () {
-        _this4.postBodyWatcher = _this4.$watch('form.body', _.debounce(function () {
+        _this4.postBodyWatcher = _this4.$watch("form.body", _.debounce(function () {
           return _this4.save();
         }, 1000), {
           deep: true
@@ -6900,10 +6900,10 @@ __webpack_require__.r(__webpack_exports__);
     loadResources: function loadResources() {
       var _this5 = this;
 
-      this.http().get('/api/tags').then(function (response) {
+      this.http().get("/api/tags").then(function (response) {
         _this5.tags = response.data.data;
       });
-      this.http().get('/api/team').then(function (response) {
+      this.http().get("/api/team").then(function (response) {
         _this5.authors = response.data.data;
 
         if (!_this5.form.author_id && _this5.authors) {
@@ -6959,7 +6959,7 @@ __webpack_require__.r(__webpack_exports__);
      * Open the featured image modal.
      */
     featuredImageModal: function featuredImageModal() {
-      this.$emit('openingFeaturedImageUploader');
+      this.$emit("openingFeaturedImageUploader");
     },
 
     /**
@@ -6991,9 +6991,9 @@ __webpack_require__.r(__webpack_exports__);
       this.alertConfirm("Are you sure you want to delete this post?", function () {
         _this6.settingsModalShown = false;
 
-        _this6.http()["delete"]('/api/posts/' + _this6.id, _this6.form).then(function (response) {
+        _this6.http()["delete"]("/api/posts/" + _this6.id, _this6.form).then(function (response) {
           _this6.$router.push({
-            name: 'posts'
+            name: "posts"
           });
         });
       });
@@ -7006,7 +7006,7 @@ __webpack_require__.r(__webpack_exports__);
       this.form.published = true;
       this.save();
       this.publishingModalShown = false;
-      this.notifySuccess('Post Published!', 2000);
+      this.notifySuccess("Publicación publicada!", 2000);
     },
 
     /**
@@ -7016,7 +7016,7 @@ __webpack_require__.r(__webpack_exports__);
       this.form.published = false;
       this.save();
       this.publishingModalShown = false;
-      this.notifySuccess('Post was converted to a draft!', 2000);
+      this.notifySuccess("Post was converted to a draft!", 2000);
     },
 
     /**
@@ -7027,25 +7027,25 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.status) return;
       this.errors = [];
-      this.status = 'Saving...';
+      this.status = "Saving...";
 
-      if (this.form.title != 'Draft' && (!this.form.slug || this.form.slug.startsWith('draft-'))) {
+      if (this.form.title != "Draft" && (!this.form.slug || this.form.slug.startsWith("draft-"))) {
         this.form.slug = this.slugify(this.form.title);
       }
 
-      this.http().post('/api/posts/' + this.id, this.form).then(function (response) {
-        _this7.status = '';
+      this.http().post("/api/posts/" + this.id, this.form).then(function (response) {
+        _this7.status = "";
 
-        if (_this7.id == 'new') {
+        if (_this7.id == "new") {
           _this7.$router.push({
-            name: 'post-edit',
+            name: "post-edit",
             params: {
               id: _this7.form.id
             }
           });
         }
       })["catch"](function (error) {
-        _this7.status = '';
+        _this7.status = "";
         _this7.errors = error.response.data.errors;
         _this7.settingsModalShown = true;
       });
@@ -66291,7 +66291,10 @@ var render = function() {
           _vm.type == "error"
             ? _c(
                 "button",
-                { staticClass: "btn-primary btn-sm", on: { click: _vm.close } },
+                {
+                  staticClass: "btn-primary text-white border-0 btn-sm",
+                  on: { click: _vm.close }
+                },
                 [_vm._v("\n                Ok\n            ")]
               )
             : _vm._e(),
@@ -66299,7 +66302,10 @@ var render = function() {
           _vm.type == "success" && !_vm.$root.alert.autoClose
             ? _c(
                 "button",
-                { staticClass: "btn-primary btn-sm", on: { click: _vm.close } },
+                {
+                  staticClass: "btn-primary text-white border-0 btn-sm",
+                  on: { click: _vm.close }
+                },
                 [_vm._v("\n                Ok\n            ")]
               )
             : _vm._e(),
@@ -66308,7 +66314,7 @@ var render = function() {
             ? _c(
                 "button",
                 {
-                  staticClass: "btn-primary btn-sm",
+                  staticClass: "btn-primary text-white border-0 btn-sm",
                   on: { click: _vm.confirm }
                 },
                 [_vm._v("\n                Yes\n            ")]
@@ -66386,40 +66392,40 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "btn-sm ml-1 btn-light mr-auto",
+          staticClass: "btn-sm ml-1 btn-light text-white border-0 mr-auto",
           on: {
             click: function($event) {
               return _vm.cancel()
             }
           }
         },
-        [_vm._v("Cancel")]
+        [_vm._v("Cancelar")]
       ),
       _vm._v(" "),
       _c(
         "button",
         {
-          staticClass: "btn-sm btn-primary mr-2",
+          staticClass: "btn-sm btn-primary text-white border-0 mr-2",
           on: {
             click: function($event) {
               return _vm.crop()
             }
           }
         },
-        [_vm._v("Crop Image")]
+        [_vm._v("Delimitar imagen")]
       ),
       _vm._v(" "),
       _c(
         "button",
         {
-          staticClass: "btn-sm btn-primary",
+          staticClass: "btn-sm btn-primary text-white border-0",
           on: {
             click: function($event) {
               return _vm.uploadOriginalImage()
             }
           }
         },
-        [_vm._v("Use Original")]
+        [_vm._v("Usar original")]
       )
     ])
   ])
@@ -66459,7 +66465,7 @@ var render = function() {
               expression: "dateComponents.month"
             }
           ],
-          staticClass: "input pr-2",
+          staticClass: "input mt-0 pr-2",
           on: {
             change: function($event) {
               var $$selectedVal = Array.prototype.filter
@@ -66504,7 +66510,7 @@ var render = function() {
               expression: "dateComponents.day"
             }
           ],
-          staticClass: "input px-2",
+          staticClass: "input mt-0 px-2",
           on: {
             change: function($event) {
               var $$selectedVal = Array.prototype.filter
@@ -66549,7 +66555,7 @@ var render = function() {
               expression: "dateComponents.year"
             }
           ],
-          staticClass: "input px-2",
+          staticClass: "input mt-0 px-2",
           on: {
             change: function($event) {
               var $$selectedVal = Array.prototype.filter
@@ -66594,7 +66600,7 @@ var render = function() {
               expression: "dateComponents.hour"
             }
           ],
-          staticClass: "input px-2",
+          staticClass: "input mt-0 px-2",
           on: {
             change: function($event) {
               var $$selectedVal = Array.prototype.filter
@@ -66639,7 +66645,7 @@ var render = function() {
               expression: "dateComponents.minute"
             }
           ],
-          staticClass: "input pl-2",
+          staticClass: "input mt-0 pl-2",
           on: {
             change: function($event) {
               var $$selectedVal = Array.prototype.filter
@@ -66982,32 +66988,6 @@ var render = function() {
                   "div",
                   { staticClass: "container py-20" },
                   [
-                    _c("div", { staticClass: "flex items-center" }, [
-                      _c("h2", { staticClass: "mr-auto" }, [
-                        _vm._v("Search Unsplash")
-                      ]),
-                      _vm._v(" "),
-                      _vm.selectedUnsplashImage
-                        ? _c(
-                            "button",
-                            {
-                              staticClass: "btn-primary mr-4",
-                              on: { click: _vm.closeUnplashModalAndInsertImage }
-                            },
-                            [_vm._v("Choose Selected Image")]
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn-light",
-                          on: { click: _vm.closeUnsplashModal }
-                        },
-                        [_vm._v("Cancel")]
-                      )
-                    ]),
-                    _vm._v(" "),
                     _vm.Wink.unsplash_key
                       ? _c("input", {
                           directives: [
@@ -67106,14 +67086,6 @@ var render = function() {
                           ],
                           2
                         )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.searchingUnsplash && !_vm.unsplashImages.length
-                      ? _c("div", [
-                          _c("h4", { staticClass: "text-center" }, [
-                            _vm._v("We couldn't find any matches.")
-                          ])
-                        ])
                       : _vm._e()
                   ],
                   1
@@ -67248,7 +67220,7 @@ var render = function() {
           "div",
           {
             staticClass:
-              "bg-contrast relative rounded shadow-lg max-w-md mx-auto my-10 p-5 modal-container"
+              "bg-contrast relative rounded shadow-lg max-w-lg mx-auto my-10 p-5 modal-container"
           },
           [_vm._t("default")],
           2
@@ -67386,7 +67358,7 @@ var render = function() {
         [
           !_vm.matches.length
             ? _c("button", { staticClass: "text-text-color" }, [
-                _vm._v("Add new tag...")
+                _vm._v("Añadir tag...")
               ])
             : _vm._e(),
           _vm._v(" "),
@@ -67566,7 +67538,7 @@ var render = function() {
       _c(
         "label",
         { staticClass: "input-label", attrs: { for: "meta_description" } },
-        [_vm._v("\n            Meta description\n        ")]
+        [_vm._v("\n            Meta descripción\n        ")]
       ),
       _vm._v(" "),
       _c("textarea", {
@@ -67596,7 +67568,7 @@ var render = function() {
       _c(
         "label",
         { staticClass: "input-label", attrs: { for: "opengraph_title" } },
-        [_vm._v("\n            Facebook Card Title\n        ")]
+        [_vm._v("\n            Facebook Card Título\n        ")]
       ),
       _vm._v(" "),
       _c("input", {
@@ -67630,7 +67602,7 @@ var render = function() {
       _c(
         "label",
         { staticClass: "input-label", attrs: { for: "opengraph_description" } },
-        [_vm._v("\n            Facebook Card Description\n        ")]
+        [_vm._v("\n            Facebook Card descripción\n        ")]
       ),
       _vm._v(" "),
       _c("textarea", {
@@ -67662,14 +67634,14 @@ var render = function() {
     _c("div", { staticClass: "input-group py-4" }, [
       _c(
         "div",
-        { staticClass: "flex items-center justify-between" },
+        { staticClass: "flex items-center justify-between w-100" },
         [
           _c(
             "div",
             [
               _c("label", { staticClass: "input-label" }, [
                 _vm._v(
-                  "\n                    Facebook Card Image\n                "
+                  "\n                    Facebook Card Imagen\n                "
                 )
               ]),
               _vm._v(" "),
@@ -67785,7 +67757,7 @@ var render = function() {
       _c(
         "label",
         { staticClass: "input-label", attrs: { for: "twitter_title" } },
-        [_vm._v("\n            Twitter Card Title\n        ")]
+        [_vm._v("\n            Twitter Card Título\n        ")]
       ),
       _vm._v(" "),
       _c("input", {
@@ -67819,7 +67791,7 @@ var render = function() {
       _c(
         "label",
         { staticClass: "input-label", attrs: { for: "twitter_description" } },
-        [_vm._v("\n            Twitter Card Description\n        ")]
+        [_vm._v("\n            Twitter Card descripción\n        ")]
       ),
       _vm._v(" "),
       _c("textarea", {
@@ -67851,14 +67823,14 @@ var render = function() {
     _c("div", { staticClass: "input-group py-4" }, [
       _c(
         "div",
-        { staticClass: "flex items-center justify-between" },
+        { staticClass: "flex items-center justify-between w-100" },
         [
           _c(
             "div",
             [
               _c("label", { staticClass: "input-label" }, [
                 _vm._v(
-                  "\n                    Twitter Card Image\n                "
+                  "\n                    Twitter Card Imagen\n                "
                 )
               ]),
               _vm._v(" "),
@@ -67927,8 +67899,11 @@ var render = function() {
     _c("div", { staticClass: "mt-10" }, [
       _c(
         "button",
-        { staticClass: "btn-sm btn-primary", on: { click: _vm.close } },
-        [_vm._v("Done")]
+        {
+          staticClass: "btn-sm btn-primary text-white border-0",
+          on: { click: _vm.close }
+        },
+        [_vm._v("Guardar")]
       )
     ])
   ])
@@ -68139,7 +68114,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn-sm btn-primary mt-10",
+              staticClass: "btn-sm btn-primary text-white border-0 mt-10",
               on: { click: _vm.applyImage }
             },
             [_vm._v("Apply")]
@@ -68147,7 +68122,10 @@ var render = function() {
           _vm._v(" "),
           _c(
             "button",
-            { staticClass: "btn-sm btn-light mt-10", on: { click: _vm.close } },
+            {
+              staticClass: "btn-sm btn-light text-white border-0 mt-10",
+              on: { click: _vm.close }
+            },
             [_vm._v("Cancel")]
           )
         ],
@@ -68893,7 +68871,7 @@ var render = function() {
         { on: { close: _vm.close } },
         [
           _c("h2", { staticClass: "font-semibold mb-5" }, [
-            _vm._v("Featured Image")
+            _vm._v("Foto principal")
           ]),
           _vm._v(" "),
           _vm.uploading ? _c("preloader") : _vm._e(),
@@ -68907,7 +68885,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "input-group" }, [
                   _c("label", { staticClass: "input-label" }, [
-                    _vm._v("Caption")
+                    _vm._v("Subtítulo")
                   ]),
                   _vm._v(" "),
                   _c("textarea", {
@@ -68954,16 +68932,19 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn-sm btn-primary mt-10",
+              staticClass: "btn-sm btn-primary text-white border-0 mt-10",
               on: { click: _vm.saveImage }
             },
-            [_vm._v("Save Image")]
+            [_vm._v("Guardar imagen")]
           ),
           _vm._v(" "),
           _c(
             "button",
-            { staticClass: "btn-sm btn-light mt-10", on: { click: _vm.close } },
-            [_vm._v("Cancel")]
+            {
+              staticClass: "btn-sm btn-light text-white border-0 mt-10",
+              on: { click: _vm.close }
+            },
+            [_vm._v("Cancelar")]
           )
         ],
         1
@@ -69001,7 +68982,7 @@ var render = function() {
             ? _c("div", [
                 !_vm.status && _vm.form.published
                   ? _c("span", { staticClass: "font-semibold" }, [
-                      _vm._v("Published")
+                      _vm._v("Publicada")
                     ])
                   : _vm._e(),
                 _vm._v(" "),
@@ -69029,10 +69010,11 @@ var render = function() {
                   ? _c(
                       "button",
                       {
-                        staticClass: "py-1 px-2 btn-primary text-sm mr-6",
+                        staticClass:
+                          "py-1 px-2 btn-primary text-white border-0 text-sm mr-6",
                         on: { click: _vm.publishingModal }
                       },
-                      [_vm._v("Publish")]
+                      [_vm._v("\n        Publicar\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -69040,45 +69022,11 @@ var render = function() {
                   ? _c(
                       "button",
                       {
-                        staticClass: "py-1 px-2 btn-primary text-sm mr-6",
+                        staticClass:
+                          "py-1 px-2 btn-primary text-white border-0 text-sm mr-6",
                         on: { click: _vm.publishingModal }
                       },
-                      [_vm._v("Update")]
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.id != "new"
-                  ? _c(
-                      "a",
-                      {
-                        staticClass:
-                          "block focus:outline-none text-light hover:text-primary mr-6",
-                        attrs: {
-                          href: _vm.postPreviewLink,
-                          target: "_blank",
-                          title: "Preview Post"
-                        }
-                      },
-                      [
-                        _c(
-                          "svg",
-                          {
-                            staticClass: "w-4 h-4 fill-current",
-                            attrs: {
-                              xmlns: "http://www.w3.org/2000/svg",
-                              viewBox: "0 0 20 20"
-                            }
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                d:
-                                  "M.2 10a11 11 0 0 1 19.6 0A11 11 0 0 1 .2 10zm9.8 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                              }
-                            })
-                          ]
-                        )
-                      ]
+                      [_vm._v("\n        Actualizar\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -69137,7 +69085,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        General Settings\n                    "
+                            "\n            Configuración general\n          "
                           )
                         ]
                       ),
@@ -69155,11 +69103,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                        Featured Image\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            Foto principal\n          ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -69175,11 +69119,7 @@ var render = function() {
                             }
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                        SEO & Social\n                    "
-                          )
-                        ]
+                        [_vm._v("\n            SEO & Social\n          ")]
                       ),
                       _vm._v(" "),
                       _vm.id != "new"
@@ -69216,95 +69156,61 @@ var render = function() {
           _vm._v(" "),
           _vm.ready && !_vm.entry
             ? _c("h2", { staticClass: "text-center font-normal" }, [
-                _vm._v("\n            404 — Post not found\n        ")
+                _vm._v("\n      404 — Publicación no encontrada\n    ")
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.ready && _vm.entry
-            ? _c(
-                "div",
-                { staticClass: "lg:w-3/4 mx-auto" },
-                [
-                  _c("textarea-autosize", {
-                    staticClass:
-                      "text-3xl font-semibold w-full focus:outline-none mb-10",
-                    attrs: { placeholder: "Type something here..." },
-                    model: {
-                      value: _vm.form.title,
-                      callback: function($$v) {
-                        _vm.$set(_vm.form, "title", $$v)
-                      },
-                      expression: "form.title"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _vm.form.markdown == null
-                    ? _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "w-full mb-5 hover:bg-lighter text-text-color block bg-very-light px-3 py-5 rounded",
-                            on: {
-                              click: function($event) {
-                                _vm.form.markdown = false
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                    I want a rich text editor\n                "
-                            )
-                          ]
-                        ),
+            ? _c("div", [
+                _c("div", { staticClass: "card my-5" }, [
+                  _c("div", { staticClass: "card-body pt-5" }, [
+                    _c(
+                      "div",
+                      { staticClass: "lg:w-3/4 mx-auto" },
+                      [
+                        _c("textarea-autosize", {
+                          staticClass:
+                            "text-3xl font-semibold w-full focus:outline-none mb-10",
+                          attrs: { placeholder: "Type something here..." },
+                          model: {
+                            value: _vm.form.title,
+                            callback: function($$v) {
+                              _vm.$set(_vm.form, "title", $$v)
+                            },
+                            expression: "form.title"
+                          }
+                        }),
                         _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "w-full mb-5 hover:bg-lighter text-text-color block bg-very-light px-3 py-5 rounded",
-                            on: {
-                              click: function($event) {
-                                _vm.form.markdown = true
+                        _vm.form.markdown == false
+                          ? _c("editor", {
+                              attrs: { "post-id": _vm.id },
+                              model: {
+                                value: _vm.form.body,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "body", $$v)
+                                },
+                                expression: "form.body"
                               }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                    I will write markdown\n                "
-                            )
-                          ]
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.form.markdown == false
-                    ? _c("editor", {
-                        attrs: { "post-id": _vm.id },
-                        model: {
-                          value: _vm.form.body,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "body", $$v)
-                          },
-                          expression: "form.body"
-                        }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.form.markdown == true
-                    ? _c("markdown-editor", {
-                        model: {
-                          value: _vm.form.body,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "body", $$v)
-                          },
-                          expression: "form.body"
-                        }
-                      })
-                    : _vm._e()
-                ],
-                1
-              )
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.form.markdown == true
+                          ? _c("markdown-editor", {
+                              model: {
+                                value: _vm.form.body,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form, "body", $$v)
+                                },
+                                expression: "form.body"
+                              }
+                            })
+                          : _vm._e()
+                      ],
+                      1
+                    )
+                  ])
+                ])
+              ])
             : _vm._e()
         ],
         1
@@ -69359,62 +69265,6 @@ var render = function() {
               [
                 _c(
                   "label",
-                  { staticClass: "input-label", attrs: { for: "author_id" } },
-                  [_vm._v("Author")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.form.author_id,
-                        expression: "form.author_id"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: { name: "author_id", id: "author_id" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.$set(
-                          _vm.form,
-                          "author_id",
-                          $event.target.multiple
-                            ? $$selectedVal
-                            : $$selectedVal[0]
-                        )
-                      }
-                    }
-                  },
-                  _vm._l(_vm.authors, function(author) {
-                    return _c("option", { domProps: { value: author.id } }, [
-                      _vm._v(_vm._s(author.name))
-                    ])
-                  }),
-                  0
-                ),
-                _vm._v(" "),
-                _c("form-errors", { attrs: { errors: _vm.errors.author_id } })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "input-group" },
-              [
-                _c(
-                  "label",
                   {
                     staticClass: "input-label mb-4",
                     attrs: { for: "tag_ids" }
@@ -69449,7 +69299,7 @@ var render = function() {
                 _c(
                   "label",
                   { staticClass: "input-label", attrs: { for: "excerpt" } },
-                  [_vm._v("Excerpt")]
+                  [_vm._v("Extracto")]
                 ),
                 _vm._v(" "),
                 _c("textarea", {
@@ -69486,10 +69336,10 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn-sm btn-primary",
+                  staticClass: "btn-sm btn-primary text-white border-0",
                   on: { click: _vm.closeSettingsModal }
                 },
-                [_vm._v("Done")]
+                [_vm._v("\n        Guardar\n      ")]
               )
             ])
           ])
@@ -69511,7 +69361,7 @@ var render = function() {
               _vm.form.slug.startsWith("draft-")
                 ? _c("div", { staticClass: "mb-10 text-red" }, [
                     _vm._v(
-                      "\n            Make sure your post has a friendly title and slug.\n        "
+                      "\n      Asegúrate de que tu publicación tenga un título y un slug amigables.\n    "
                     )
                   ])
                 : _vm._e(),
@@ -69521,7 +69371,7 @@ var render = function() {
                 { staticClass: "input-group pt-0" },
                 [
                   _c("label", { staticClass: "input-label" }, [
-                    _vm._v("Publish Date (M/D/Y H:M) UTC")
+                    _vm._v("Fecha de publicación (M/D/Y H:M) UTC")
                   ]),
                   _vm._v(" "),
                   _c("date-time-picker", {
@@ -69554,10 +69404,10 @@ var render = function() {
                             expression: "status"
                           }
                         ],
-                        staticClass: "btn-sm btn-primary",
+                        staticClass: "btn-sm btn-primary text-white border-0",
                         on: { click: _vm.publishPost }
                       },
-                      [_vm._v("Publish this post")]
+                      [_vm._v("\n        Publica esta publicación\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -69573,10 +69423,10 @@ var render = function() {
                             expression: "status"
                           }
                         ],
-                        staticClass: "btn-sm btn-primary",
+                        staticClass: "btn-sm btn-primary text-white border-0",
                         on: { click: _vm.publishPost }
                       },
-                      [_vm._v("Update Post")]
+                      [_vm._v("\n        Actualizar publicación\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -69592,24 +69442,25 @@ var render = function() {
                             expression: "status"
                           }
                         ],
-                        staticClass: "btn-sm ml-1 btn-light",
+                        staticClass:
+                          "btn-sm ml-1 btn-light text-white border-0",
                         on: { click: _vm.unpublishPost }
                       },
-                      [_vm._v("Convert to draft")]
+                      [_vm._v("\n        Convertir a borrador\n      ")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
                 _c(
                   "button",
                   {
-                    staticClass: "btn-sm ml-1 btn-light",
+                    staticClass: "btn-sm ml-1 btn-light text-white border-0",
                     on: {
                       click: function($event) {
                         _vm.publishingModalShown = false
                       }
                     }
                   },
-                  [_vm._v("Cancel")]
+                  [_vm._v("\n        Cancelar\n      ")]
                 )
               ])
             ]
@@ -69897,9 +69748,9 @@ var render = function() {
                                         { domProps: { value: author.id } },
                                         [
                                           _vm._v(
-                                            "\n                  " +
+                                            "\n                    " +
                                               _vm._s(author.name) +
-                                              "\n                "
+                                              "\n                  "
                                           )
                                         ]
                                       )
@@ -69967,9 +69818,9 @@ var render = function() {
                                         { domProps: { value: tag.id } },
                                         [
                                           _vm._v(
-                                            "\n                  " +
+                                            "\n                    " +
                                               _vm._s(tag.name) +
-                                              "\n                "
+                                              "\n                  "
                                           )
                                         ]
                                       )
@@ -69994,7 +69845,7 @@ var render = function() {
                                   },
                                   [
                                     _vm._v(
-                                      "\n              Reset\n            "
+                                      "\n                Reset\n              "
                                     )
                                   ]
                                 )
@@ -70022,7 +69873,7 @@ var render = function() {
                             "ul",
                             {
                               staticClass:
-                                "list-group list-group-flush list my--3"
+                                "list-group list-group-flush w-100 list my--3"
                             },
                             [
                               _c(
@@ -70171,7 +70022,7 @@ var render = function() {
                                                 )
                                                   ? _c("span", [
                                                       _vm._v(
-                                                        "Published " +
+                                                        "Publicada " +
                                                           _vm._s(
                                                             _vm.timeAgo(
                                                               entry.publish_date
@@ -70193,7 +70044,7 @@ var render = function() {
                                                       },
                                                       [
                                                         _vm._v(
-                                                          "Scheduled " +
+                                                          "Programada " +
                                                             _vm._s(
                                                               _vm.timeAgo(
                                                                 entry.publish_date
@@ -70448,10 +70299,10 @@ var render = function() {
             ? _c("div", { staticClass: "lg:w-2/3 mx-auto" }, [
                 _vm.id != "new"
                   ? _c("h1", { staticClass: "font-semibold text-3xl mb-10" }, [
-                      _vm._v("Edit Tag")
+                      _vm._v("Editar Tag")
                     ])
                   : _c("h1", { staticClass: "font-semibold text-3xl mb-10" }, [
-                      _vm._v("New Tag")
+                      _vm._v("Nueva Tag")
                     ]),
                 _vm._v(" "),
                 _c(
@@ -70461,7 +70312,7 @@ var render = function() {
                     _c(
                       "label",
                       { staticClass: "input-label", attrs: { for: "name" } },
-                      [_vm._v("Tag Name")]
+                      [_vm._v("Nombre")]
                     ),
                     _vm._v(" "),
                     _c("input", {
@@ -70504,7 +70355,7 @@ var render = function() {
                     _c(
                       "label",
                       { staticClass: "input-label", attrs: { for: "name" } },
-                      [_vm._v("Tag Slug")]
+                      [_vm._v("Slug")]
                     ),
                     _vm._v(" "),
                     _c("input", {
@@ -70591,7 +70442,7 @@ var render = function() {
                 staticClass: "py-1 px-2 btn-primary text-sm",
                 attrs: { to: { name: "tag-new" } }
               },
-              [_vm._v("\n                New Tag\n            ")]
+              [_vm._v("\n                Crear Tag\n            ")]
             )
           ],
           1
@@ -70654,7 +70505,9 @@ var render = function() {
                 _c(
                   "p",
                   [
-                    _vm._v("No tags were found, start by\n                "),
+                    _vm._v(
+                      "No se encontraron etiquetas, comience por\n                "
+                    ),
                     _c(
                       "router-link",
                       {
@@ -70662,7 +70515,7 @@ var render = function() {
                           "no-underline text-primary hover:text-primary-dark",
                         attrs: { to: { name: "tag-new" } }
                       },
-                      [_vm._v("adding some tags")]
+                      [_vm._v("agregar algunas etiquetas")]
                     ),
                     _vm._v("\n                .\n            ")
                   ],
@@ -70674,7 +70527,7 @@ var render = function() {
           _vm.ready && _vm.entries.length == 0 && _vm.isFiltered
             ? _c("div", [
                 _vm._v(
-                  "\n            No tags matched the given search.\n        "
+                  "\n           Ninguna etiqueta coincidió con la búsqueda dada.\n        "
                 )
               ])
             : _vm._e(),
@@ -70765,13 +70618,13 @@ var render = function() {
                                         }
                                       }
                                     },
-                                    [_vm._v("Load Older Tags")]
+                                    [_vm._v("Cargar etiquetas más antiguas")]
                                   )
                                 : _vm._e()
                             ]),
                             _vm._v(" "),
                             _vm.loadingMoreEntries
-                              ? _c("small", [_vm._v("Loading...")])
+                              ? _c("small", [_vm._v("Cargando...")])
                               : _vm._e()
                           ]
                         )
