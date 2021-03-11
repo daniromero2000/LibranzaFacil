@@ -1,0 +1,142 @@
+.container-text-blog {
+    max-width     : 100%;
+    padding-bottom: 5%;
+    margin        : auto
+}
+
+strong {
+    font-weight: bold;
+}
+
+.container-text-blog h1 {
+    font-size : 1.9vw;
+    text-align: center;
+    margin-top: 4%;
+    padding   : 1vw;
+    color     : #164194;
+    position  : relative
+}
+
+.container-text-blog h1:after {
+    position        : absolute;
+    content         : '';
+    height          : 0.23vw;
+    width           : 22%;
+    background-color: #164194;
+    bottom          : 0;
+    left            : 50%;
+    transform       : translate(-50%);
+    font-weight     : 700;
+    border-radius   : 6.6vw
+}
+
+.container-title {
+    display        : flex;
+    justify-content: center
+}
+
+.container-text-blog h2 {
+    font-size : 2vw;
+    margin-top: 3%;
+    color     : #164194
+}
+
+.container-text-blog h3 {
+    font-size : 1.7vw !important;
+    margin-top: 3%;
+    color     : #164194;
+}
+
+.container-text-blog h3 span {
+    font-size : 1.7vw !important;
+    margin-top: 3%;
+    color     : #164194;
+}
+
+.container-text-blog p {
+    font-size : 1.3vw;
+    margin-top: 2%
+}
+
+.container-text-blog li {
+    font-size : 1.3vw;
+    margin-top: 1%
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-text-blog {
+        padding-bottom: 5%
+    }
+
+    .container-text-blog h1 {
+        font-size : 3.4vw;
+        margin-top: 6%;
+        padding   : 1.3vw
+    }
+
+    .container-text-blog h2 {
+        font-size : 2.4vw;
+        margin-top: 5%
+    }
+
+    .container-text-blog p {
+        font-size : 2.1vw;
+        margin-top: 4%
+    }
+
+    .container-text-blog h3 {
+        font-size : 2.4vw;
+        margin-top: 4%
+    }
+}
+
+@media (min-width: 310px) and (max-width: 480px) {
+    .container-text-blog {
+        padding-bottom: 5%
+    }
+
+    .container-text-blog h1 {
+        font-size : 3.4vw;
+        margin-top: 6%;
+        padding   : 1.3vw
+    }
+
+    .container-text-blog h2 {
+        font-size : 3.2vw;
+        margin-top: 8%
+    }
+
+    .container-text-blog p {
+        font-size : 2.9vw;
+        margin-top: 6%
+    }
+
+    .container-text-blog h3 {
+        font-size : 3.1vw;
+        margin-top: 6%
+    }
+}
+
+h1.title {
+    position     : relative;
+    margin-bottom: 3%;
+    color        : gray;
+}
+
+h1.title::after {
+    content       : " ";
+    display       : inline-block;
+    width         : 0;
+    height        : 0;
+    color         : #ffce00;
+    font-weight   : bolder;
+    position      : absolute;
+    left          : 0;
+    margin-left   : 0;
+    vertical-align: .255em;
+    border-top    : 4px solid;
+    border-right  : 54px solid;
+    border-bottom : 0;
+    border-left   : 30px solid;
+    bottom        : -3px;
+}
