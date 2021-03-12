@@ -132,12 +132,6 @@ h5,
   padding: 2.5em 0;
 }
 
-@media (min-width: 768px) {
-  .site-section {
-    padding: 5em 0;
-  }
-}
-
 .site-section.site-section-sm {
   padding: 4em 0;
 }
@@ -1204,7 +1198,7 @@ h5,
 
 .sidebar-box {
   margin-bottom: 4em;
-  font-size    : 15px;
+  font-size    : 1vw;
   width        : 100%;
   float        : left;
   background   : #fff;
@@ -1215,10 +1209,11 @@ h5,
 }
 
 .sidebar-box .heading {
-  font-size     : 18px;
-  margin-bottom : 30px;
-  padding-bottom: 20px;
-  border-bottom : 1px solid #e6e6e6;
+  font-size     : 1.4vw;
+  margin-bottom : 0.9vw;
+  padding-bottom: 0.8vw;
+  border-bottom : 1px solid #ffce00;
+  color         : #ffce00;
 }
 
 .tags {
@@ -1229,7 +1224,7 @@ h5,
 
 .tags li {
   padding: 0;
-  margin : 0 4px 4px 0;
+  margin : 0 0.4vw 0.4vw 0;
   float  : left;
   display: inline-block;
 }
@@ -1237,8 +1232,8 @@ h5,
 .tags li a {
   float        : left;
   display      : block;
-  border-radius: 4px;
-  padding      : 2px 6px;
+  border-radius: 0.4vw;
+  padding      : 0.2vw 0.6vw;
   color        : gray;
   background   : #f2f2f2;
 }
@@ -1538,7 +1533,7 @@ h5,
 }
 
 .post-entry-sidebar .post-meta {
-  font-size: 14px;
+  font-size: 1vw;
   color    : #b3b3b3;
 }
 
@@ -1549,8 +1544,12 @@ h5,
 
 .post-entry-sidebar ul li {
   list-style: none;
-  padding   : 0 0 20px 0;
-  margin    : 0 0 20px 0;
+  padding   : 0 0 7% 0;
+  margin    : 0 0 7% 0;
+}
+
+ol {
+  padding-left: 4%;
 }
 
 .post-entry-sidebar ul li a {
@@ -1558,7 +1557,8 @@ h5,
 }
 
 .post-entry-sidebar ul li a img {
-  width: 90px;
+  width       : 8vw;
+  margin-right: 1.7vw;
 }
 
 .post-entry-sidebar ul li a img,
@@ -1568,7 +1568,7 @@ h5,
 }
 
 .post-entry-sidebar ul li a .text h4 {
-  font-size: 18px;
+  font-size: 1.4vw;
 }
 
 .search-form-wrap {
@@ -1794,4 +1794,50 @@ h5,
 
 .search-form-wrap form .form-control {
   border: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .post-entry-sidebar .post-meta {
+    font-size: 1.9vw !important;
+  }
+
+  .tags li {
+    padding: 0;
+    margin : 0 1.1vw 1.2vw 0;
+  }
+
+  .sidebar-box .heading {
+    font-size     : 3.4vw;
+    margin-bottom : 3.9vw;
+    padding-bottom: 2.8vw;
+  }
+
+  .tags li a {
+    padding  : 1.2vw 1.6vw;
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .post-entry-sidebar .post-meta {
+    font-size: 3.5vw !important;
+  }
+
+  .tags li {
+    padding: 0;
+    margin : 0 2.3vw 2.2vw 0;
+  }
+
+  .sidebar-box .heading {
+    font-size     : 5.6vw;
+    margin-bottom : 6.3vw;
+    padding-bottom: 3.6vw;
+  }
+
+  .tags li a {
+    padding  : 2vw 2vw;
+    font-size: 3.3vw;
+  }
 }

@@ -8,6 +8,20 @@ strong {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 2.5vw;
+}
+
+.main-content h5 {
+    font-size: 1.25vw;
+}
+
+
+h4 {
+    font-size: 1.2vw;
+    color    : gray !important;
+}
+
 .container-text-blog h1 {
     font-size : 1.9vw;
     text-align: center;
@@ -41,28 +55,45 @@ strong {
     color     : gray
 }
 
-h5 {
-    color     : gray !important
+.subscribe-1 h2 {
+    font-size : 2vw !;
+    margin-top: 3%;
+    color     : gray
+}
+
+.container-show-blow {
+    width : 90%;
+    margin: auto;
 }
 
 .container-text-blog h3 {
-    font-size : 1.7vw !important;
+    font-size : 1.7vw;
     margin-top: 3%;
     color     : gray;
 }
 
 .container-text-blog h3 span {
-    font-size : 1.7vw !important;
+    font-size : 1.7vw;
     margin-top: 3%;
     color     : gray;
 }
 
-.container-text-blog p {
+.content-post img {
+    max-width: 40%;
+    width    : 40%;
+    margin   : 2% 0;
+}
+
+.container-text-blog p,
+.breadcrumb-item,
+.subscribe-1 {
     font-size : 1.3vw;
     margin-top: 2%
 }
 
-.container-text-blog li {
+.container-text-blog li,
+.breadcrumb-item,
+.subscribe-1 {
     font-size : 1.3vw;
     margin-top: 1%
 }
@@ -71,6 +102,7 @@ img {
     max-width: 100%;
     margin   : 2% auto;
     display  : flex;
+    width    : 100%;
 }
 
 iframe {
@@ -81,18 +113,61 @@ iframe {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+    .container-text-blog h3 span {
+        font-size : 3.2vw !important;
+        margin-top: 3%;
+    }
+
+    .post-entry-sidebar .post-meta {
+        font-size: 1.9vw !important;
+    }
+
+    .tags li {
+        padding: 0;
+        margin : 0 1.1vw 1.2vw 0;
+    }
+
+    .sidebar-box .heading {
+        font-size     : 3.4vw;
+        margin-bottom : 3.9vw;
+        padding-bottom: 2.8vw;
+    }
+
+    .tags li a {
+        padding: 1.2vw 1.6vw;
+    }
+
+    .content-post h4 {
+        font-size: 2.7vw;
+    }
+
+    .content-post img {
+        max-width: 40%;
+        width    : 40%;
+        margin   : 2% 0;
+    }
+
+    .main-content h5 {
+        font-size: 2.25vw;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
     .container-text-blog {
         padding-bottom: 5%
     }
 
     .container-text-blog h1 {
-        font-size : 3.4vw;
+        font-size : 4.2vw;
         margin-top: 6%;
         padding   : 1.3vw
     }
 
     .container-text-blog h2 {
-        font-size : 2.4vw;
+        font-size : 3.8vw;
         margin-top: 5%
     }
 
@@ -101,13 +176,68 @@ iframe {
         margin-top: 4%
     }
 
+    .container-text-blog li,
+    .breadcrumb-item,
+    .subscribe-1 {
+        font-size : 2.1vw;
+        margin-top: 2%
+    }
+
     .container-text-blog h3 {
         font-size : 2.4vw;
         margin-top: 4%
     }
 }
 
-@media (min-width: 310px) and (max-width: 480px) {
+@media (max-width: 480px) {
+
+    .container-text-blog h3 span {
+        font-size : 5.2vw !important;
+        margin-top: 3%;
+    }
+
+    .post-entry-sidebar .post-meta {
+        font-size: 1.9vw !important;
+    }
+
+    .tags li {
+        padding: 0;
+        margin : 0 1.1vw 1.2vw 0;
+    }
+
+    .sidebar-box .heading {
+        font-size     : 3.4vw;
+        margin-bottom : 3.9vw;
+        padding-bottom: 2.8vw;
+    }
+
+    .tags li a {
+        padding: 1.2vw 1.6vw;
+    }
+
+    .content-post h4 {
+        font-size : 4.3vw;
+        margin-top: 7%;
+    }
+
+    .content-post img {
+        max-width: 40%;
+        width    : 40%;
+        margin   : 2% 0;
+    }
+
+    .main-content h5 {
+        font-size: 2.25vw;
+    }
+
+    h1 {
+        font-size: 6.7vw;
+    }
+
+    .main-content h5 {
+        font-size: 4.25vw;
+    }
+
     .container-text-blog {
         padding-bottom: 5%
     }
@@ -119,13 +249,20 @@ iframe {
     }
 
     .container-text-blog h2 {
-        font-size : 3.2vw;
-        margin-top: 8%
+        font-size : 6.4vw;
+        margin-top: 8%;
     }
 
     .container-text-blog p {
-        font-size : 2.9vw;
-        margin-top: 6%
+        font-size : 4.2vw;
+        margin-top: 6%;
+    }
+
+    .container-text-blog li,
+    .breadcrumb-item,
+    .subscribe-1 {
+        font-size : 4.2vw;
+        margin-top: 3%;
     }
 
     .container-text-blog h3 {
@@ -154,6 +291,6 @@ h1.title::after {
     border-top    : 4px solid;
     border-right  : 54px solid;
     border-bottom : 0;
-    border-left   : 30px solid;
+    border-left   : 2vw solid;
     bottom        : -3px;
 }

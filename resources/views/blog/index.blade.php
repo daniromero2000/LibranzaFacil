@@ -4,23 +4,24 @@
 @endsection
 @section('content')
     <div class="site-wrap">
-
-
         <div class="site-section">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12">
-                        <h2>{{ isset($origin) ? 'Blogs - ' . $origin->name : 'Blogs' }}</h2>
+                        <h2>{{ isset($origin) ? 'Posts - ' . $origin->name : 'Posts' }}</h2>
                     </div>
                 </div>
                 <ul class="nav nav-pills mb-4 justify-content-center">
                     <li class="nav-item mx-2">
-                        <a class="nav-link btn-outline-primary" style=" border: 1px solid; " aria-current="page" href="{{route('blog')}}">Ver Todos</a>
-                    </li>    
+                        <a class="nav-link btn-outline-primary {{ request()->url() == route('blog') ? 'active' : '' }}"
+                            style=" border: 1px solid; " aria-current="page" href="{{ route('blog') }}">Ver Todos</a>
+                    </li>
                     @foreach ($tags as $tag)
-                    <li class="nav-item mx-2">
-                        <a class="nav-link btn-outline-primary" style=" border: 1px solid; " aria-current="page" href="{{route('blog.tag.show', $tag->slug)}}">{{$tag->name}}</a>
-                    </li>    
+                        <li class="nav-item mx-2">
+                            <a class="nav-link btn-outline-primary {{ request()->url() == route('blog.tag.show', $tag->slug) ? 'active' : '' }}"
+                                style=" border: 1px solid; " aria-current="page"
+                                href="{{ route('blog.tag.show', $tag->slug) }}">{{ $tag->name }}</a>
+                        </li>
                     @endforeach
                 </ul>
                 <div class="row">
@@ -45,36 +46,11 @@
                 </div>
                 <div class="row text-center pt-5 border-top">
                     <div class="col-md-12">
-                        <div class="custom-pagination">
-                            <span>1</span>
-                            <a href="">2</a>
-                            <a href="">3</a>
-                            <a href="">4</a>
-                            <span>...</span>
-                            <a href="">15</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="site-section bg-lightx">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-5">
-                        <div class="subscribe-1 ">
-                            <h2>Subscribe to our newsletter</h2>
-                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nesciunt error
-                                illum a explicabo, ipsam nostrum.</p>
-                            <form action="" class="d-flex">
-                                <input type="text" class="form-control" placeholder="Enter your email address">
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
-                            </form>
-                        </div>
+                        @include('generals::layouts.admin.pagination.front.pagination')
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
-
 </html>

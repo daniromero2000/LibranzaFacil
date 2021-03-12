@@ -114,7 +114,9 @@ header .icon-call {
     font-weight       : 500;
     -webkit-transition: .4s ease-out;
     transition        : .4s ease-out;
-    text-align        : center
+    text-align        : center;
+    border-bottom     : .1vw solid #dee2e66b;
+    min-height        : 5.2vw;
 }
 
 .button-nav {
@@ -122,7 +124,8 @@ header .icon-call {
     background   : #ffce00;
     border-radius: 48vw;
     display      : flex;
-    width        : 33%
+    width        : 33%;
+    align-items  : center;
 }
 
 .button-nav:hover {
@@ -433,11 +436,11 @@ footer .icons {
 
     .navbar a,
     header span {
-        font-size: 2.3vw
+        font-size: 2.6vw
     }
 
     .first-div-header {
-        width: 28.3%
+        width: 31%
     }
 
     .first-div-header img {
@@ -445,7 +448,7 @@ footer .icons {
     }
 
     .col-header-responsive {
-        max-width: 27%;
+        max-width: 30%;
         padding  : 3.5% 0
     }
 
@@ -475,7 +478,7 @@ footer .icons {
     }
 
     .button-nav {
-        width      : 42.1%;
+        width      : 46.7%;
         margin-left: 1%
     }
 
@@ -525,7 +528,7 @@ footer .icons {
     }
 
     .text-foot {
-        font-size: 3.3vw;
+        font-size: 3.3vw
     }
 
     .servicio li {
@@ -533,11 +536,11 @@ footer .icons {
     }
 
     .title-foot {
-        font-size: 4.1vw;
+        font-size: 4.1vw
     }
 
     .linea {
-        font-size: 3.5vw;
+        font-size: 3.5vw
     }
 
     footer .container-icon-call {
@@ -549,11 +552,11 @@ footer .icons {
     }
 
     .tels {
-        font-size: 3.2vw;
+        font-size: 3.2vw
     }
 
     .horario {
-        font-size: 3.1vw;
+        font-size: 3.1vw
     }
 
     .ml-2-responsive1 {
@@ -565,7 +568,7 @@ footer .icons {
     }
 
     .ml-2-responsive1 {
-        font-size: 3.9vw;
+        font-size: 3.9vw
     }
 
     .last-col-footer {
