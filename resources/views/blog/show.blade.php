@@ -2,13 +2,6 @@
 @section('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/blog/public/css/show/app.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('modules/blog/public/css/app.css') }}">
-
-    <style>
-        img {
-            max-width: 100%;
-        }
-
-    </style>
 @endsection
 @section('content')
 
@@ -16,22 +9,27 @@
         <div class="site-wrap">
             <section class="site-section py-lg">
                 <div class="container">
+                    <nav aria-label="breadcrumb bg-white">
+                        <ol class="breadcrumb bg-white">
+                            <li class="breadcrumb-item"><a href="">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="{{route('blog')}}">Blogs</a></li>
+                        </ol>
+                    </nav>
                     <div class="row blog-entries element-animate">
                         <div class="col-md-12 col-lg-9 main-content">
                             <h1 class="title">{{ $post->title ? $post->title : 'title' }}</h1>
+                            <h5>{{ $post->publish_date->toFormattedDateString() }}</h5>
                             <div class="post-content-body container-text-blog">
                                 {!! $post->content !!}
                             </div>
-                            <div class="pt-5">
+                            <div>
                                 <p>Tags:
                                     @foreach ($post->tags as $tag)
-                                        <a href="{{ route('blog.show', $tag->slug) }}">#{{ $tag->name }}</a>
+                                        <a href="{{ route('blog.tag.show', $tag->slug) }}">#{{ $tag->name }}</a>
                                     @endforeach
-
                                 </p>
                             </div>
                         </div>
-
                         <div class="col-md-12 col-lg-3 sidebar">
                             <div class="sidebar-box search-form-wrap">
                                 <form action="https://preview.colorlib.com/theme/miniblog/single.html#" class="search-form">
@@ -43,68 +41,38 @@
                                 </form>
                             </div>
 
-                            {{-- <div class="sidebar-box">
-                                <h3 class="heading">Popular Posts</h3>
+                            <div class="sidebar-box">
+                                <h3 class="heading">Lee También</h3>
                                 <div class="post-entry-sidebar">
                                     <ul>
-                                        <li>
-                                            <a href="https://preview.colorlib.com/theme/miniblog/single.html">
-                                                <img src="./Mini Blog_files/img_1.jpg" alt="Image placeholder" class="mr-4">
-                                                <div class="text">
-                                                    <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
-                                                    <div class="post-meta">
-                                                        <span class="mr-2">March 15, 2018 </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://preview.colorlib.com/theme/miniblog/single.html">
-                                                <img src="./Mini Blog_files/img_2.jpg" alt="Image placeholder" class="mr-4">
-                                                <div class="text">
-                                                    <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
-                                                    <div class="post-meta">
-                                                        <span class="mr-2">March 15, 2018 </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://preview.colorlib.com/theme/miniblog/single.html">
-                                                <img src="./Mini Blog_files/img_3.jpg" alt="Image placeholder" class="mr-4">
-                                                <div class="text">
-                                                    <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
-                                                    <div class="post-meta">
-                                                        <span class="mr-2">March 15, 2018 </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                        @foreach ($post->tags as $tagsPost)
+                                            @foreach ($tagsPost->posts->take(10) as $item)
+                                                <li>
+                                                    <a href="{{ route('blog.show', $item->slug) }}">
+                                                        <img src="{{ asset($item->featured_image) }}"
+                                                            alt="Image placeholder" class="mr-4">
+                                                        <div class="text">
+                                                            <h4>{{ $item->title }}</h4>
+                                                            <div class="post-meta">
+                                                                <span
+                                                                    class="mr-2">{{ $item->publish_date->toFormattedDateString() }}
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        @endforeach
                                     </ul>
                                 </div>
-                            </div> --}}
-
+                            </div>
                             <div class="sidebar-box">
                                 <h3 class="heading">Tags</h3>
                                 <ul class="tags">
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Travel</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Adventure</a>
-                                    </li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Food</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Lifestyle</a>
-                                    </li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Business</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Freelancing</a>
-                                    </li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Travel</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Adventure</a>
-                                    </li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Food</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Lifestyle</a>
-                                    </li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Business</a></li>
-                                    <li><a href="https://preview.colorlib.com/theme/miniblog/single.html#">Freelancing</a>
-                                    </li>
+                                    @foreach ($tags as $tag)
+                                        <li><a href="{{ route('blog.tag.show', $tag->slug) }}">{{ $tag->name }}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

@@ -13,7 +13,7 @@ strong {
     text-align: center;
     margin-top: 4%;
     padding   : 1vw;
-    color     : #164194;
+    color     : gray;
     position  : relative
 }
 
@@ -22,7 +22,7 @@ strong {
     content         : '';
     height          : 0.23vw;
     width           : 22%;
-    background-color: #164194;
+    background-color: gray;
     bottom          : 0;
     left            : 50%;
     transform       : translate(-50%);
@@ -38,19 +38,23 @@ strong {
 .container-text-blog h2 {
     font-size : 2vw;
     margin-top: 3%;
-    color     : #164194
+    color     : gray
+}
+
+h5 {
+    color     : gray !important
 }
 
 .container-text-blog h3 {
     font-size : 1.7vw !important;
     margin-top: 3%;
-    color     : #164194;
+    color     : gray;
 }
 
 .container-text-blog h3 span {
     font-size : 1.7vw !important;
     margin-top: 3%;
-    color     : #164194;
+    color     : gray;
 }
 
 .container-text-blog p {
@@ -61,6 +65,19 @@ strong {
 .container-text-blog li {
     font-size : 1.3vw;
     margin-top: 1%
+}
+
+img {
+    max-width: 100%;
+    margin   : 2% auto;
+    display  : flex;
+}
+
+iframe {
+    display   : flex;
+    margin    : 5% auto 5% auto;
+    max-width : 100%;
+    max-height: 100%;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
